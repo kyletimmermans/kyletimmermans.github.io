@@ -12,3 +12,7 @@ ToDo:
 <div>-post CTF info learned</div>
 <div>-host important networking stuff, cheatsheets, etc</div>
 
+</br>
+
+<div>Update all sites with kyletimmermans.github.io</div>
+
