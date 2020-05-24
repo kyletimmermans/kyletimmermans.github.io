@@ -3,6 +3,7 @@
 ToDo:
 
 <div>-fix tab names</div>
+<div>&ensp;-Home page fixed</div>
 <div>-give tab an image (maybe dijkstra's canvas icon)</div>
 <div>-get rid of older and newer boxes</div>
 <div>-remove name tag at bottom for every page but keep on bottom of home page</div>
