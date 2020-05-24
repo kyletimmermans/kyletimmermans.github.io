@@ -14,5 +14,5 @@ ToDo:
 
 </br>
 
-<div>Update all sites with kyletimmermans.github.io</div>
+<div>Update all sites with kyletimmermans.github.io when finished</div>
 
