@@ -6,7 +6,7 @@ ToDo:
 <div>-Projects Page:</div>
 <div>&ensp;&ensp;-fix image dimensions for the different project pictures if its not automatic</div>
 <div>&ensp;&ensp;-clicking on picutures of programs brings you to github readme.md</div>
-<div>-fix footers, credit needed on homepage, remove footers for everywhere else</div>
+<div>-fix footers, credit needed on homepage, all other footers are Kyle Timmermans - 2020</div>
 <div>-get rid of older and newer boxes</div>
 <div>-talk about CVE somewhere "CVE-2020-9008" page</div>
 <div>-post CTF info learned</div>
