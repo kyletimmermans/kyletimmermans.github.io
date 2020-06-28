@@ -8,7 +8,6 @@ ToDo:
 <div>&ensp;&ensp;-clicking on picutures of programs brings you to github readme.md</div>
 <div>-footer credit needed on homepage</div>
 <div>-get rid of older and newer boxes</div>
-<div>-talk about CVE somewhere "CVE-2020-9008" page</div>
 
 </br>
 
