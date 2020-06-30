@@ -1,7 +1,7 @@
 ---
 layout: misc
-title: Contact
+title: 
 ---
 
 
-Feel free to contact me at my email: __ktimmermans@fordham.edu__
+                  Feel free to contact me at my email: __ktimmermans@fordham.edu__
