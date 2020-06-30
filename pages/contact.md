@@ -1,6 +1,6 @@
 ---
-layout: misc
-title: Contact
+layout: center
+title: 
 ---
 
 
