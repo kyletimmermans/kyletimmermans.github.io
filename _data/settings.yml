@@ -9,8 +9,6 @@ google-ID: ''
 menu:
 - {name: 'Projects', folder: 'pages', file: 'projects.html'}
 - {name: 'CVEs', folder: 'pages', file: 'cves.html'}
-- {name: 'Sample Posts', folder: 'pages', file: 'sample-posts.html'}
-- {name: 'Documentation', folder: 'pages', file: 'documentation.html'}
 - {name: 'About', folder: 'pages', file: 'about.html'}
 - {name: 'Contact', folder: 'pages', file: 'contact.html'}
 
