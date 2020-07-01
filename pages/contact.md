@@ -1,5 +1,6 @@
 ---
 layout: center
+title: Contact
 ---
 
 
