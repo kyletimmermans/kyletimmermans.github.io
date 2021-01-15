@@ -4,22 +4,19 @@
 <style>
   .myvideo {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 400px;
-    height: 300px; 
-    overflow: hidden;
+    height: 100%;
+    width: 100%
   }
 </style>
+  
+{% include head.html %}
+
+<body>
   
 <video autoplay muted loop id="myvideo">
   <source src="https://storm.cis.fordham.edu/~ktimmermans/timelapse4k.webm" type="video/webm">
 </video>
   
-{% include head.html %}
-
-<body>
-
 <div class="container">
   {% include header.html %}
   <div class="posts-wrapper">
