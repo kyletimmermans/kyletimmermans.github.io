@@ -2,7 +2,7 @@
 layout: post
 title: "NYPD Twitter Tool"
 author: "Kyle Timmermans"
-categories: NYPDTwitterTool
+categories: nypd-twitter-tool
 tags: [NYPDTwitterTool]
 image: nypdtwittertool.png
 ---
