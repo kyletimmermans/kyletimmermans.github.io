@@ -6,6 +6,7 @@
 <div>-Create home page</div>
 <div>&ensp;&ensp;-Welcome fade in and out in different languages</div>
 <div>&ensp;&ensp;-add video background to home page</div>
+<div>-remove extra random files (Be careful)</div>
 
 </br>
 
