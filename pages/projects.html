@@ -2,10 +2,9 @@
 layout: page
 title: Projects
 ---
-<div>Hi</div>
-{% for post in site.posts %}
-  <div>{{ post.title }}</div>
-{% endfor %}
+<div>New!</div>
+
+<div>{{ site.posts.size }}</div>
 
 {% for post in site.posts %}
   <a href="{{ site.github.url }}{{ post.url }}">
