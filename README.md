@@ -10,6 +10,7 @@
 <div>-get rid of older and newer boxes</div>
 <div>-embed resume pdf in Resume area</div>
 <div>-add cve link in CVEs section</div>
+<div>-add video background to home page</div>
 
 </br>
 
