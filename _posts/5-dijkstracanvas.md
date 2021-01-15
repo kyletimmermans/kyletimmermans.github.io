@@ -2,8 +2,8 @@
 layout: post
 title: "Dijkstra's Canvas"
 author: "Kyle Timmermans"
-categories: Dijkstra's Canvas
-tags: [Dijkstra's Canvas]
+categories: DijkstrasCanvas
+tags: [DijkstrasCanvas]
 image: dijkstracanvas.png
 ---
 
