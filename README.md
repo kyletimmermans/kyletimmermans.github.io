@@ -8,6 +8,7 @@ ToDo:
 <div>&ensp;&ensp;-clicking on picutures of programs brings you to github readme.md</div>
 <div>-footer credit needed on homepage</div>
 <div>-get rid of older and newer boxes</div>
+<div>-embed resume pdf in Resume area</div>
 
 </br>
 
