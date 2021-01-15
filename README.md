@@ -9,6 +9,7 @@
 <div>&ensp;&ensp;-clicking on picutures of programs brings you to their respective github page</div>
 <div>-get rid of older and newer boxes</div>
 <div>-embed resume pdf in Resume area</div>
+<div>-create linkedin icon and add to header</div>
 
 </br>
 
