@@ -3,13 +3,14 @@
   
 <style>
   .myvideo {
-      display: block;
-      height: auto;
-      overflow: hidden;
-      position: relative;
-      padding-bottom: 56.7%; /* you can change this to match the width/height proportion of the video */
-      background: red;
-  }
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 </style>
   
 <video autoplay muted loop id="myvideo">
