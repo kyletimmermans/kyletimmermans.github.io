@@ -9,6 +9,7 @@ google-ID: ''
 menu:
 - {name: 'Projects                     ', folder: 'pages', file: 'projects.html'}
 - {name: 'CVEs', folder: 'pages', file: 'cves.html'}
+- {name: 'Resume', folder: 'pages', file: 'resume.html'}
 - {name: 'About', folder: 'pages', file: 'about.html'}
 - {name: 'Contact', folder: 'pages', file: 'contact.html'}
 
