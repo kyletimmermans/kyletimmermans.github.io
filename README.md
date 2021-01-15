@@ -1,6 +1,9 @@
 # kyletimmermans.github.io
 
-ToDo:
+
+### ToDo
+
+- [ ] Hi
 
 <div>-make new home page and put programming picture page in "Projects" page</div>
 <div>-Projects Page:</div>
