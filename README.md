@@ -3,8 +3,8 @@
 
 ### ToDo
 
-<div>-add cve link in CVEs section</div>
-<div>-add video background to home page</div>
+<div>-Create home page</div>
+<div>&ensp;&ensp;-add video background to home page</div>
 
 </br>
 
