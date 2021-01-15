@@ -10,5 +10,7 @@
 
 <div>Update all sites with kyletimmermans.github.io when finished</div>
 
-## POSTS NEEDS DATE IN FILENAME WITH yyyy-mm-dd format
+# Notes
+### POSTS NEEDS DATE IN FILENAME WITH yyyy-mm-dd format
+### To use gists with image, create gist, push image, get raw image url, update link on gist
 
