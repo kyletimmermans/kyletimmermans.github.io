@@ -1,7 +1,18 @@
 <!doctype html>
 <html>
   
-<video autoplay muted loop>
+<style>
+  .myvideo {
+    left: 50%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+</style>
+  
+<video autoplay muted loop id="myvideo">
   <source src="https://storm.cis.fordham.edu/~ktimmermans/timelapse4k.webm" type="video/webm">
 </video>
   
