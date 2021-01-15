@@ -1,12 +1,21 @@
 <!doctype html>
 <html>
 
-<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-  <iframe frameborder="0" height="100%" width="100%"
-    src="https://youtube.com/embed/VPjpl0Bug6M?autoplay=1&controls=0&showinfo=0&autohide=1">
-  </iframe>
-</div>
-
+<style>
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+</style>
+  
+<video autoplay muted loop id="myVideo">
+  <source src="https://www.youtube.com/watch?v=VPjpl0Bug6M" type="video/mp4">
+</video>
+  
+ 
 {% include head.html %}
 
 <body>
