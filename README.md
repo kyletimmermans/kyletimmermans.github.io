@@ -14,5 +14,5 @@
 
 <div>Update all sites with kyletimmermans.github.io when finished</div>
 
-## POSTS NEEDS DATE BEFORE IN yyyy-mm-dd format
+## POSTS NEEDS DATE IN FILENAME WITH yyyy-mm-dd format
 
