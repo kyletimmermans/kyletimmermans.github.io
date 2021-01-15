@@ -3,7 +3,6 @@
 
 ### ToDo
 
-<div>-embed resume pdf in Resume area</div>
 <div>-add cve link in CVEs section</div>
 <div>-add video background to home page</div>
 
