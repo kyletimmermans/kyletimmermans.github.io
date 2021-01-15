@@ -2,8 +2,8 @@
 layout: post
 title: "Zsh Color Prompt Tool"
 author: "Kyle Timmermans"
-categories: Zsh Color Prompt Tool
-tags: [Zsh Color Prompt Tool]
+categories: ZshColorPromptTool
+tags: [ZshColorPromptTool]
 image: colorprompttool.png
 ---
 
