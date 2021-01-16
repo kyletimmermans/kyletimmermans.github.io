@@ -19,4 +19,5 @@
 ### Timelapse vid hosted on storm - https://storm.cis.fordham.edu/~ktimmermans/timelapse4k.webm
 ### Fix video size: https://stackoverflow.com/questions/42306807/css-background-video-sizing-issue-with-large-videos
 ### homeheader.html added to includes so that jsinclude.html can use it. A.K.A. Header is translucent for homepage and text brightens up and that is only possible by adding a new site header class called site-header-home in header.scss in assets.
-### home > jsinclude.html > homeheader.html > header2.scss > .site-header-2 & .site-title-2 & menu-list-2 & menu-list-2 & menu-link-2 & dropdown-2 & bropbtn-2 & fa fa-bars-2 & dropdown-contents-2
+### home > jsinclude.html > homeheader.html > header2.scss > .site-header-2 & dropbtn-2
+<div>&ensp;&ensp;-Replace all white in this new header.scss file with translucent</div>
