@@ -4,11 +4,22 @@
 {% include head.html %}
 
 <style>
- .myvideo {
-   position: absolute;
-   width: 100px;
-   height: 100px;
- }
+    #video-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    #video-bg > video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 </style>
  
 <body>
@@ -17,9 +28,11 @@
 var welcome = ["Welcome", "Добро Пожаловать", "स्वागत", "환영", "ようこそ", "Bienvenue", "欢迎", "Willkommen", "خوش آمدید", "ברוך הבא", "Bienvenidos", "Fáilte", "Benvenuto"];
 </script>
 
-<video autoplay muted loop id="myvideo">
-  <source src="https://storm.cis.fordham.edu/~ktimmermans/timelapse1080.mp4" type="video/mp4">
-</video>
+<div id="video-bg">
+ <video autoplay muted loop>
+   <source src="https://storm.cis.fordham.edu/~ktimmermans/timelapse4k.webm" type="video/webm">
+ </video>
+</div>
  
 <div class="container">
   {% include header.html %}
