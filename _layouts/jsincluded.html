@@ -3,18 +3,24 @@
  
 {% include head.html %}
 
+<style>
+ .myvideo {
+   position: absolute;
+   width: 400px;
+   height: 300px;
+ }
+</style>
+ 
 <body>
 
 <script>
 var welcome = ["Welcome", "Добро Пожаловать", "स्वागत", "환영", "ようこそ", "Bienvenue", "欢迎", "Willkommen", "خوش آمدید", "ברוך הבא", "Bienvenidos", "Fáilte", "Benvenuto"];
 </script>
 
-<div class="container">
-  <video autoplay muted loop id="myvideo">
-    <source src="https://storm.cis.fordham.edu/~ktimmermans/timelapse4k.webm" type="video/webm">
-  </video>
-</div>
-  
+<video autoplay muted loop>
+  <source src="https://storm.cis.fordham.edu/~ktimmermans/timelapse4k.webm" type="video/webm">
+</video>
+ 
 <div class="container">
   {% include header.html %}
   <div class="posts-wrapper">
