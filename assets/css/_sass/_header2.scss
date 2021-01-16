@@ -1,22 +1,22 @@
-.site-header-2 {
+.site-header {
   min-height: 56px;
   width: $container-width;
   position: fixed;
-  background-color: blue;
+  background-color: white;
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
 }
 @media (max-width: $container-width) {
-  .site-header-2 {
+  .site-header {
       min-height: 56px;
       width: 95vw;
       position: fixed;
-      background-color: red;
+      background-color: white;
       box-shadow: 0 5px 6px -6px #bbb;
       z-index: 100;
   }
 }
-.site-header-2 a {
+.site-header a {
   text-decoration: none;
 }
 .site-title {
