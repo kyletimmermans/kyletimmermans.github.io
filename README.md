@@ -21,4 +21,4 @@
 ### homeheader.html added to includes so that jsinclude.html can use it. A.K.A. Header is translucent for homepage and text brightens up and that is only possible by adding a new site header class called site-header-home in header.scss in assets.
 ### home > jsinclude.html > homeheader.html > header2.scss > .site-header-2
 <div>&ensp;&ensp;-Replace all white in this new header.scss file with translucent</div>
-<div>&ensp;&ensp;-Add -2 to every class name so we don't mix them as two global classes</div>
+<div>&ensp;&ensp;-Add -2 to every class name so we don't mix them as two global classes in both header2.scss and homeheader.html</div>
