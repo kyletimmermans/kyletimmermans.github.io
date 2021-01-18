@@ -25,5 +25,5 @@
 <div>&ensp;&ensp;-Add header2.scss to -sections-dir.scss</div>
 
 ### If you want to add more projects with picutre boxes, might have to change a number variable somewhere
-### Also need a new post-wrapper class fix in the includes called homedefault.scss
+### Also need a new post-wrapper class fix in the sass folder called homedefault.scss
 ### Print welcome text: for-loop in a while(1) loop, will just keep going back to beginning of welcome message array
