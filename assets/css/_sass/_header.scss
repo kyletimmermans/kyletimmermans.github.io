@@ -2,7 +2,7 @@
   min-height: 56px;
   width: $container-width;
   position: fixed;
-  background-color: blue;
+  background-color: white;
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
 }
@@ -27,6 +27,7 @@
   margin-top: 0;
   padding-left: 10px;
   float: left;
+  color: blue;
 }
 .menu-list {
   line-height: $header-thickness;
