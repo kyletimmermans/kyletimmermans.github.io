@@ -4,7 +4,7 @@
 ### ToDo
 
 <div>-Create home page</div>
-<div>&ensp;&ensp;-fix header on homepage - center</div>
+<div>&ensp;&ensp;-fix header on homepage - center, white text</div>
 <div>&ensp;&ensp;-make sure footer is visible</div>
 <div>&ensp;&ensp;-Welcome fade in and out in different languages</div>
 
