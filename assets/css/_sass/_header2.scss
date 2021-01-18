@@ -3,6 +3,7 @@
   width: $container-width;
   position: fixed;
   background-color: transparent;
+  color: white;
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
 }
@@ -12,6 +13,7 @@
       width: 95vw;
       position: fixed;
       background-color: transparent;
+      color: white;
       box-shadow: 0 5px 6px -6px #bbb;
       z-index: 100;
   }
