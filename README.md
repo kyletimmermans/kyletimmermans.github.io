@@ -23,3 +23,4 @@
 <div>&ensp;&ensp;-Replace all white in this new header.scss file with translucent</div>
 <div>&ensp;&ensp;-Add -2 to every class name so we don't mix them as two global classes in both header2.scss and homeheader.html</div>
 <div>&ensp;&ensp;-Add header2.scss to -sections-dir.scss</div>
+### If you want to add more projects with picutre boxes, might have to change a number variable somewhere
