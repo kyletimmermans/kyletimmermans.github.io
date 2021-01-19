@@ -6,6 +6,7 @@
 <div>Create home page</div>
 <div>&ensp;&ensp;-Make sure footer is visible on next page</div>
 <div>&ensp;&ensp;-Welcome in different languages on new page (install characters like en-EN)</div>
+<div>&ensp;&ensp;&ensp;&ensp;-No fade, quick succession</div>
 <div>Dark mode for rest of pages? (Need white text then) (Discord, Github, Slack color scan) </div>
 <div>Fix Github Icon to have green hover and pink/purple instagram hover</div>
 
@@ -35,5 +36,6 @@
 ### If you want to add more projects with picutre boxes, might have to change a number variable somewhere
 ### homedefault.scss to remove underlined text in homepage (container-3 and posts-wrapper-3)
 ### homefooter.html uses homefooter.scss
+### videobg css needs "position: absolute" instead of "fixed" so we can scroll down
 ### Print welcome text: for-loop in a while(1) loop, will just keep going back to beginning of welcome message array
 
