@@ -13,7 +13,7 @@
 </br>
 
 <div>-Mobile Version</div>
-<div>&ensp;&ensp;-Recognize mobile script/div>
+<div>&ensp;&ensp;-Recognize mobile script</div>
 <div>&ensp;&ensp;-Serve a mobile homepage</div>
 <div>&ensp;&ensp;-Fix pdf resume (screenshot each page?)</div>
 
