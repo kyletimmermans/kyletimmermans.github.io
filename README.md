@@ -4,9 +4,17 @@
 ### ToDo
 
 <div>-Create home page</div>
-<div>&ensp;&ensp;-fix header on homepage - center</div>
-<div>&ensp;&ensp;-make sure footer is visible</div>
+<div>&ensp;&ensp;-Fix header on homepage - center</div>
+<div>&ensp;&ensp;-Make sure footer is visible</div>
 <div>&ensp;&ensp;-Welcome fade in and out in different languages</div>
+<div>Dark mode? for rest of pages?</div>
+
+</br>
+
+<div>-Mobile Version</div>
+<div>&ensp;&ensp;-Recognize mobile script/div>
+<div>&ensp;&ensp;-Serve a mobile homepage</div>
+<div>&ensp;&ensp;-Fix pdf resume (screenshot each page?)</div>
 
 </br>
 
