@@ -4,7 +4,6 @@
 ### ToDo
 
 <div>Create home page</div>
-<div>&ensp;&ensp;-Fix header on homepage - center</div>
 <div>&ensp;&ensp;-Make sure footer is visible</div>
 <div>&ensp;&ensp;-Welcome fade in and out in different languages</div>
 <div>Dark mode for rest of pages? (Need white text then) (Discord, Github, Slack color scan) </div>
