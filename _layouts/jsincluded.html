@@ -5,7 +5,7 @@
 
 <style>
     #video-bg {
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
@@ -37,8 +37,13 @@
     {{ content }}
   </div>
 </div>
- 
+
+<div id="p1"><div>
+
 <script>
+var x = screen.height*2;  // Push past first page and create second page that is the size of browser window (dynamic)
+document.getElementById("p1").style.paddingTop = x + "px"; // Value needs pixel unit
+ 
 var welcome = ["Welcome", "Добро пожаловать", "स्वागत", "환영", "ようこそ", "Bienvenue", "欢迎", "Willkommen", "خوش آمدید", "ברוך הבא", "Bienvenidos", "Fáilte", "Benvenuto"];
 </script>
  
