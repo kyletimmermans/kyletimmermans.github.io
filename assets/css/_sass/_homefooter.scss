@@ -5,11 +5,15 @@
   min-height: 56px;
   line-height: 45px;
   width: $container-width;
+  position: fixed;
+  bottom: 0;
 }
 .footer a {
   color: $brand-color;
   padding: 0px 10px 0px;
   text-decoration: none;
+  position: fixed;
+  bottom: 0;
 }
 @media (max-width: $container-width) {
   .footer {
@@ -19,5 +23,7 @@
     min-height: 56px;
     line-height: 45px;
     width: 95vw;
+    position: fixed;
+    bottom: 0;
   }
 }
