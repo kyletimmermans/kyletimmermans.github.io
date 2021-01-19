@@ -2,27 +2,30 @@
   Site container
 */
 
-.container-2 {
+.container-3 {
   width: $container-width;
   margin-left: auto;
   margin-right: auto;
 }
-.posts-wrapper-2 {
+.container-3 a {
+  text-decoration: none;
+}
+.posts-wrapper-3 {
   padding-top: $header-thickness+10px;
   margin: auto;
   display: block;
   width: $container-width - 20px;
 }
-.posts-wrapper-2 h1 {
+.posts-wrapper-3 h1 {
   margin: 20px 0px 5px;
 }
 @media (max-width: $container-width) {
-  .container-2 {
+  .container-3 {
     width: 95vw;
     margin-left: auto;
     margin-right: auto;
   }
-  .posts-wrapper-2 {
+  .posts-wrapper-3 {
     padding-top: $header-thickness+10px;
     margin: auto;
     display: block;
