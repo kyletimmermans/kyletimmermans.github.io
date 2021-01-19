@@ -19,7 +19,7 @@
 
 </br>
 
-<div>Update all sites with kyletimmermans.github.io when finished</div>
+<div>Custom domain?</div>
 
 # Notes
 ### POSTS NEEDS DATE IN FILENAME WITH yyyy-mm-dd format in the front
