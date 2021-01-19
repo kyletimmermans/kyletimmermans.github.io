@@ -37,5 +37,5 @@
 ### homedefault.scss to remove underlined text in homepage (container-3 and posts-wrapper-3)
 ### homefooter.html uses homefooter.scss
 ### videobg css needs "position: absolute" instead of "fixed" so we can scroll down
+### Scroll past div to change text from white to black - https://stackoverflow.com/questions/37513628/check-if-scrolled-past-div-with-javascript-no-jquery
 ### Print welcome text: for-loop in a while(1) loop, will just keep going back to beginning of welcome message array
-
