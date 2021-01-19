@@ -4,7 +4,7 @@
 ### ToDo
 
 <div>Create home page</div>
-<div>&ensp;&ensp;-Fix ghost bar</div>
+<div>&ensp;&ensp;-Fix font color on scroll</div>
 <div>&ensp;&ensp;-Welcome in different languages on new page (install characters like en-EN)</div>
 <div>&ensp;&ensp;&ensp;&ensp;-No fade, quick succession</div>
 <div>Dark mode for rest of pages? (Need white text then) (Discord, Github, Slack color scan) </div>
