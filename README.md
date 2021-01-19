@@ -5,7 +5,7 @@
 
 <div>Create home page</div>
 <div>&ensp;&ensp;-Make sure footer is visible on next page</div>
-<div>&ensp;&ensp;-Welcome in different languages on new page</div>
+<div>&ensp;&ensp;-Welcome in different languages on new page (install characters like en-EN)</div>
 <div>Dark mode for rest of pages? (Need white text then) (Discord, Github, Slack color scan) </div>
 <div>Fix Github Icon to have green hover and pink/purple instagram hover</div>
 
