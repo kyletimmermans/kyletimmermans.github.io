@@ -1,4 +1,4 @@
-.footer {
+.footer-3 {
   background: white;
   color: $brand-color;
   text-align: center;
@@ -8,7 +8,7 @@
   position: fixed;
   bottom: 0;
 }
-.footer a {
+.footer-3 a {
   color: $brand-color;
   padding: 0px 10px 0px;
   text-decoration: none;
@@ -16,7 +16,7 @@
   bottom: 0;
 }
 @media (max-width: $container-width) {
-  .footer {
+  .footer-3 {
     background: white;
     color: $brand-color;
     text-align: center;
