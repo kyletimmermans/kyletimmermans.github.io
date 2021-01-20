@@ -3,7 +3,7 @@ $secondaryColor: #fff;
 $steps: 20;
 
 .glitch {
-    position: relative;
+    position: absolute;
     margin: 0 auto;
     color: $primaryColor;
     font-size: 80px;
@@ -13,7 +13,7 @@ $steps: 20;
     text-transform: uppercase;
     letter-spacing: 0.01em;
     transform: scale3d(1,1,1);
-   
+    padding-bottom: 400px;
 
     &::before,
     &::after {
