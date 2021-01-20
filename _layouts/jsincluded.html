@@ -51,7 +51,7 @@ window.addEventListener("scroll", function() {
  var elementTarget = document.getElementById("video-bg");
  // Only change to black once after we set it once, while we're in the white zone, don't keep changing it, so we check with the second-
  // -Condition to make sure we changed it already. Otherwise it would just keep making it black because we are below the video
- if ((window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) && (document.getElementById("p2").classList.contains("container-3")) {   
+ if ((window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) && (document.getElementById("p2").classList.contains("container-3"))) {   
     document.getElementById("p2").classList.remove("container-3"); // Get rid of white font
     document.getElementById("p2").classList.add("container-4"); // Add black font
  } else {  // If back on video make it white text again
