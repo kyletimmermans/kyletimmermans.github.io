@@ -52,10 +52,11 @@ window.addEventListener("scroll", function() {
  // Only change to black once after we set it once, while we're in the white zone, don't keep changing it, so we check with the second-
  // -Condition to make sure we changed it already. Otherwise it would just keep making it black because we are below the video
  // This is done to prevent an infinte loop of it attempting to change colors while it's already changed and not JUST because it's below a certain line
- if ((window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) && (document.getElementById("p2").classList.contains("container-3"))) {   
+ // -32 is a measure pixel length that is the true line where text color should chamge
+ if ((window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight - 32)) && (document.getElementById("p2").classList.contains("container-3"))) {   
     document.getElementById("p2").classList.remove("container-3");  // Get rid of white font
     document.getElementById("p2").classList.add("container-4");  // Add black font
- } else if ((window.scrollY < (elementTarget.offsetTop + elementTarget.offsetHeight)) && (document.getElementById("p2").classList.contains("container-4"))) {
+ } else if ((window.scrollY < (elementTarget.offsetTop + elementTarget.offsetHeight - 32)) && (document.getElementById("p2").classList.contains("container-4"))) {
     document.getElementById("p2").classList.remove("container-4");  // Revert back to white font again if scrolled back up, also checks if we fixed already - 
     document.getElementById("p2").classList.add("container-3");  // -Just like the firt if statement
  }
