@@ -36,3 +36,5 @@
 ### videobg css needs "position: absolute" instead of "fixed" so we can scroll down
 ### Scroll past div to change text from white to black - https://stackoverflow.com/questions/37513628/check-if-scrolled-past-div-with-javascript-no-jquery
 ### Print welcome text: for-loop in a while(1) loop, will just keep going back to beginning of welcome message array
+<div>&ensp;&ensp;-Do we really need while(1)? Check if for loop will infinite just bc it's in webpage</div>
+
