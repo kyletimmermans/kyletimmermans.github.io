@@ -3,8 +3,6 @@
 
 ### ToDo
 
-<div>Change twitter and instagram font</div>
-
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Recognize mobile device script</div>
 <div>&ensp;&ensp;-Create and serve a mobile homepage</div>
