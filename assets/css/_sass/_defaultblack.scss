@@ -6,6 +6,7 @@
   width: $container-width;
   margin-left: auto;
   margin-right: auto;
+  color: black;
 }
 .container-4 a {
   color: black;
@@ -15,20 +16,24 @@
   margin: auto;
   display: block;
   width: $container-width - 20px;
+  color: black;
 }
 .posts-wrapper-4 h1 {
   margin: 20px 0px 5px;
+  color: black;
 }
 @media (max-width: $container-width) {
   .container-4 {
     width: 95vw;
     margin-left: auto;
     margin-right: auto;
+    color: black;
   }
   .posts-wrapper-4 {
     padding-top: $header-thickness+10px;
     margin: auto;
     display: block;
     width: 95vw;
+    color: black;
   }
 }
