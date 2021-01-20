@@ -3,8 +3,6 @@
 
 ### ToDo
 
-<div>Create home page</div>
-<div>&ensp;&ensp;-Welcome in different languages on new page</div>
 <div>Fix Github Icon to have green hover and pink/purple instagram hover</div>
 
 </br>
