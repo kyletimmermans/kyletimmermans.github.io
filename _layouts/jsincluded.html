@@ -38,7 +38,9 @@
   </div>
 </div>
 
-<div id="p1"><div>
+<div id="p1"><div>  <!-- Div for spacing and creating new page -->
+    
+<div id="p3"></div>  <!-- Div for holding welcome text -->
 
 <script>
 // To create extra scrollable space to next page
@@ -64,7 +66,29 @@ window.addEventListener("scroll", function() {
 });
 
 // Welcome text effect
-var welcome = ["Welcome", "Добро пожаловать", "स्वागत", "환영", "ようこそ", "Bienvenue", "欢迎", "Willkommen", "خوش آمدید", "ברוך הבא", "Bienvenidos", "Fáilte", "Benvenuto"];
+var messages = ["Welcome", "Добро пожаловать", "स्वागत", "환영", "ようこそ", "Bienvenue", "欢迎", "Willkommen", "خوش آمدید", "ברוך הבא", "Bienvenidos", "Fáilte", "Benvenuto"];
+var i = 0; // Start at 0 bc increment comes first
+// Recursively increment and go through array and each time use setTimeout to delay, just keep going back to top of function when welcome() is called
+function welcome() {
+ if (i == 0) {  // First word shouldn't be delayed, it should already be present, only start delaying after the first welcome for the effect
+   document.getElementById("p3").innerHTML = messages[i];
+   i++;  // No need for delay on this one as the next element will already have a delay in front of it anyways
+   welcome(); // Recurse
+ } else {  // Now we can start using the delay because the first welcome was printed without delay before it
+   setTimeout(function() {
+     document.getElementById("p3").innerHTML = messages[i];
+     i++;
+     if (i == messages.length) {  // If at last element, do the last and then set i back to 0 for infinite loop
+       welcome(); // Do last element
+       i = 0;  // Then reset back to beginning of for-loop
+     } else if (i < messages.length) {  // If not last element, print normally, don't reset for-loop yet
+       welcome(); // Run again recursively with the next increment
+     }
+   }, 1000)
+ }
+}
+
+welcome(); // Call welcome func
 </script>
  
 <div class="container"> {% include footer.html %} </div>
