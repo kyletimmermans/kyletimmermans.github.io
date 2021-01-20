@@ -4,11 +4,12 @@
 ### ToDo
 
 <div>Fix Github Icon to have green hover and pink/purple instagram hover</div>
+<div>&ensp;&ensp;-Fix all footer pages e.g. homefooter</div>
 
 </br>
 
 <div>-Mobile Version</div>
-<div>&ensp;&ensp;-Recognize mobile script</div>
+<div>&ensp;&ensp;-Recognize mobile device script</div>
 <div>&ensp;&ensp;-Serve a mobile homepage</div>
 <div>&ensp;&ensp;-Fix pdf resume (screenshot each page?)</div>
 
