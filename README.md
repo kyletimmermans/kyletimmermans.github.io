@@ -2,6 +2,8 @@
 
 
 ### ToDo
+<div>-CSS Scroll Indicator Animation</div>
+<div>&ensp;&ensp;-Pops up every x, maybe 2 or 3 seconds?</div>
 
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Recognize mobile device script</div>
