@@ -14,7 +14,7 @@ $steps: 20;
     letter-spacing: 0.01em;
     transform: scale3d(1,1,1);
     bottom: -450px;
-    right: 300px;
+    right: 334.5px;  // 2880 width ( pixel finder ) = 1440 width real life. Size of glitch text = 771. 1440 - 771 = 669 & 669 / 2 = 334.5
 
     &::before,
     &::after {
