@@ -13,8 +13,8 @@ $steps: 20;
     text-transform: uppercase;
     letter-spacing: 0.01em;
     transform: scale3d(1,1,1);
-    bottom: 0px;
-    right: 250px;
+    bottom: -450px;
+    right: 300px;
 
     &::before,
     &::after {
