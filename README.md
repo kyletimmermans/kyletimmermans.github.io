@@ -5,7 +5,7 @@
 <div>Open website in different borwsers on different computers / monitor resolutions</div>
 <div>Fix добро пожаловать text and enjoy your stay, don't use exact pixel number, rather "half" of width and height, etc</div>
 <div>Fix Hindi text looking weird?<div>
-<div>Wait for video to pop up and then start sending welcome messages (await async?)</div>
+<div>Wait for video to pop up and only then start sending welcome messages (await async?)</div>
 <div>-CSS Scroll Indicator Animation</div>
 <div>&ensp;&ensp;-Pops up every x, maybe 2 or 3 seconds? (scrollindicator.scss)</div>
 
