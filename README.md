@@ -2,7 +2,7 @@
 
 
 ### ToDo
-<div>Open website in different borwsers on different computers / monitor resolutions</div>
+#### Open website in different borwsers on different computers / monitor resolutions
 <div>Fix enjoy your stay, don't use exact pixel number, rather "half" of width and height, etc</div>
 <div>Fix when header becomes hamburger menu, 12" (1024x768) and 10" (1024x600) displays will show hamburger menu</div>
 <div>Fix Hindi text looking weird?<div>
