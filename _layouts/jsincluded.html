@@ -82,15 +82,12 @@ window.addEventListener("scroll", function() {
  }
 });
 
-// Wait for video to load so we can ensure that "Welcome" is the first string to pop-up
-var vid = document.getElementById("video-bg");
-window.onload = function() {
-            vid.addEventListener('loadeddata', function() {
-            var messages = ["Welcome", "Добро пожаловать", "स्वागत", "환영", "ようこそ", "Bienvenue", "欢迎", "Willkommen", "خوش آمدید", "ברוך הבא", "Bienvenidos", "Dobrodošli", "Fáilte", "Benvenuto"]; 
-        });
-}
-
 // Welcome text loop
+// Ensure that "Welcome" shows up first, so we wait for video to load
+var vid = document.getElementById("video-bg");
+if (vid.readyState === 3) {  // Just in time
+    var messages = ["Welcome", "Добро пожаловать", "स्वागत", "환영", "ようこそ", "Bienvenue", "欢迎", "Willkommen", "خوش آمدید", "ברוך הבא", "Bienvenidos", "Dobrodošli", "Fáilte", "Benvenuto"]; 
+}
 var i = 0; // Start at 0 bc increment comes first
 // Recursively increment and go through array and each time use setTimeout to delay, just keep going back to last two conditions after this runs once
 function welcome() {
