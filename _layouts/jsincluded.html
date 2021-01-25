@@ -54,9 +54,16 @@
   </div>
 </div>
 
-<div id="p3" class="centered"></div>  <!-- Div for holding welcome text -->    
+<div id="p3" class="centered"></div>  <!-- Div for holding welcome text -->  
+
+<div id="p1"><div>  <!-- Div for spacing and creating new page -->
+
+<h1 class="glitch" data-text="Enjoy your stay!">Enjoy your stay!</h1>
 
 <script>
+// To create extra scrollable space to next page
+document.getElementById("p1").style.paddingTop = 178 + "vh";  // Push past first page and create second page that is the size of browser window (dynamic)
+
 // Change white header text to black if it passed the video and is on top of white background.
 // if currentScrollHeight > the target element top value + target element bottom value e.g. 0 + 900
 window.addEventListener("scroll", function() {
@@ -101,8 +108,7 @@ function welcome() {
 welcome(); // Call welcome func
 </script>
  
-<div id="p4" class="container"> {% include footer.html %} </div>
-<script>document.getElementById("p4").style.paddingTop = 200 + "vh";  // Push footer all the way down</script>
+<div class="container"> {% include footer.html %} </div>
  
 </body>
 </html>
