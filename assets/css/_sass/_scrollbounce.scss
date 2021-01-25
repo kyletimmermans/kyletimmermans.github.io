@@ -1,7 +1,6 @@
 .scrollbounce {
-  height: 100vh;
-  position: relative;
-  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .scrollbounce::before {
