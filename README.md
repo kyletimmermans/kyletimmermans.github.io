@@ -3,7 +3,6 @@
 
 ### ToDo
 #### Open website in different borwsers on different computers / monitor resolutions
-<div>Fix enjoy your stay, don't use exact pixel number, rather "half" of width and height, etc</div>
 <div>Fix page multiplier to make second page</div>
 <div>Fix when header becomes hamburger menu, 12" (1024x768) and 10" (1024x600) displays will show hamburger menu</div>
 <div>Wait for video to pop up and only then start sending welcome messages (await async?)</div>
@@ -41,7 +40,9 @@
 ### Fix Добро пожаловать becoming 2 lines by adding "white-space: nowrap; overflow: hidden;" to "centered" css class
 <div>&ensp;&ensp;-Add to "Enjoy your stay!" text div and add "centered" class as well and fix "translateY" lines</div>
 
-### Fix 2nd white page being too long or short: Place the buffer div at bottom 0 and then just add only "page-height" padding to it, no multiplier
+### Fix 2nd white page being too long or short: 180vh padding - top. Because 200 is for the first page and 80 is for the second page b/c footer is 20vh (80+20=100)
+<div>&ensp;&ensp;-Can't use absolute position and bottom: 0 because absolute positioning is not affected by the additional padding added</div>
+
 ### Detect mobile browsers to serve mobile homepage instead - https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 
 
