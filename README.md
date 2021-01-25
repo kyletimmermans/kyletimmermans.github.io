@@ -38,7 +38,7 @@
 ### Scroll past div to change text from white to black - https://stackoverflow.com/questions/37513628/check-if-scrolled-past-div-with-javascript-no-jquery
 ### Delay print https://stackoverflow.com/questions/3583724/how-do-i-add-a-delay-in-a-javascript-loop
 ### Fix Добро пожаловать becoming 2 lines by adding "white-space: nowrap; overflow: hidden;" to "centered" css class
-<div>&ensp;&ensp;-Add to "Enjoy your stay!" text div and add "centered" class as well</div>
+<div>&ensp;&ensp;-Add to "Enjoy your stay!" text div and add "centered" class as well and fix "translateY" lines</div>
 
 ### Detect mobile browsers to serve mobile homepage instead - https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 
