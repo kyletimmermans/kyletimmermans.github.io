@@ -1,12 +1,7 @@
 # kyletimmermans.github.io
 
 
-### ToDo
-#### Open website in different borwsers on different computers / monitor resolutions
-
-<div>-CSS Scroll Indicator Animation</div>
-<div>&ensp;&ensp;-Pops up every x, maybe 2 or 3 seconds? (scrollindicator.scss)</div>
-<div>&ensp;&ensp;-Make it transparent-ish</div>
+## ToDo
 
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Recognize mobile device script</div>
