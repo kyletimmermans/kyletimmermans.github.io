@@ -9,7 +9,7 @@
 <div>Wait for video to pop up and only then start sending welcome messages (await async?)</div>
 <div>-CSS Scroll Indicator Animation</div>
 <div>&ensp;&ensp;-Pops up every x, maybe 2 or 3 seconds? (scrollindicator.scss)</div>
-<div>&ensp;&ensp;&ensp;&ensp;-Make it transparent-ish</div>
+<div>&ensp;&ensp;-Make it transparent-ish</div>
 
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Recognize mobile device script</div>
