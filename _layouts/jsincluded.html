@@ -9,7 +9,7 @@
 
 <style>
     #video-bg {
-        position: relative;
+        position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
@@ -36,10 +36,9 @@
         white-space: nowrap;
         overflow: hidden;
     .new-page {
-        position: relative;
+        position: fixed;
         height: 100vh;
         width: 100vh;
-        display:inline-block;
   }
 </style>
  
@@ -104,9 +103,7 @@ function welcome() {
 }
 
 welcome(); // Call welcome func
-</script>
-
-<div style="clear:both;"></div>  <!-- Split windows -->    
+</script>  
     
 <div class="new-page">   <!-- Used to store the new page -->
     <div class="container"> {% include footer.html %} </div>
