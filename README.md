@@ -5,11 +5,11 @@
 #### Open website in different borwsers on different computers / monitor resolutions
 <div>Fix enjoy your stay, don't use exact pixel number, rather "half" of width and height, etc</div>
 <div>Fix when header becomes hamburger menu, 12" (1024x768) and 10" (1024x600) displays will show hamburger menu</div>
-<div>Fix Hindi text looking weird?<div>
 <div>Wait for video to pop up and only then start sending welcome messages (await async?)</div>
 <div>-CSS Scroll Indicator Animation</div>
 <div>&ensp;&ensp;-Pops up every x, maybe 2 or 3 seconds? (scrollindicator.scss)</div>
 <div>&ensp;&ensp;-Make it transparent-ish</div>
+<div>Fix Hindi text looking weird?<div>
 
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Recognize mobile device script</div>
