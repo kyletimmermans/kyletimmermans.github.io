@@ -83,7 +83,10 @@ window.addEventListener("scroll", function() {
 });
 
 // Welcome text effect
-var messages = ["Welcome", "Добро пожаловать", "स्वागत", "환영", "ようこそ", "Bienvenue", "欢迎", "Willkommen", "خوش آمدید", "ברוך הבא", "Bienvenidos", "Dobrodošli", "Fáilte", "Benvenuto"];
+var vid = document.getElementById("video-bg");
+vid.onloadeddata = function() {  // Wait for video to load so we can ensure that "Welcome" is the first string to pop-up
+    var messages = ["Welcome", "Добро пожаловать", "स्वागत", "환영", "ようこそ", "Bienvenue", "欢迎", "Willkommen", "خوش آمدید", "ברוך הבא", "Bienvenidos", "Dobrodošli", "Fáilte", "Benvenuto"];
+};   
 var i = 0; // Start at 0 bc increment comes first
 // Recursively increment and go through array and each time use setTimeout to delay, just keep going back to last two conditions after this runs once
 function welcome() {
