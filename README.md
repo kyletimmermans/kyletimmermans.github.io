@@ -4,7 +4,7 @@
 ### ToDo
 #### Open website in different borwsers on different computers / monitor resolutions
 
-<div>-Fix page length on second page, make dynamic</div>
+<div>-Fix page length on second page, make dynamic full screen</div>
 <div>-Dynamically center enjoy your stay</div>
 <div>Fix when header becomes hamburger menu, 12" (1024x768) and 10" (1024x600) displays will show hamburger menu</div>
 <div>Wait for video to pop up and only then start sending welcome messages (await async?)</div>
