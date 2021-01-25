@@ -13,9 +13,14 @@ $steps: 20;
     text-transform: uppercase;
     letter-spacing: 0.01em;
     transform: scale3d(1,1,1);
-    bottom: -450px;
-    right: 334.5px;  // 2880 width ( pixel finder ) = 1440 width real life. Size of glitch text = 771. 1440 - 771 = 669 & 669 / 2 sides of blank space near text = 334.5px
-
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    
     &::before,
     &::after {
         content: attr(data-text);
