@@ -3,6 +3,7 @@
 
 ### ToDo
 #### Open website in different borwsers on different computers / monitor resolutions
+<div>Put new page in div</div>
 <div>Fix when header becomes hamburger menu, 12" (1024x768) and 10" (1024x600) displays will show hamburger menu</div>
 <div>Wait for video to pop up and only then start sending welcome messages (await async?)</div>
 <div>-CSS Scroll Indicator Animation</div>
@@ -39,7 +40,8 @@
 ### Fix Добро пожаловать becoming 2 lines by adding "white-space: nowrap; overflow: hidden;" to "centered" css class
 <div>&ensp;&ensp;-Add to "Enjoy your stay!" text div and add "centered" class as well and fix "translateY" lines</div>
 
-### Fix 2nd white page being too long or short: Simply push back footer 100vh, and then add glitch text after but placing it above footer
+## Put everything in new page into a div with height 100vh and weight 100vw
+<div>&ensp;&ensp;-This fixes the issue of second page being different lenghts than first one</div>
 <div>&ensp;&ensp;-Can't use absolute position and bottom: 0 because absolute positioning is not affected by the additional padding added</div>
 
 ### Detect mobile browsers to serve mobile homepage instead - https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
