@@ -40,10 +40,9 @@
 ### Fix Добро пожаловать becoming 2 lines by adding "white-space: nowrap; overflow: hidden;" to "centered" css class
 <div>&ensp;&ensp;-Add to "Enjoy your stay!" text div and add "centered" class as well and fix "translateY" lines</div>
 
-## Put everything in new page into a div with height 100vh and weight 100vw using css class "new-page"
+## Put everything in new page into a div with height 100vh and weight 100vw
 <div>&ensp;&ensp;-This fixes the issue of second page being different lenghts than first one</div>
 <div>&ensp;&ensp;-Can't use absolute position and bottom: 0 because absolute positioning is not affected by the additional padding added</div>
-<div>&ensp;&ensp;-Make everything relative to push against one another</div>
 
 ### Detect mobile browsers to serve mobile homepage instead - https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 

@@ -9,7 +9,7 @@
 
 <style>
     #video-bg {
-        position: relative;
+        position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
@@ -35,10 +35,6 @@
         font-size: 72px;
         white-space: nowrap;
         overflow: hidden;
-    .new-page {
-        position: relative;
-        height: 100vh;
-        width: 100vw;
   }
 </style>
  
@@ -59,8 +55,15 @@
 </div>
 
 <div id="p3" class="centered"></div>  <!-- Div for holding welcome text -->  
-    
+
+<div id="p1"><div>  <!-- Div for spacing and creating new page -->
+
+<h1 class="glitch" data-text="Enjoy your stay!">Enjoy your stay!</h1>
+
 <script>
+// To create extra scrollable space to next page
+document.getElementById("p1").style.paddingTop = 179 + "vh";  // Push past first page and create second page that is the size of browser window (dynamic)
+
 // Change white header text to black if it passed the video and is on top of white background.
 // if currentScrollHeight > the target element top value + target element bottom value e.g. 0 + 900
 window.addEventListener("scroll", function() {
@@ -103,13 +106,9 @@ function welcome() {
 }
 
 welcome(); // Call welcome func
-</script>  
-
-<div style="position: relative"></div>
-    
-<div class="new-page">   <!-- Used to store the new page -->
-    <div class="container"> {% include footer.html %} </div>
-</div>
+</script>
+ 
+<div class="container"> {% include footer.html %} </div>
  
 </body>
 </html>
