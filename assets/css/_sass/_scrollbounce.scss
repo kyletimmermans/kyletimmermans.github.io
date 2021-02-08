@@ -15,10 +15,6 @@
 }
 
 @keyframes bounce {
-  0%, 100% {
-    opacity: 0;
-    transform: translateY(-50%);
-  }
   0% {
     opacity: 1;
   }
