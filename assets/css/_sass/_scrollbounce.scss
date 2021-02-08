@@ -3,12 +3,12 @@
   bottom: 0;
   text-align: center;
   left: 50%;
-  color: rgba(100, 251, 130, 1.0);
+  color: rgb(100, 251, 130);
 }
 
 .scrollbounce::before {
   animation: bounce 4s ease infinite;
-  color: rgba(100, 251, 130, 1.0);
+  color: rgb(100, 251, 130);
   content: '↓';
   font-size: 4rem;
   opacity: 0.8;
