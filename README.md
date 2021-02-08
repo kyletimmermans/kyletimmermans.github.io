@@ -3,7 +3,7 @@
 
 ## ToDo
 
-<div>Fix scrolldown arrow, make it lighter and show up more frequently</div>
+<div>Make scrolldown arrow show up more frequently</div>
 <div>&ensp;</div>
 
 <div>-Mobile Version</div>
@@ -36,5 +36,4 @@
 <div>&ensp;&ensp;-Add to "Enjoy your stay!" text div and add "centered" class as well and fix "translateY" lines</div>
 
 ### Detect mobile browsers to serve mobile homepage instead - https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
-
-
+### For SASS colors, use RGB() instead of rgb()
