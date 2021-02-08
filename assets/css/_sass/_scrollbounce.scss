@@ -3,11 +3,11 @@
   bottom: 0;
   text-align: center;
   left: 50%;
-  color: green;
+  color: #64FB82;
 }
 
 .scrollbounce::before {
-  animation: bounce 4s ease infinite;
+  animation: bounce 2s ease infinite;
   color: green;
   content: '↓';
   font-size: 4rem;
