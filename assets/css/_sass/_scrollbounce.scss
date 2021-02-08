@@ -8,7 +8,7 @@
 
 .scrollbounce::before {
   animation: bounce 4s ease infinite;
-  color: green;
+  color: rgba(100, 251, 130, 1.0);
   content: '↓';
   font-size: 4rem;
   opacity: 0.8;
