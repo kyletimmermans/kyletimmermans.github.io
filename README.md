@@ -40,3 +40,4 @@
 
 ### Detect mobile browsers to serve mobile homepage instead - https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 ### For SASS colors, use RGB() instead of rgb()
+### mobile_index.html > homeMobile.html > mobileForHome.html
