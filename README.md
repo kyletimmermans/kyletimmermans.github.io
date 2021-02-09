@@ -14,6 +14,7 @@
 <div>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Enjoy</div>
 <div>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Your</div>
 <div>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Stay!</div>
+<div>&ensp;&ensp;-Make sure footer shows up on page no scroll</div>
 
 </br>
 
