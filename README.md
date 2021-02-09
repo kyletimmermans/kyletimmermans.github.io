@@ -4,8 +4,8 @@
 ## ToDo
 
 <div>-Mobile Version</div>
-<div>&ensp;&ensp;-Recognize mobile device script</div>
-<div>&ensp;&ensp;-Create and serve a mobile homepage</div>
+
+<div>&ensp;&ensp;-Create and serve a mobile homepage (Use millenial mobile page default)</div>
 <div>&ensp;&ensp;&ensp;&ensp;-Simple boxes for each page</div>
 <div>&ensp;&ensp;-Fix pdf resume (screenshot each page?)</div>
 
