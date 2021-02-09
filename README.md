@@ -6,7 +6,7 @@
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Fix hamburger menu so it goes away when re-clicked</div>
 <div>&ensp;&ensp;-Fix pdf resume for mobile (Open pdf in new tab)</div>
-<div>&ensp;&ensp;&ensp;&ensp;-Fix link in home page (Make a mobileHomeHeader.html)</div>
+<div>&ensp;&ensp;&ensp;&ensp;-Add javascript in resume page that opens pdf in new tab and returns to mobile home page</div>
 
 </br>
 
