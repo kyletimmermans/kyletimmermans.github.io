@@ -5,8 +5,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 
-{% include head.html %}
-
+{% include head.html %}  
+    
+<body>
+    
+<div class="container">
+   {% include header.html %}
+  <div class="posts-wrapper">
+    {{ content }}
+  </div>
+</div>
+    
+<div><h1 class="glitch" data-text="Enjoy">Enjoy</h1><div>
+<div>&ensp;</div>
+<div><h1 class="glitch" data-text="Your">Your</h1><div>
+<div>&ensp;</div>
+<div><h1 class="glitch" data-text="Stay!">Stay!</h1><div>
+    
 <body>
     
 <div class="container"> {% include footer.html %} </div>
