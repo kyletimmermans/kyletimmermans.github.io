@@ -3,9 +3,6 @@
 
 ## ToDo
 
-<div>Make scrolldown arrow show up more frequently</div>
-<div>&ensp;</div>
-
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Recognize mobile device script</div>
 <div>&ensp;&ensp;-Create and serve a mobile homepage</div>
