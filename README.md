@@ -5,6 +5,7 @@
 
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Fix hamburger menu so it goes away when re-clicked</div>
+<div>&ensp;&ensp;-Move enjoy your stay up each by same number</div>
 
 </br>
 
