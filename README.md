@@ -9,6 +9,7 @@
 <div>&ensp;&ensp;&ensp;&ensp;-Non-homepages pages are already fine</div>
 <div>&ensp;&ensp;-Simple boxes for each page</div>
 <div>&ensp;&ensp;-Fix pdf resume (screenshot each page?)</div>
+<div>&ensp;&ensp;-Glitch text works on mobile</div>
 
 </br>
 
