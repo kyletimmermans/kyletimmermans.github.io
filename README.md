@@ -15,6 +15,7 @@
 <div>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Your</div>
 <div>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Stay!</div>
 <div>&ensp;&ensp;-Make sure footer shows up on page no scroll</div>
+<div>&ensp;&ensp;-Fix hamburger menu so it goes away when re-clicked</div>
 
 </br>
 
