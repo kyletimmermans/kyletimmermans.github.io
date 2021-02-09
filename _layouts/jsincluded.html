@@ -12,8 +12,8 @@ window.mobileCheck = function() {
   return check;
 };
     
-if (check) {   // Redirect to mobile homepage if "check == true"
-    window.location = "http://www.w3schools.com";
+if (window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
+    window.location.replace("http://www.w3schools.com");
 }  
 </script>
 
