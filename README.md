@@ -11,7 +11,8 @@
 <div>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Stay!</div>
 <div>&ensp;&ensp;-Make sure footer shows up on page no scroll</div>
 <div>&ensp;&ensp;-Fix hamburger menu so it goes away when re-clicked</div>
-<div>&ensp;&ensp;-Fix pdf resume (screenshot each page?)</div>
+<div>&ensp;&ensp;-Fix pdf resume for mobile (Open pdf in new tab)</div>
+<div>&ensp;&ensp;&ensp;&ensp;-Fix link in home page (Make a mobileHomeHeader.html)</div>
 
 </br>
 
