@@ -10,7 +10,7 @@
 <div>&ensp;&ensp;-Simple boxes for each page</div>
 <div>&ensp;&ensp;-Fix pdf resume (screenshot each page?)</div>
 <div>&ensp;&ensp;-Glitch text works on mobile</div>
-<div>&ensp;&ensp;&ensp;&ensp;Don't any scrolling be required (no-wrap?)</div>
+<div>&ensp;&ensp;&ensp;&ensp;-Don't any scrolling be required (no-wrap?)</div>
 <div>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Enjoy</div>
 <div>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Your</div>
 <div>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Stay!</div>
