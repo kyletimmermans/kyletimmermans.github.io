@@ -51,7 +51,11 @@
 <script>
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
-// PUT SOMETHING HERE \\
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {  // If click outside drpbtn element, if click does not match drpbtn
+      document.getElementById("dropdown").classList.toggle("show");  // Toggle dropdown to open
+  }
+}  
 </script>
     
 <div class="container">
