@@ -5,7 +5,8 @@
 
 <div>-Mobile Version</div>
 
-<div>&ensp;&ensp;-Create and serve a mobile homepage (Use millenial index.html default but with my presets)</div>
+<div>&ensp;&ensp;-Create and serve a mobile homepage (Use millenial index.html default but with my presets to my pages)</div>
+<div>&ensp;&ensp;-Non-homepages pages are already fine</div>
 <div>&ensp;&ensp;&ensp;&ensp;-Simple boxes for each page</div>
 <div>&ensp;&ensp;-Fix pdf resume (screenshot each page?)</div>
 
