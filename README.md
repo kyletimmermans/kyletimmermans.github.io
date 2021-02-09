@@ -4,7 +4,6 @@
 ## ToDo
 
 <div>-Mobile Version</div>
-<div>&ensp;&ensp;-Make sure footer shows up on page no scroll</div>
 <div>&ensp;&ensp;-Fix hamburger menu so it goes away when re-clicked</div>
 <div>&ensp;&ensp;-Fix pdf resume for mobile (Open pdf in new tab)</div>
 <div>&ensp;&ensp;&ensp;&ensp;-Fix link in home page (Make a mobileHomeHeader.html)</div>
@@ -35,3 +34,4 @@
 ### Detect mobile browsers to serve mobile homepage instead - https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 ### For SASS colors, use RGB() instead of rgb()
 ### mobile_index.html > homeMobile.html > mobileForHome.html
+### Re-clickable dropdown hamburger menu - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown
