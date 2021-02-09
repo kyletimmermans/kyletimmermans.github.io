@@ -4,11 +4,6 @@
 ## ToDo
 
 <div>-Mobile Version</div>
-<div>&ensp;&ensp;-Glitch text works on mobile</div>
-<div>&ensp;&ensp;&ensp;&ensp;-Don't any scrolling be required (no-wrap?)</div>
-<div>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Enjoy</div>
-<div>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Your</div>
-<div>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Stay!</div>
 <div>&ensp;&ensp;-Make sure footer shows up on page no scroll</div>
 <div>&ensp;&ensp;-Fix hamburger menu so it goes away when re-clicked</div>
 <div>&ensp;&ensp;-Fix pdf resume for mobile (Open pdf in new tab)</div>
