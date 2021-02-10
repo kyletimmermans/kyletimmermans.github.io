@@ -51,6 +51,8 @@
 <script>
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown
 // When the user clicks on the dropdown menu, toggle between hiding and showing the dropdown content
+
+/*
 var clickedDropdown = 0;    // 0 for closed, 1 for open. Start as closed
 
 var dropbutton;  // Init here so they are not local vars for a function but instead something we can use outside of function
@@ -72,7 +74,7 @@ function hideDropdown() {
         alert(clickedDropdown);
     }    
 } 
-
+*/
 /*
 // Clicking off button and still close 
 if (clickedDropdown == 1 and target.match(!drpbtn))
@@ -81,7 +83,7 @@ if (clickedDropdown == 1 and target.match(!drpbtn))
 </script>
     
 <div class="container">
-   {% include header.html %}
+   {% include mobileheader.html %}
   <div class="posts-wrapper">
     {{ content }}
   </div>
