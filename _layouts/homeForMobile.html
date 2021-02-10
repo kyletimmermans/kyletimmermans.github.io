@@ -56,9 +56,6 @@ var clickedDropdown = 0;    // 0 for closed, 1 for open. Start as closed
 window.onload=function() {  // Wait for hamburger menu to load
     var button1 = document.getElementsByClassName("dropbtn")[0];   // dropbtn for after first press
     button1.addEventListener('click', hideDropdown);
-    
-    var button2 = document.getElementsByClassName("dropdown")[0];  // dropdown for after second press
-    button2.addEventListener('click', hideDropdown);
 }
 
 // If it closed, we clicked so it is now open. If it is open 
@@ -71,7 +68,7 @@ function hideDropdown() {
     if (clickedDropdown == 1) {  // If it was open, close it
         clickedDropdown = 0;
         alert(clickedDropdown);
-        button.classList.toggle("show");
+        button.classList.toggle("show");  // Needs a proper close, this doesn't work
     }    
 } 
 
