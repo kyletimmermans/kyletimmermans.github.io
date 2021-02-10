@@ -59,7 +59,7 @@ var dropdown_content;
 window.onload=function() {  // Required for load purposes
     dropbutton = document.getElementsByClassName("dropbtn")[0];   // When pressing dropbtn
     dropbutton.addEventListener('click', hideDropdown);
-    dropdown_content = document.getElementsByClassName("dropdown-content")[0];  // Need to grab the menu
+    dropdown_content = document.getElementsByClassName("dropdown-content a")[0];  // Need to grab the menu
 }
     
 // If it closed, we clicked so it is now open. If it is open 
