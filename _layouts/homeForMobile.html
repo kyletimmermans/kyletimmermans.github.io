@@ -51,11 +51,11 @@
 <script>
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown
 // When the user clicks on the dropdown menu, toggle between hiding and showing the dropdown content
+var clickedDropwdown = 0;    // 0 for closed, 1 for open. Start as closed
+
 var button = document.getElementsByClassName("dropbtn")[0];
     
 button.addEventListener("click", hideDropdown);
-
-var clickedDropwdown = 0;    // 0 for closed, 1 for open. Start as closed
 
 // If it closed, we clicked so it is now open. If it is open 
 function hideDropdown() { 
