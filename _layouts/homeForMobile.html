@@ -53,8 +53,11 @@
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 window.onclick = function(event) {
   if (event.target.matches('.dropbtn')) {  // Start with figuring out if we even clicked the dropdown menu
-    window.location.replace("https://google.com");
+    alert("dropbtn");
   }
+  if (event.target.matches('.dropdown')) {  // Start with figuring out if we even clicked the dropdown menu
+    alert("dropdown");
+  } 
 }
 </script>
     
