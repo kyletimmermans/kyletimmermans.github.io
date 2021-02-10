@@ -82,13 +82,13 @@
       text-decoration: none;
       display: block;
   }
-  .dropdown-content-3 a:active {
+  .dropdown-content-3 a:hover, a:active {
     background-color: #f1f1f1
   }
-  .dropdown-3:active .dropdown-content-3 {
+  .dropdown-3:hover, .dropdown-3:active .dropdown-content-3 {
       display: block;
   }
-  .dropdown-3:active .dropbtn-3 {
+  .dropdown-3:hover, .dropdown-3:active .dropbtn-3 {
       background-color: #f1f1f1;
   }
 }
