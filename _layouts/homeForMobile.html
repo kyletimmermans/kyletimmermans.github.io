@@ -53,23 +53,16 @@
 // When the user clicks on the dropdown menu, toggle between hiding and showing the dropdown content
 var clickedDropdown = 0;    // 0 for closed, 1 for open. Start as closed
 
-var isLoaded = false;  // Init as false   
+var dropbutton;  // Init here so they are not local vars for a function but instead something we can use outside of function
+var dropdown;
     
 window.onload=function() {  // Required for load purposes
     var dropbutton = document.getElementsByClassName("dropbtn")[0];   // When pressing dropbtn
     dropbutton.addEventListener('click', hideDropdown);
     var dropdown = document.getElementsByClassName("dropdown")[0];   // dropbutton for after first press
     dropdown.addEventListener('click', hideDropdown);
-    isLoaded = true;
 }
-
-if (isLoaded) {   // Needed to init again after "window.onload"
-    var dropbutton = document.getElementsByClassName("dropbtn")[0];   // When pressing dropbtn
-    dropbutton.addEventListener('click', hideDropdown);
-    var dropdown = document.getElementsByClassName("dropdown")[0];   // dropbutton for after first press
-    dropdown.addEventListener('click', hideDropdown);
-}
-
+    
 // If it closed, we clicked so it is now open. If it is open 
 function hideDropdown() { 
     if (clickedDropdown == 0) { 
