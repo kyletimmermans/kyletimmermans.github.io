@@ -53,9 +53,10 @@
 // When the user clicks on the dropdown menu, toggle between hiding and showing the dropdown content
 var clickedDropwdown = 0;    // 0 for closed, 1 for open. Start as closed
 
-var button = document.getElementsByClassName("dropbtn")[0];
-    
-button.addEventListener('click', hideDropdown);
+window.onload=function() {  // Wait for hamburger menu to load
+    var button = document.getElementsByClassName("dropbtn")[0];
+    button.addEventListener('click', hideDropdown);
+}
 
 // If it closed, we clicked so it is now open. If it is open 
 function hideDropdown() { 
