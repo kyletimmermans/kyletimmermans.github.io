@@ -54,6 +54,8 @@
 var clickedDropwdown = 0;    // 0 for closed, 1 for open. Start as closed
 
 var button = document.getElementsByClassName("dropbtn")[0];
+    
+button.addEventListener('click', hideDropdown);
 
 // If it closed, we clicked so it is now open. If it is open 
 function hideDropdown() { 
