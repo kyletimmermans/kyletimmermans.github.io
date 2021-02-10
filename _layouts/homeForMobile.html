@@ -50,23 +50,31 @@
     
 <script>
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown
-// When the user clicks on the button, toggle between hiding and showing the dropdown content
+// When the user clicks on the dropdown menu, toggle between hiding and showing the dropdown content
 var button = document.getElementsByClassName(".dropbtn");
-button[0].addEventListener("click", hideDropdown);
-
-var clickedDropwdown = 0;    // Odd for 
-    
-function hideDropdown() {   // When it is clicked to open, becomes 1, this our first click and clicked will always be an odd number
-    clickedDropdown++;      // When it is clicked again to open, becomes 2, then open clicks will always be an even number
-    if ((clickedDropdown % 2) == 0) {   // If even, we want to close the menu by clicking somewhere else on the screen
-        alert("Clicked!");
-    }
-} 
+console.log(button[0]);
 
 /*
-if (first element)
-    if (brpbtn clicked || !drpbtn clicked)
-        click off
+button[0].addEventListener("click", hideDropdown);
+
+var clickedDropwdown = 0;    // 0 for closed, 1 for open. Start as closed
+
+// If it closed, we clicked so it is now open. If it is open 
+function hideDropdown() { 
+    if (clickedDropdown == 0) { 
+        clickedDropdown == 1;  // If it was closed not we signify that it is open bc we must have clicked the menu to get here
+        return;  // End function, let it be open until we click again
+    }
+    if (clickedDropdown == 1) {  // If it was open, close it
+        clickedDropdown = 0;
+        // close statement
+    }    
+} 
+*/
+/*
+// Clicking off button and still close 
+if (clickedDropdown == 1 and target.match(!drpbtn))
+        close statement
 */
 </script>
     
