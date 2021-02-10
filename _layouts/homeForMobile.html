@@ -57,9 +57,9 @@ var dropbutton;  // Init here so they are not local vars for a function but inst
 var dropdown;
     
 window.onload=function() {  // Required for load purposes
-    var dropbutton = document.getElementsByClassName("dropbtn")[0];   // When pressing dropbtn
+    dropbutton = document.getElementsByClassName("dropbtn")[0];   // When pressing dropbtn
     dropbutton.addEventListener('click', hideDropdown);
-    var dropdown = document.getElementsByClassName("dropdown")[0];   // dropbutton for after first press
+    dropdown = document.getElementsByClassName("dropdown")[0];   // dropbutton for after first press
     dropdown.addEventListener('click', hideDropdown);
 }
     
