@@ -52,9 +52,9 @@
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 window.onclick = function(event) {
-  if (event.target.matches('.dropdown')) {  // Start with figuring out if we even clicked the dropdown menu
-        if (event.target.matches('.dropdown') || !event.target.matches('.dropdown') {  // When we try to click dropdown after already opened or anywhere else on site
-            document.getElementByClassName(".dropdown").classList.toggle("show");  // Toggle close
+  if (event.target.matches('.dropbtn')) {  // Start with figuring out if we even clicked the dropdown menu
+        if (event.target.matches('.dropbtn') || !event.target.matches('.dropbtn') {  // When we try to click dropdown after already opened or anywhere else on site
+            document.getElementByClassName(".dropbtn").classList.toggle("show");  // Toggle close
         }
   }
 }
