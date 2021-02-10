@@ -54,13 +54,10 @@
 var clickedDropdown = 0;    // 0 for closed, 1 for open. Start as closed
 
 var dropbutton;  // Init here so they are not local vars for a function but instead something we can use outside of function
-var dropdown;
     
 window.onload=function() {  // Required for load purposes
     dropbutton = document.getElementsByClassName("dropbtn")[0];   // When pressing dropbtn
     dropbutton.addEventListener('click', hideDropdown);
-    dropdown = document.getElementsByClassName("dropdown")[0];   // dropbutton for after first press
-    dropdown.addEventListener('click', hideDropdown);
 }
     
 // If it closed, we clicked so it is now open. If it is open 
@@ -73,7 +70,7 @@ function hideDropdown() {
     if (clickedDropdown == 1) {  // If it was open, close it
         clickedDropdown = 0;
         alert(clickedDropdown);
-        dropdown.classList.toggle("show");  // dropdown is the actual menu we want to close
+        dropbutton.classList.toggle("show");  // dropdown is the actual menu we want to close
     }    
 } 
 
