@@ -62,12 +62,12 @@ window.onload=function() {  // Wait for hamburger menu to load
 function hideDropdown() { 
     if (clickedDropdown == 0) { 
         clickedDropdown == 1;  // If it was closed not we signify that it is open bc we must have clicked the menu to get here
-        alert(clickedDropdown);
+        alert(clickedDropdown + ": First statement");
         return;  // End function, let it be open until we click again
     }
     if (clickedDropdown == 1) {  // If it was open, close it
         clickedDropdown = 0;
-        alert(clickedDropdown);
+        alert(clickedDropdown + ": Second statement");
         button.classList.toggle("show");
     }    
 } 
