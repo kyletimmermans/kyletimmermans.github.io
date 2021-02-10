@@ -55,13 +55,19 @@ var clickedDropdown = 0;    // 0 for closed, 1 for open. Start as closed
 
 var isLoaded = false;  // Init as false   
     
-window.onload=function() {  // Wait for hamburger menu to load
+window.onload=function() {  // Required for load purposes
+    var dropbutton = document.getElementsByClassName("dropbtn")[0];   // When pressing dropbtn
+    dropbutton.addEventListener('click', hideDropdown);
+    var dropdown = document.getElementsByClassName("dropdown")[0];   // dropbutton for after first press
+    dropdown.addEventListener('click', hideDropdown);
     isLoaded = true;
 }
 
-if (isLoaded) {   // Reload
-    var button = document.getElementsByClassName("dropbtn")[0];   // dropbtn for after first press
-    button.addEventListener('click', hideDropdown);
+if (isLoaded) {   // Needed to init again after "window.onload"
+    var dropbutton = document.getElementsByClassName("dropbtn")[0];   // When pressing dropbtn
+    dropbutton.addEventListener('click', hideDropdown);
+    var dropdown = document.getElementsByClassName("dropdown")[0];   // dropbutton for after first press
+    dropdown.addEventListener('click', hideDropdown);
 }
 
 // If it closed, we clicked so it is now open. If it is open 
@@ -74,7 +80,7 @@ function hideDropdown() {
     if (clickedDropdown == 1) {  // If it was open, close it
         clickedDropdown = 0;
         alert(clickedDropdown);
-        button.classList.toggle("show");  // Needs a proper close, this doesn't work
+        dropdown.classList.toggle("show");  // dropdown is the actual menu we want to close
     }    
 } 
 
