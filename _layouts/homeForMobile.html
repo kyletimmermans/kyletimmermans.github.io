@@ -51,8 +51,6 @@
 <script>
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
-document.getElementsByClassName(".dropbtn").addEventListener("click", hideDropdown);
-
 var clickedDropwdown = 0;    // Odd for 
     
 function hidedropDown() {   // When it is clicked to open, becomes 1, this our first click and clicked will always be an odd number
@@ -61,6 +59,9 @@ function hidedropDown() {   // When it is clicked to open, becomes 1, this our f
         alert("Clicked!");
     }
 } 
+    
+document.getElementsByClassName(".dropbtn").addEventListener("click", hideDropdown);
+
 /*
 if (first element)
     if (brpbtn clicked || !drpbtn clicked)
