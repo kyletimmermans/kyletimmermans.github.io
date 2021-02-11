@@ -33,4 +33,4 @@
 ### Detect mobile browsers to serve mobile homepage instead - https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 ### For SASS colors, use RGB() instead of rgb()
 ### mobile_index.html > homeMobile.html > mobileForHome.html
-### Hover for mobile - https://stackoverflow.com/questions/2851663/how-do-i-simulate-a-hover-with-a-touch-in-touch-enabled-browsers
+### Hover for mobile: make dropdown-content-3 display: none; by default on show onclick() of dropbtn-3
