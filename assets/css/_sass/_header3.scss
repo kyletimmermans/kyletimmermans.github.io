@@ -1,3 +1,7 @@
+.hover {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;        
+}
 .site-header-3 {
   min-height: 56px;
   width: $container-width;
@@ -83,18 +87,12 @@
       display: block;
   }
   .dropdown-content-3 a:hover, a:hover_effect {
-    background-color: #f1f1f1;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
+      background-color: #f1f1f1;
   }
   .dropdown-3:hover, .dropdown-3:hover_effect .dropdown-content-3 {
       display: block;
-      -webkit-user-select: none;
-      -webkit-touch-callout: none;
   }
   .dropdown-3:hover, .dropdown-3:hover_effect .dropbtn-3 {
       background-color: #f1f1f1;
-      -webkit-user-select: none;
-      -webkit-touch-callout: none;
   }
 }
