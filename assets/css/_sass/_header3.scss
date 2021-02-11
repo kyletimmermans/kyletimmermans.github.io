@@ -82,7 +82,7 @@
       text-decoration: none;
       display: block;
   }
-  .dropdown-content-3 a:hover {
+  .dropdown-content-3 a:hover, a:active {
     background-color: #f1f1f1
   }
   .dropdown-3:hover .dropdown-content-3 {
