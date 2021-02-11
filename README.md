@@ -6,7 +6,6 @@
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Fix hamburger menu so it goes away when re-clicked</div>
 <div>&ensp;&ensp;-Fix for all mobile pages</div>
-<div>&ensp;&ensp;&ensp;&ensp;-Remove js from homeForMobile.html and simply use new css selector fix</div>
 
 </br>
 
@@ -34,4 +33,4 @@
 ### Detect mobile browsers to serve mobile homepage instead - https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 ### For SASS colors, use RGB() instead of rgb()
 ### mobile_index.html > homeMobile.html > mobileForHome.html
-### Re-clickable dropdown hamburger menu - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown
+### Hover for mobile - https://stackoverflow.com/questions/2851663/how-do-i-simulate-a-hover-with-a-touch-in-touch-enabled-browsers
