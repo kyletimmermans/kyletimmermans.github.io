@@ -88,7 +88,7 @@
   .dropdown-3:hover .dropdown-content-3 {
       display: block;
   }
-  .dropdown-3:hover .dropbtn-3 {
+  .dropdown-3:hover, .dropdown-3:active .dropbtn-3 {
       background-color: #f1f1f1;
   }
 }
