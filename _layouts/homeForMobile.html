@@ -2,6 +2,7 @@
 <html>
     
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 
@@ -80,6 +81,13 @@ function hideDropdown() {
 if (clickedDropdown == 1 and target.match(!drpbtn))
         close statement
 */
+    
+$(document).ready(function() {
+   $('.hover').on('touchstart touchend', function(e) {
+       e.preventDefault();
+       $(this).toggleClass('hover_effect');
+   });
+});
 </script>
     
 <div class="container">
