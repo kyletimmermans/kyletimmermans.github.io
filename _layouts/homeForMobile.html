@@ -82,13 +82,7 @@ if (clickedDropdown == 1 and target.match(!drpbtn))
         close statement
 */
 
-// https://stackoverflow.com/questions/2851663/how-do-i-simulate-a-hover-with-a-touch-in-touch-enabled-browsers?answertab=votes#tab-top
-$(document).ready(function() {
-   $('.hover').on('touchstart touchend', function(e) {
-       e.preventDefault();
-       $(this).toggleClass('hover_effect');
-   });
-});
+$('.hover').on('touchstart', function() {});
 </script>
     
 <div class="container">
