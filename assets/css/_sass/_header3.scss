@@ -28,7 +28,7 @@
   padding-left: 10px;
   float: left;
 }
-.menu-list-3 {
+.menu-list-3:hover, .menu-list-3:active {
   line-height: $header-thickness;
   float: right;
 }
