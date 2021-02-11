@@ -5,6 +5,7 @@
 
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Fix hamburger menu so it goes away when re-clicked</div>
+<div>&ensp;&ensp;-Fix for all mobile pages</div>
 <div>&ensp;&ensp;&ensp;&ensp;-Remove js from homeForMobile.html and simply use new css selector fix</div>
 
 </br>
