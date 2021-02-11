@@ -18,8 +18,10 @@
     var x = document.getElementById("special-div");
     if (x.style.display === "none" || x.style.display === "") {  // If we have "" it means we're getting first read (Default state is hidden)
       x.style.display = "block";
+      x.classList.remove("colorRevert");
     } else {
       x.style.display = "none";
+      x.classList.add("colorRevert");
     }
   }
   </script>
