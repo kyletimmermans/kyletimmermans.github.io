@@ -55,7 +55,7 @@
   .site-title-3 {
     padding-right: 0.25rem;
   }
-  .dropbtn-3 {
+  .dropbtn-3:hover, .dropbtn-3:active {
       background-color: white;
       color: black;
       padding: 16px;
@@ -82,13 +82,13 @@
       text-decoration: none;
       display: block;
   }
-  .dropdown-content-3 a:hover, a:active {
+  .dropdown-content-3 a:hover {
     background-color: #f1f1f1
   }
   .dropdown-3:hover .dropdown-content-3 {
       display: block;
   }
-  .dropdown-3:hover, .dropdown-3:active .dropbtn-3 {
+  .dropdown-3:hover .dropbtn-3 {
       background-color: #f1f1f1;
   }
 }
