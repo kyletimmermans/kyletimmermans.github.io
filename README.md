@@ -5,7 +5,7 @@
 
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Fix hamburger menu so it goes away when re-clicked</div>
-<div>&ensp;&ensp;-Fix for all mobile pages</div>
+<div>&ensp;&ensp;-Make all pages mobile (CVE, projects, about, etc)</div>
 
 </br>
 
