@@ -19,6 +19,7 @@
     var y = document.getElementById("special-button");  // Dropdown button
     if (x.style.display === "none" || x.style.display === "") {  // If we have "" it means we're getting first read (Default state is hidden)
       x.style.display = "block";
+      y.focus();  // Re-add :hover
     } else {    // If its showing
       x.style.display = "none";
       y.style.pointerEvents = "none";  // Remove :hover from dropbtn-3
