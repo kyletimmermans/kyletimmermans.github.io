@@ -36,3 +36,4 @@
 ### For SASS colors, use RGB() instead of rgb()
 ### mobile_index.html > homeMobile.html > mobileForHome.html
 ### Hover for mobile - See mobileheader.html in the includes file
+### CNAME here and DNS settings pointing here from www.kyles.world
