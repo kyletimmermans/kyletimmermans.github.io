@@ -13,6 +13,8 @@
 
 <div>-Porkbun</div>
 <div>&ensp;&ensp;-Make www subdomain and kyles.world are the same</div>
+<div>&ensp;&ensp;-Make m. domain for mobile?</div>
+
 
 
 </br>
