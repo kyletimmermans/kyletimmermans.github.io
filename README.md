@@ -23,7 +23,7 @@
 <div>&ensp;&ensp;-Add -2 to every class name so we don't mix them as two global classes in both header2.scss and homeheader.html</div>
 <div>&ensp;&ensp;-Add header2.scss to -sections-dir.scss</div>
 
-### If you want to add more projects with picutre boxes, might have to change a number variable somewhere
+### If you want to add more projects with picutre boxes, might have to change a number variable in config.yml
 ### homedefault.scss to remove underlined text in homepage (container-3 and posts-wrapper-3)
 ### homefooter.html uses homefooter.scss
 ### videobg css needs "position: absolute" instead of "fixed" so we can scroll down
