@@ -5,7 +5,6 @@
 
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Fix hamburger menu so it goes away when re-clicked</div>
-<div>&ensp;&ensp;&ensp;&ensp;-Get rid of hover and add active?</div>
 <div>&ensp;&ensp;-Make all pages mobile (CVE, projects, about, etc) so they all have fixed hamburger menu</div>
 <div>&ensp;&ensp;&ensp;&ensp;-There must be a more encapsulated answer, just used mobileheader.html for each page?</div>
 <div>&ensp;&ensp;&ensp;&ensp;-If mobile, use mobileheader.html, otherwise do normal, document.add type line</div>
@@ -14,7 +13,6 @@
 
 <div>-Porkbun</div>
 <div>&ensp;&ensp;-Make www subdomain and kyles.world are the same</div>
-<div>&ensp;&ensp;-Make m. domain for mobile?</div>
 
 
 
