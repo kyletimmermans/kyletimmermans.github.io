@@ -19,10 +19,9 @@
     var y = document.getElementById("special-button");  // Dropdown button
     if (x.style.display === "none" || x.style.display === "") {  // If we have "" it means we're getting first read (Default state is hidden)
       x.style.display = "block";
-      y.classList.remove("colorRevert");
     } else {    // If its showing
       x.style.display = "none";
-      y.classList.add("colorRevert");
+      y.style.pointerEvents = "none";  // Remove :hover from dropbtn-3
     }
   }
   </script>
