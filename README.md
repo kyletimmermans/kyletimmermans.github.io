@@ -9,6 +9,12 @@
 <div>&ensp;&ensp;&ensp;&ensp;-There must be a more encapsulated answer, just used mobileheader.html for each page?</div>
 <div>&ensp;&ensp;&ensp;&ensp;-If mobile, use mobileheader.html, otherwise do normal, document.add type line</div>
 
+<br/>
+
+<div>-Porkbun</div>
+<div>&ensp;&ensp;-Make www subdomain and kyles.world are the same</div>
+
+
 </br>
 
 # Notes
