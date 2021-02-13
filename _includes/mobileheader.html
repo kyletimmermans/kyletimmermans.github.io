@@ -15,13 +15,14 @@
   <script>
   // Fix hamburger menu hover on mobile
   function revealDropdown() {
-    var x = document.getElementById("special-div");
+    var x = document.getElementById("special-div");  // Actual drp
+    var y = document.getElementsByClassName("dropbtn-3")[0];
     if (x.style.display === "none" || x.style.display === "") {  // If we have "" it means we're getting first read (Default state is hidden)
       x.style.display = "block";
-      x.classList.remove("colorRevert");
+      y.classList.remove("colorRevert");
     } else {    // If its showing
       x.style.display = "none";
-      x.classList.add("colorRevert");
+      y.classList.add("colorRevert");
     }
   }
   </script>
