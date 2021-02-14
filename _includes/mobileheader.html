@@ -20,12 +20,10 @@
     var z = document.getElementById("special-div-2");  // Dropdown content 2
     if (x.style.display === "none" || x.style.display === "") {  // If we have "" it means we're getting first read (Default state is hidden)
       x.style.display = "block";
-      y.classList.remove("dropbtn-4")  // Re-add :hover
-      y.classList.remove("dropdown-4")
+      x.clasList.add("new-red");
     } else {    // If its showing
       x.style.display = "none";
-      y.classList.add("dropbtn-4")  // Remove :hover from dropbtn-3
-      y.classList.add("dropdown-4")
+      x.clasList.add("new-red");
     }
   }
   </script>
