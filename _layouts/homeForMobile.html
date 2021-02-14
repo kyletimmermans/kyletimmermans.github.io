@@ -49,8 +49,8 @@
 <body>
     
 <script>
-window.onclick = function(event) {
-    if (!event.target.matches('dropbtn-3') || !event.target.matches('dropdown-content-3') || !event.target.matches('dropdown-3')) {  // If we click outside dropdown menu
+window.onclick = function(event) {  // If we click outside the dropdown menu / button, close it
+    if (!event.target.matches('dropbtn-3') || !event.target.matches('dropdown-content-3') || !event.target.matches('dropdown-3') || !event.target.matches('menu-list-3') || !event.target.matches('menu-link-3') || !event.target.matches('fa fa-bars')) {
         document.getElementById("special-div").style.display = "none";   // Hide dropdown menu
     }   
 }
