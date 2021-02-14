@@ -17,16 +17,19 @@
   function revealDropdown() {
     var x = document.getElementById("special-div");  // Dropdown content
     var y = document.getElementById("special-button");  // Dropdown button
+    var z = document.getElementById("special-div-2");  // Dropdown content 2
     if (x.style.display === "none" || x.style.display === "") {  // If we have "" it means we're getting first read (Default state is hidden)
       x.style.display = "block";
-      y.style.pointerEvents = "auto";  // Re-add :hover
+      y.classList.remove("dropbtn-4")  // Re-add :hover
+      y.classList.remove("dropdown-4")
     } else {    // If its showing
       x.style.display = "none";
-      y.style.pointerEvents = "none";  // Remove :hover from dropbtn-3
+      y.classList.add("dropbtn-4")  // Remove :hover from dropbtn-3
+      y.classList.add("dropdown-4")
     }
   }
   </script>
-  <div class="dropdown-3">
+  <div id="special-div-2" class="dropdown-3">
     <button onclick="revealDropdown()" id="special-button" class="dropbtn-3"><i class="fa fa-bars" aria-hidden="true"></i></button>
   </div>
 </header>
