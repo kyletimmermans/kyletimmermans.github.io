@@ -16,18 +16,15 @@
   // Fix hamburger menu hover on mobile
   function revealDropdown() {
     var x = document.getElementById("special-div");  // Dropdown content
-    var y = document.getElementById("special-button");  // Dropdown button
-    var z = document.getElementById("special-div-2");  // Dropdown content 2
     if (x.style.display === "none" || x.style.display === "") {  // If we have "" it means we're getting first read (Default state is hidden)
       x.style.display = "block";
-      x.clasList.add("new-red");
     } else {    // If its showing
       x.style.display = "none";
-      x.clasList.add("new-red");
+      document.getElementById("special-button").style.background-color = "white";
     }
   }
   </script>
-  <div id="special-div-2" class="dropdown-3">
+  <div class="dropdown-3">
     <button onclick="revealDropdown()" id="special-button" class="dropbtn-3"><i class="fa fa-bars" aria-hidden="true"></i></button>
   </div>
 </header>
