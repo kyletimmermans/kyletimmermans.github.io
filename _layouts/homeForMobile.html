@@ -49,11 +49,11 @@
 <body>
     
 <script>
-/*
-// Clicking off of menu will hide div menu
-if (event.target.match(!drpbtn))
-        close statement
-*/
+window.onclick = function(event) {
+    if (!event.target.matches('dropbtn-3') || !event.target.matches('dropdown-content-3') || !event.target.matches('dropdown-3')) {  // If we click outside dropdown menu
+        document.getElementById("special-div").style.display = "none";   // Hide dropdown menu
+    }   
+}
 </script>
     
 <div class="container">
