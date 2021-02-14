@@ -17,12 +17,12 @@
   function revealDropdown() {
     var x = document.getElementById("special-div");  // Dropdown content
     var y = document.getElementById("special-button");
-    if (x.style.display === "none" || x.style.display === "") {  // If we have "" it means we're getting first read (Default state is hidden)
-      x.style.display = "block";
+    if (x.style.visibility !== "hidden" || x.style.visibility === "") {  // If we have "" it means we're getting first read (Default state is hidden)
+      x.style.visibility = "visible";
       x.classList.add("dropdown-content-3");  // Put back in correct position
       y.style.backgroundColor = "#f1f1f1";
-    } else {    // If its showing
-      x.style.display = "none";
+    } else {    // If its showing, hide
+      x.style.visibility = "hidden";
       y.style.backgroundColor = "white";
     }
   }
