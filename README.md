@@ -44,4 +44,4 @@
 ### mobile_index.html > homeMobile.html > mobileForHome.html
 ### Hover for mobile - See mobileheader.html in the includes file
 ### CNAME here and DNS settings pointing here from www.kyles.world
-### Setup A records that point each nameserver address used by porkbun and point to www.kyles.world
+### Setup ALIAS records that point each nameserver address used by porkbun and point to www.kyles.world
