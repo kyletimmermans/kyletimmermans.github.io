@@ -4,10 +4,7 @@
 <!DOCTYPE html>
 <html>
 
-{% include head.html %}
-
-<body>
-<script>
+<head>
 <script>
 window.mobileCheck = function() {
   let check = false;
@@ -54,7 +51,12 @@ if (window.mobileCheck()) {   // If on mobile add mobileheader.html and add scri
     document.body.appendChild(normalheader);
 }
 </script>
-</script>
+</head>
+
+{% include head.html %}
+
+<body>
 
 </body>
+  
 </html>
