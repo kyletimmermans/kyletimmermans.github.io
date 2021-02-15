@@ -5,7 +5,7 @@
 
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Make all pages mobile (CVE, projects, about, etc) so they all have fixed hamburger menu</div>
-<div>&ensp;&ensp;&ensp;&ensp;-Fix center.html, and misc.html in layouts</div>
+<div>&ensp;&ensp;&ensp;&ensp;-Fix default.html in layouts</div>
 <div>&ensp;&ensp;&ensp;&ensp;-Answer lays in homeForMobile.html javascript section and mobileheader.html</div>
 
 </br>
