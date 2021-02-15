@@ -50,6 +50,7 @@
     
 <script>
 // Check for click on dropdown menu, if clicked outside, close menu
+/*
 var specifiedElement1 = document.getElementById('dropdown-content-3');
 var specifiedElement2 = document.getElementById('dropdown-3');
 var specifiedElement3 = document.getElementById('dropbtn-3');
@@ -74,6 +75,16 @@ document.addEventListener('touchstart click', function(event) {
     x.style.display = "none";
     y.style.backgroundColor = "white";
   }
+  */
+
+var specifiedElement1 = document.getElementById('center1');
+    
+document.addEventListener('touchstart click', function(event) { 
+    var isClicked1 = specifiedElement1.contains(event.target);
+    
+    if(isClicked1) {
+        alert("Hey");
+    }
 });
 </script>
     
