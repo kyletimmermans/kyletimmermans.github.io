@@ -80,13 +80,7 @@ window.onload = function() {   // Wait for window to load so we don't return nul
 window.onload = function() {   // Wait for window to load so we don't return null values
     var specifiedElement1 = document.getElementById('center1');
     
-    document.addEventListener('touchstart click', function(event) { 
-        var isClicked1 = specifiedElement1.contains(event.target);
-        
-        if (isClicked1) {
-            alert("Hey!");
-        }
-    }); 
+    console.log(specifiedElement1.innerHTML);
 };
 </script>
     
