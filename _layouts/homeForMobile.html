@@ -67,8 +67,8 @@ document.addEventListener('click', function(event) {
   var isClicked4 = specifiedElement4.contains(event.target);
   var isClicked5 = specifiedElement5.contains(event.target);
   var isClicked6 = specifiedElement6.contains(event.target);
-    
-  if (!isClicked1 || !isClicked2 || !isClicked3 || !isClicked4 || !isClicked5 || !isClicked6) {  // If clicked outside, close menu
+  //   if (!isClicked1 || !isClicked2 || !isClicked3 || !isClicked4 || !isClicked5 || !isClicked6) {  // If clicked outside, close menu
+  if (!isClicked3) {  // If clicked outside, close menu
       x.style.display = "none";
       y.style.backgroundColor = "white";
       console.log("Made it to the first if statement");
