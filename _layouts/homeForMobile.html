@@ -50,42 +50,33 @@
     
 <script>
 // Check for click on dropdown menu, if clicked outside, close menu
-/*
-var specifiedElement1 = document.getElementById('dropdown-content-3');
-var specifiedElement2 = document.getElementById('dropdown-3');
-var specifiedElement3 = document.getElementById('dropbtn-3');
-var specifiedElement4 = document.getElementById('menu-list-3');
-var specifiedElement5 = document.getElementById('menu-link-3');
-var specifiedElement6 = document.getElementById('fa fa-bars');
+window.onload = function(event) {   // Wait for window to load so we don't return null values
+  var specifiedElement1 = document.getElementById('dropdown-content-3');
+  var specifiedElement2 = document.getElementById('dropdown-3');
+  var specifiedElement3 = document.getElementById('dropbtn-3');
+  var specifiedElement4 = document.getElementById('menu-list-3');
+  var specifiedElement5 = document.getElementById('menu-link-3');
+  var specifiedElement6 = document.getElementById('fa fa-bars');
 
-var x = document.getElementById("special-div");  // Dropdown content
-var y = document.getElementById("special-button");  // Dropdown button
-
-document.addEventListener('touchstart click', function(event) {   
-  var isClicked1 = specifiedElement1.contains(event.target);
-  var isClicked2 = specifiedElement2.contains(event.target);
-  var isClicked3 = specifiedElement3.contains(event.target);
-  var isClicked4 = specifiedElement4.contains(event.target);
-  var isClicked5 = specifiedElement5.contains(event.target);
-  var isClicked6 = specifiedElement6.contains(event.target);
+  var x = document.getElementById("special-div");  // Dropdown content
+  var y = document.getElementById("special-button");  // Dropdown button
   
-  if (!isClicked1 && !isClicked2 && !isClicked3 && !isClicked4 && !isClicked5 && !isClicked6) {  // If clicked outside, close menu
-    // Do nothing
-  } else {
-    x.style.display = "none";
-    y.style.backgroundColor = "white";
-  }
-  */
-
-var specifiedElement1 = document.getElementById('center1');
-    
-document.addEventListener('click', function(event) { 
+  document.addEventListener('touchstart click', function(event) {   
     var isClicked1 = specifiedElement1.contains(event.target);
-    
-    if(isClicked1) {
-        alert("Hey");
+    var isClicked2 = specifiedElement2.contains(event.target);
+    var isClicked3 = specifiedElement3.contains(event.target);
+    var isClicked4 = specifiedElement4.contains(event.target);
+    var isClicked5 = specifiedElement5.contains(event.target);
+    var isClicked6 = specifiedElement6.contains(event.target);
+
+    if (!isClicked1 && !isClicked2 && !isClicked3 && !isClicked4 && !isClicked5 && !isClicked6) {  // If clicked outside, close menu
+        // Do nothing
+    } else {
+        x.style.display = "none";
+        y.style.backgroundColor = "white";
     }
-});
+  });
+};
 </script>
     
 <div class="container">
