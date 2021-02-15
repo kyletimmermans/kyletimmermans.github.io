@@ -59,22 +59,19 @@ var specifiedElement6 = document.getElementById('fa fa-bars');
 
 var x = document.getElementById("special-div");  // Dropdown content
 var y = document.getElementById("special-button");  // Dropdown button
-    
-document.addEventListener('click', function(event) {   
+
+document.addEventListener('click touchstart', function(event) {   
   var isClicked1 = specifiedElement1.contains(event.target);
   var isClicked2 = specifiedElement2.contains(event.target);
   var isClicked3 = specifiedElement3.contains(event.target);
   var isClicked4 = specifiedElement4.contains(event.target);
   var isClicked5 = specifiedElement5.contains(event.target);
   var isClicked6 = specifiedElement6.contains(event.target);
-  //   if (!isClicked1 || !isClicked2 || !isClicked3 || !isClicked4 || !isClicked5 || !isClicked6) {  // If clicked outside, close menu
-  if (!isClicked3) {  // If clicked outside, close menu
-      x.style.display = "none";
-      y.style.backgroundColor = "white";
-      console.log("Made it to the first if statement");
-  } else {
-      console.log("Made it to the else statement");
-  }
+  
+  if (!isClicked1 || !isClicked2 || !isClicked3 || !isClicked4 || !isClicked5 || !isClicked6) {  // If clicked outside, close menu
+    x.style.display = "none";
+    y.style.backgroundColor = "white";
+  } 
 });
 </script>
     
