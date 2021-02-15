@@ -50,14 +50,13 @@
     
 <script>
 // Check for click on dropdown menu, if clicked outside, close menu
-/*
 window.onload = function() {   // Wait for window to load so we don't return null values
-  var specifiedElement1 = document.getElementById('dropdown-content-3');
-  var specifiedElement2 = document.getElementById('dropdown-3');
-  var specifiedElement3 = document.getElementById('dropbtn-3');
-  var specifiedElement4 = document.getElementById('menu-list-3');
-  var specifiedElement5 = document.getElementById('menu-link-3');
-  var specifiedElement6 = document.getElementById('fa fa-bars');
+  var specifiedElement1 = document.getElementsByClassName('dropdown-content-3')[0];
+  var specifiedElement2 = document.getElementsByClassName('dropdown-3')[0];
+  var specifiedElement3 = document.getElementsByClassName('dropbtn-3')[0];
+  var specifiedElement4 = document.getElementsByClassName('menu-list-3')[0];
+  var specifiedElement5 = document.getElementsByClassName('menu-link-3')[0];
+  var specifiedElement6 = document.getElementsByClassName('fa fa-bars')[0];
 
   var x = document.getElementById("special-div");  // Dropdown content
   var y = document.getElementById("special-button");  // Dropdown button
@@ -75,12 +74,6 @@ window.onload = function() {   // Wait for window to load so we don't return nul
         y.style.backgroundColor = "white";
     }
   });
-};
-*/
-window.onload = function() {   // Wait for window to load so we don't return null values
-    var specifiedElement1 = document.getElementById('center1')[0];
-    
-    console.log(specifiedElement1.innerHTML);
 };
 </script>
     
