@@ -15,12 +15,12 @@ window.mobileCheck = function() {
 if (window.mobileCheck()) {   // If on mobile add mobileheader.html and add script that allows to click outside of menu and still close the menu
     var mobileheader = document.createElement('div');
     mobileheader.className = "container";  // Outermost and only div still needs a class
-    mobileheader.innerHTML = "{% include mobileheader.html %}" + "<div class="posts-wrapper">" + "{{ content }}" + "</div>" + "{% include footer.html %}";
+    mobileheader.innerHTML = "{% include mobileheader.html %}<div class="posts-wrapper">{{ content }}</div>{% include footer.html %};
     document.body.append(mobileheader);
 } else {   // If desktop page, just use normal header
     var normalheader = document.createElement('div');
     normalheader.className = "container";  // Outermost and only div still needs a class
-    normalheader.innerHTML = "{% include header.html %}" + "<div class="posts-wrapper">" + "{{ content }}" + "</div>" + "{% include footer.html %}";
+    normalheader.innerHTML = "{% include header.html %}<div class="posts-wrapper">{{ content }}</div>{% include footer.html %}";
     document.body.append(normalheader);
 }
 </script>
