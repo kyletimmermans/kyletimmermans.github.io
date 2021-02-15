@@ -71,8 +71,9 @@ document.addEventListener('click', function(event) {
   if (!isClicked1 || !isClicked2 || !isClicked3 || !isClicked4 || !isClicked5 || !isClicked6) {  // If clicked outside, close menu
       x.style.display = "none";
       y.style.backgroundColor = "white";
+      console.log("Made it to the first if statement");
   } else {
-        console.log("Made it to the else statement");
+      console.log("Made it to the else statement");
   }
 });
 </script>
