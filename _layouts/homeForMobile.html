@@ -49,6 +49,19 @@
 <body>
     
 <script>
+// Check for click on dropdown menu, if clicked outside, close menu
+var specifiedElement = document.getElementById('dropdown-3');
+var x = document.getElementById("special-div");  // Dropdown content
+var y = document.getElementById("special-button");  // Dropdown button
+document.addEventListener('click', function(event) {   
+  var isClickInside = specifiedElement.contains(event.target);
+  if (!isClickInside) {  // If clicked outside, close menu
+      x.style.display = "none";
+      y.style.backgroundColor = "white";
+  }
+});
+
+/*
 window.onclick = function(event) {  // If we click outside the dropdown menu / button, close it
     if (!event.target.className !== "dropbtn-3" || !event.target.className !== "dropdown-content-3" || !event.target.className !== "dropdown-3" || !event.target.className !== "menu-list-3" || !event.target.className !== "menu-link-3" || !event.target.className !== "fa fa-bars") {
         document.getElementById("special-div").style.display = "none";   // Hide dropdown menu
@@ -56,6 +69,7 @@ window.onclick = function(event) {  // If we click outside the dropdown menu / b
         alert("Made it");
     }   
 }
+*/
 </script>
     
 <div class="container">
