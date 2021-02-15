@@ -50,26 +50,29 @@
     
 <script>
 // Check for click on dropdown menu, if clicked outside, close menu
-var specifiedElement = document.getElementById('dropdown-3');
+var specifiedElement1 = document.getElementById('dropdown-content-3');
+var specifiedElement2 = document.getElementById('dropdown-3');
+var specifiedElement3 = document.getElementById('dropbtn-3');
+var specifiedElement4 = document.getElementById('menu-list-3');
+var specifiedElement5 = document.getElementById('menu-link-3');
+var specifiedElement6 = document.getElementById('fa fa-bars');
+
 var x = document.getElementById("special-div");  // Dropdown content
 var y = document.getElementById("special-button");  // Dropdown button
+    
 document.addEventListener('click', function(event) {   
-  var isClickInside = specifiedElement.contains(event.target);
-  if (!isClickInside) {  // If clicked outside, close menu
+  var isClicked1 = specifiedElement1.contains(event.target);
+  var isClicked2 = specifiedElement2.contains(event.target);
+  var isClicked3 = specifiedElement3.contains(event.target);
+  var isClicked4 = specifiedElement4.contains(event.target);
+  var isClicked5 = specifiedElement5.contains(event.target);
+  var isClicked6 = specifiedElement6.contains(event.target);
+    
+  if (!isClicked1 || !isClicked2 || !isClicked3 || !isClicked4 || !isClicked5 || !isClicked6) {  // If clicked outside, close menu
       x.style.display = "none";
       y.style.backgroundColor = "white";
   }
 });
-
-/*
-window.onclick = function(event) {  // If we click outside the dropdown menu / button, close it
-    if (!event.target.className !== "dropbtn-3" || !event.target.className !== "dropdown-content-3" || !event.target.className !== "dropdown-3" || !event.target.className !== "menu-list-3" || !event.target.className !== "menu-link-3" || !event.target.className !== "fa fa-bars") {
-        document.getElementById("special-div").style.display = "none";   // Hide dropdown menu
-        document.getElementById("special-button").style.backgroundColor = "white";   // And change the color back to white like a normal close
-        alert("Made it");
-    }   
-}
-*/
 </script>
     
 <div class="container">
