@@ -61,7 +61,7 @@ window.onload = function() {   // Wait for window to load so we don't return nul
   var x = document.getElementById("special-div");  // Dropdown content
   var y = document.getElementById("special-button");  // Dropdown button
   
-  document.addEventListener('touchstart click', function(event) {   
+  document.addEventListener('click', function(event) {   
     var isClicked1 = specifiedElement1.contains(event.target);
     var isClicked2 = specifiedElement2.contains(event.target);
     var isClicked3 = specifiedElement3.contains(event.target);
