@@ -34,11 +34,8 @@ if (isMobile) {
 </script>
 
 <div class="container">
-  {% if isMobile == true %}
-    {% include mobileheader.html %}
-  {% elsif isMobile != true %}
-    {% include header.html %}
-  {% endif %}
+  <script>if (isMobile) { {% include mobileheader.html %} } </script>
+  <script>if (!isMobile) { {% include header.html %} </script>
   <div class="posts-wrapper">
     {{ content }}
   </div>
