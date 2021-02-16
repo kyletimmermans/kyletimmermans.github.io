@@ -24,18 +24,10 @@ var isMobile = window.mobileCheck();
 if (isMobile) {
   var mobileheader = document.createElement('div');
   mobileheader.className = "container";   
-  var fixed_header = (String({% mobileheader.html %})).replace(/\n|\t/g, ' ');
-  var fixed_footer = (String({% footer.html %})).replace(/\n|\t/g, ' ');
-  var fixed_content = (String({{ content }})).replace(/\n|\t/g, ' ');
-  mobileheader.innerHTML = fixed_header + "<div class="posts-wrapper">" + fixed_content + "</div>" + fixed_footer;  
   document.body.appendChild(mobileheader);
 } else {
   var normalheader = document.createElement('div');
   normalheader.className = "container";
-  var fixed_header = (String({% header.html %})).replace(/\n|\t/g, ' ');
-  var fixed_footer = (String({% footer.html %})).replace(/\n|\t/g, ' ');
-  var fixed_content = (String({{ content }})).replace(/\n|\t/g, ' ');
-  mobileheader.innerHTML = fixed_header + "<div class="posts-wrapper">" + fixed_content + "</div>" + fixed_footer;  
   document.body.appendChild(normalheader);
 }
 </script>
