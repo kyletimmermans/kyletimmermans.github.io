@@ -23,14 +23,14 @@ var isMobile = window.mobileCheck();
 <script>
 // Can't have an if else statement below b/c of Jekyll
 if (!isMobile) {
-  {% assign isMobile = false %}  
+  {% assign isMobile = false %}
+  console.log("false");
 }
 
 if (isMobile) {
   {% assign isMobile = true %}
+  console.log("true");
 }
-
-console.log({{isMobile}});
 </script>
 
 <div class="container">
