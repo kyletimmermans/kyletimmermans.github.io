@@ -21,19 +21,17 @@ var isMobile = window.mobileCheck();
 <body>
 
 <script>
-// mobileheader2, header2, footer2 are one line minified b/c the jekyll variables break the innerHTML
+/*
 if (isMobile) {
-    var mobileheader = document.createElement('div');
-    mobileheader.className = "container";
-    mobileheader.innerHTML = "{% include mobileheader2.txt %}" + "<div class="posts-wrapper">" + "{{ content }}" + "</div>" + "{% include footer2.txt %}";
-    document.body.appendChild(mobileheader);
+
 } else {
-    var normalheader = document.createElement('div');
-    normalheader.className = "container";
-    normalheader.innerHTML = "{% include header2.txt %}" + "<div class="posts-wrapper">" + "{{ content }}" + "</div>" + "{% include footer2.txt %}";
-    document.body.appendChild(normalheader);
+
 }
+*/
+console.log({{site.title}});
 </script>
+  
+
   
 <script>
 if (isMobile) {
