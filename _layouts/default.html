@@ -24,14 +24,18 @@ var isMobile = window.mobileCheck();
 if (isMobile) {
   var mobileheader = document.createElement('div');
   mobileheader.className = "container";   
-  var fixed_html = "\n" + "{% include mobileheader.html %}<div class="posts-wrapper">{{ content }}</div>{% include footer.html %}".replace(/\n|\t/g, ' ');   // Fix html for include
-  mobileheader.innerHTML = fixed_html;    
+  var fixed_header = (String({% include mobileheader.html %})).replace(/\n|\t/g, ' ');
+  var fixed_footer = (String({% include footer.html %})).replace(/\n|\t/g, ' ');
+  var fixed_content = (String({% content %})).replace(/\n|\t/g, ' ');
+  mobileheader.innerHTML = fixed_header + "<div class="posts-wrapper">" + fixed_content + "</div>" + fixed_footer;  
   document.body.appendChild(mobileheader);
 } else {
   var normalheader = document.createElement('div');
   normalheader.className = "container";
-  var fixed_html = "\n" + "{% include header.html %}<div class="posts-wrapper">{{ content }}</div>{% include footer.html %}".replace(/\n|\t/g, ' ');
-  normalheader.innerHTML = fixed_html;
+  var fixed_header = (String({% include header.html %})).replace(/\n|\t/g, ' ');
+  var fixed_footer = (String({% include footer.html %})).replace(/\n|\t/g, ' ');
+  var fixed_content = (String({% content %})).replace(/\n|\t/g, ' ');
+  mobileheader.innerHTML = fixed_header + "<div class="posts-wrapper">" + fixed_content + "</div>" + fixed_footer;  
   document.body.appendChild(normalheader);
 }
 </script>
