@@ -23,9 +23,9 @@ var isMobile = window.mobileCheck();
 <script>
 if (isMobile) {
   var mobileheader = document.createElement('div');
-  mobileheader.className = "container";
-  var fixed_html = "{% include mobileheader.html %}<div class="posts-wrapper">{{ content }}</div>{% include footer.html %}".replace(/\n|\t/g, ' ');
-  mobileheader.innerHTML = fixed_html;
+  mobileheader.className = "container";   
+  var fixed_html = "{% include mobileheader.html %}<div class="posts-wrapper">{{ content }}</div>{% include footer.html %}".replace(/\n|\t/g, ' ');   // Fix html for include
+  mobileheader.innerHTML = fixed_html;    
   document.body.appendChild(mobileheader);
 } else {
   var normalheader = document.createElement('div');
