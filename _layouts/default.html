@@ -20,23 +20,21 @@ var isMobile = window.mobileCheck();
 
 <body>
 
-<script>
 // Can't have an if else statement below b/c of Jekyll
-if (!isMobile) {
-  {% assign isMobile = false %}
-  //console.log("false");
-}
-
-if (isMobile) {
-  {% assign isMobile = true %}
-  //console.log("true");
-}
-
-console.log({{page.content}});
-</script>
-
 <div class="container">
-  {% include header.html %}
+  <script>
+  if (!isMobile) {
+    {% assign isMobile = false %}
+  }
+  if (isMobile) {
+    {% assign isMobile = true %}
+  }
+  </script>
+  {% if isMobile == true %}
+    {% include mobileheader.html %}
+  {% elsif isMobile != true %}
+    {% include header.html %}
+  {% endif %}
   <div class="posts-wrapper">
     {{ content }}
   </div>
