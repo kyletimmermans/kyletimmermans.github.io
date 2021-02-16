@@ -5,7 +5,7 @@
 
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Make all pages mobile (CVE, projects, about, etc) so they all have fixed hamburger menu</div>
-<div>&ensp;&ensp;&ensp;&ensp;-use global vars</div>
+<div>&ensp;&ensp;&ensp;&ensp;-https://stackoverflow.com/questions/22497779/convert-html-node-to-one-line-stringminify</div>
 
 </br>
 
