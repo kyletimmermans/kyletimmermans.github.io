@@ -21,10 +21,17 @@ var isMobile = window.mobileCheck();
 <body>
 
 <script>
+// mobileheader2 and header2 are one line minified
 if (isMobile) {
-    console.log("mobile");
+    var mobileheader = document.createElement('div');
+    mobileheader.className = "container";
+    mobileheader.innerHTML = {% include mobileheader2.html %} + "<div class="posts-wrapper">" + {{ content }} + "</div>" + {% include footer %};
+    document.body.appendChild(mobileheader);
 } else {
-    console.log("desktop");
+    var normalheader = document.createElement('div');
+    normalheader.className = "container";
+    normalheader.innerHTML = {% include header2.html %} + "<div class="posts-wrapper">" + {{ content }} + "</div>" + {% include footer %};
+    document.body.appendChild(normalheader);
 }
 </script>
   
