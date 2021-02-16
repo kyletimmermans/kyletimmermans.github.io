@@ -21,7 +21,7 @@ var isMobile = window.mobileCheck();
 <body>
 
 <script>
-// mobileheader2 and header2 are one line minified
+// mobileheader2, header2, footer2 are one line minified b/c the jekyll variables break the innerHTML
 if (isMobile) {
     var mobileheader = document.createElement('div');
     mobileheader.className = "container";
