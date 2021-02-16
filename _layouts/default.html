@@ -19,7 +19,11 @@ var isMobile = window.mobileCheck();
 {% include head.html %}
 
 <body>
-<script>console.log({{site.time}});</script>
+<script>
+var date = new Date();
+date.setHours( 0,0,0,0 );
+console.log({{site.time}});
+</script>
   
 // Can't have an if else statement below b/c of Jekyll
 <div class="container">
