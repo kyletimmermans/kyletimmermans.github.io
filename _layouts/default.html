@@ -31,11 +31,12 @@ if (isMobile) {
   {% assign isMobile = true %}
   console.log("true");
 }
+
+alert({{site.content}});
 </script>
 
 <div class="container">
-  <script>if (isMobile) { {% include mobileheader.html %} } </script>
-  <script>if (!isMobile) { {% include header.html %} </script>
+  {% include header.html %}
   <div class="posts-wrapper">
     {{ content }}
   </div>
