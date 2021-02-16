@@ -22,9 +22,9 @@ var isMobile = window.mobileCheck();
 
 <script>
 if (isMobile) {
-  {% assign isMobile = true %}
+  {{% assign isMobile = true %}}
 else {
-  {% assign isMobile = false %}
+  {{% assign isMobile = false %}}
 }
   
 alert({{isMobile}});
