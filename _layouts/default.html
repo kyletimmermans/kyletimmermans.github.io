@@ -22,13 +22,9 @@ var isMobile = window.mobileCheck();
 
 <script>
 if (isMobile) {
-  var mobileheader = document.createElement('div');
-  mobileheader.className = "container";   
-  document.body.appendChild(mobileheader);
+    console.log("mobile");
 } else {
-  var normalheader = document.createElement('div');
-  normalheader.className = "container";
-  document.body.appendChild(normalheader);
+    console.log("desktop");
 }
 </script>
   
