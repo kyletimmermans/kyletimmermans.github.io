@@ -29,15 +29,16 @@ if (!isMobile) {
 if (isMobile) {
   {% assign isMobile = true %}
 }
-  
-alert({{isMobile}});
 </script>
 
+<script>
+alert({{isMobile}});
+</script>
 
 <div class="container">
   {% if isMobile == true %}
     {% include mobileheader.html %}
-  {% else %}
+  {% elsif isMobile != true %}
     {% include header.html %}
   {% endif %}
   <div class="posts-wrapper">
