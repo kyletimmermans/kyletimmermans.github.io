@@ -5,7 +5,7 @@
 
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Make all pages mobile (CVE, projects, about, etc) so they all have fixed hamburger menu</div>
-<div>&ensp;&ensp;&ensp;&ensp;-Change time? With site.time?</div>
+<div>&ensp;&ensp;&ensp;&ensp;-Change time? With site.time? Change time to 0000 and if 0000 it is mobile and then change back</div>
 
 </br>
 
