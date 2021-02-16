@@ -13,9 +13,6 @@ window.mobileCheck = function() {
 };
   
 var isMobile = window.mobileCheck();
-
-console.log(isMobile);
-alert(isMobile);
 </script>
 </head>
 
@@ -32,6 +29,8 @@ if (!isMobile) {
 if (isMobile) {
   {% assign isMobile = true %}
 }
+  
+alert({{isMobile}});
 </script>
 
 
