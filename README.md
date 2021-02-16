@@ -40,4 +40,4 @@
 ### To fix all mobile page headers (CVE, Projects, etc), fix default.html and check for mobile and docment.createElement() as necessary
 ### For Jekyll Liquid tags (variables that use {}) "Front matter" must be added "--- ---"
 ### Adding in { include file.html } with Jekyll Liquid requires this fix - https://stackoverflow.com/questions/22497779/convert-html-node-to-one-line-stringminify
-### mobilheader2.html and header2.html have been minified and added to the includes folder
+### mobilheader2.html and header2.html have been minified and added to the includes folder so it is safe to include in default.html in layouts
