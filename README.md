@@ -6,7 +6,6 @@
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Make all pages mobile (CVE, projects, about, etc) so they all have fixed hamburger menu</div>
 <div>&ensp;&ensp;&ensp;&ensp;-Fix default.html in layouts</div>
-<div>&ensp;&ensp;&ensp;&ensp;-Answer lays in homeForMobile.html javascript section and mobileheader.html</div>
 
 </br>
 
@@ -40,4 +39,3 @@
 ### Hamburger menu fix - Toggle between display block and none to show on click (no more :hover) and then toggle backgroundColor between white and gray, and finally, set the dropdown-content box to top: 100% because this is relative to the the dropbtn
 ### To fix all mobile page headers (CVE, Projects, etc), fix default.html and check for mobile and docment.createElement() as necessary
 ### For Jekyll Liquid tags (variables that use {}) "Front matter" must be added "--- ---"
-### Use jekyll assignment "isMobile" and  jekyll if statements to check and serve mobile header
