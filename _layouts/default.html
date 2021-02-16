@@ -26,7 +26,7 @@ if (isMobile) {
   mobileheader.className = "container";   
   var fixed_header = (String({% include mobileheader.html %})).replace(/\n|\t/g, ' ');
   var fixed_footer = (String({% include footer.html %})).replace(/\n|\t/g, ' ');
-  var fixed_content = (String({% content %})).replace(/\n|\t/g, ' ');
+  var fixed_content = (String({{ content }})).replace(/\n|\t/g, ' ');
   mobileheader.innerHTML = fixed_header + "<div class="posts-wrapper">" + fixed_content + "</div>" + fixed_footer;  
   document.body.appendChild(mobileheader);
 } else {
@@ -34,7 +34,7 @@ if (isMobile) {
   normalheader.className = "container";
   var fixed_header = (String({% include header.html %})).replace(/\n|\t/g, ' ');
   var fixed_footer = (String({% include footer.html %})).replace(/\n|\t/g, ' ');
-  var fixed_content = (String({% content %})).replace(/\n|\t/g, ' ');
+  var fixed_content = (String({{ content }})).replace(/\n|\t/g, ' ');
   mobileheader.innerHTML = fixed_header + "<div class="posts-wrapper">" + fixed_content + "</div>" + fixed_footer;  
   document.body.appendChild(normalheader);
 }
