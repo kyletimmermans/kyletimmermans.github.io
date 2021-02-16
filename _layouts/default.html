@@ -24,15 +24,15 @@ var isMobile = window.mobileCheck();
 if (isMobile) {
   var mobileheader = document.createElement('div');
   mobileheader.className = "container";   
-  var fixed_html = "{% include mobileheader.html %}<div class="posts-wrapper">{{ content }}</div>{% include footer.html %}".replace(/\n|\t/g, ' ');   // Fix html for include
-  console.log(fixed_html);
+  var first_html = "{% include mobileheader.html %}<div class="posts-wrapper">{{ content }}</div>{% include footer.html %}".replace(/\n|\t/g, ' ');   // Fix html for include
+  var fixed_html = first_html.replace(/\n|\t/g, ' ');
   mobileheader.innerHTML = fixed_html;    
   document.body.appendChild(mobileheader);
 } else {
   var normalheader = document.createElement('div');
   normalheader.className = "container";
-  var fixed_html = "{% include header.html %}<div class="posts-wrapper">{{ content }}</div>{% include footer.html %}".replace(/\n|\t/g, ' ');
-  console.log(fixed_html);
+  var first_html = "{% include header.html %}<div class="posts-wrapper">{{ content }}</div>{% include footer.html %}";
+  var fixed_html = first_html.replace(/\n|\t/g, ' ');
   normalheader.innerHTML = fixed_html;
   document.body.appendChild(normalheader);
 }
