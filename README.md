@@ -5,7 +5,6 @@
 
 <div>-Mobile Version</div>
 <div>&ensp;&ensp;-Make all pages mobile (CVE, projects, about, etc) so they all have fixed hamburger menu</div>
-<div>&ensp;&ensp;&ensp;&ensp;-https://stackoverflow.com/questions/22497779/convert-html-node-to-one-line-stringminify</div>
 
 </br>
 
@@ -40,4 +39,3 @@
 ### To fix all mobile page headers (CVE, Projects, etc), fix default.html and check for mobile and docment.createElement() as necessary
 ### For Jekyll Liquid tags (variables that use {}) "Front matter" must be added "--- ---"
 ### Adding in { include file.html } with Jekyll Liquid requires this fix - https://stackoverflow.com/questions/22497779/convert-html-node-to-one-line-stringminify
-### mobilheader2.txt, header2.txt, footer2.txt have been minified and added to the includes folder so it is safe to include in default.html in layouts
