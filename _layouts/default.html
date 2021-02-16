@@ -23,10 +23,10 @@ var isMobile = window.mobileCheck();
 <script>
 if (isMobile) {
   {% assign isMobile = true %}
-  var something1 = {{isMobile}};
+  console.log("test");
 else {
   {% assign isMobile = false %}
-  var something2 = {{isMobile}};
+  console.log("test");
 }
   
 alert({{isMobile}});
