@@ -21,16 +21,34 @@ var isMobile = window.mobileCheck();
 <body>
 
 <script>
-/*
+// Attach jekyll vcariable to html instead of letting it sit in a script tag and hopefully get it into global scope
 if (isMobile) {
-
+  var jekyllGlobalVar = document.createElement('div');
+  jekyllGlobalVar.style.display = "none";
+  jekyllGlobalVar.innerHTML = "<div style="display: none">{% assign isMobile = true %}</div>";
+  document.body.appendChild(jekyllGlobalVar);
 } else {
-
+  var jekyllGlobalVar = document.createElement('div');
+  jekyllGlobalVar.style.display = "none";
+  jekyllGlobalVar.innerHTML = "<div style="display: none">{% assign isMobile = false %}</div>";
+  document.body.appendChild(jekyllGlobalVar);
 }
-*/
-console.log({{page.title}});
 </script>
+
   
+<!-- Main -->
+  
+<div class="container">
+  {% if isMobile == true %}
+    {% include mobileheader.html %}
+  {% elsif isMobile != true %}
+    {% include header.html %}
+  {% endif %}
+  <div class="posts-wrapper">
+    {{ content }}
+  </div>
+  {% include footer.html %}
+</div>
 
   
 <script>
