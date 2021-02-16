@@ -21,16 +21,11 @@ var isMobile = window.mobileCheck();
 <body>
 
 <script>
+{% assign isMobile = false %}
+
 if (isMobile) {
   {% assign isMobile = true %}
-  console.log("test");
-else {
-  {% assign isMobile = false %}
-  console.log("test");
 }
-  
-alert({{isMobile}});
-console.log({{isMobile}});
 </script>
 
 
