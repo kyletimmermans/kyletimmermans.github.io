@@ -29,17 +29,17 @@ var isMobile = window.mobileCheck();
 // Filler
 var main = document.getElementById('main-div');
 
-var mobileheader = (('{% include mobileheader.html | strip_newlines %}').replace(/(\r\n|\n|\r)/gm, "")).toString();
-var header = (('{% include header.html | strip_newlines %}').replace(/(\r\n|\n|\r)/gm, "")).toString();
-var content = (('{{ content | strip_newlines }}').replace(/(\r\n|\n|\r)/gm, "")).toString();
-var footer = (('{% include footer.html | strip_newlines %}').replace(/(\r\n|\n|\r)/gm, "")).toString();
+var mobileheader = (('{% capture mobileheader %}{% include mobileheader.html %}{% endcapture %}{{ mobileheader | strip_newlines }}').replace(/(\r\n|\n|\r)/gm, "")).toString();
+var header = (('{% capture header %}{% include header.html %}{% endcapture %}{{ header | strip_newlines }}').replace(/(\r\n|\n|\r)/gm, "")).toString();
+var content = (('{{ content | escape | strip_newlines }}').replace(/(\r\n|\n|\r)/gm, "")).toString();
+var footer = (('{% capture footer %}{% include footer.html %}{% endcapture %}{{ footer | strip_newlines }}').replace(/(\r\n|\n|\r)/gm, "")).toString();
   
 if (isMobile) {
-  main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + content1 + '</div>' + footer);
+  main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + content + '</div>' + footer);
 } 
   
 if (!isMobile) {
-  main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + content1 + '</div>' + footer);
+  main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + content + '</div>' + footer);
 }
 </script>
 
