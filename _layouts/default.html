@@ -26,13 +26,13 @@ var isMobile = window.mobileCheck();
   
 <script>
 // Essentially we are chosing which header to display depending if it's mobile or not
-// Use raw tags to prevent literal processing of liquid variables
+// Filler
 var main = document.getElementById('main-div');
 
-var mobileheader = (('{% include mobileheader.html %}').replace(/(\r\n|\n|\r)/gm, "")).toString();
-var header = (('{% include header.html %}').replace(/(\r\n|\n|\r)/gm, "")).toString();
-var content = (('{{ content }}').replace(/(\r\n|\n|\r)/gm, "")).toString();
-var footer = (('{% include footer.html %}').replace(/(\r\n|\n|\r)/gm, "")).toString();
+var mobileheader = (('{% include mobileheader.html | strip_newlines %}').replace(/(\r\n|\n|\r)/gm, "")).toString();
+var header = (('{% include header.html | strip_newlines %}').replace(/(\r\n|\n|\r)/gm, "")).toString();
+var content = (('{{ content | strip_newlines }}').replace(/(\r\n|\n|\r)/gm, "")).toString();
+var footer = (('{% include footer.html | strip_newlines %}').replace(/(\r\n|\n|\r)/gm, "")).toString();
   
 if (isMobile) {
   main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + content1 + '</div>' + footer);
