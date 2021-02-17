@@ -26,7 +26,7 @@ var isMobile = window.mobileCheck();
   
 <script>
 // Use raw tags to prevent literal processing of liquid variables
-var main = document.getElementsByID('main-div');
+var main = document.getElementById('main-div');
   
 if (isMobile) {
   main.insertAdjacentHTML('beforeend', '{% raw %}{% include mobileheader.html %}{% endraw %}  <div class="posts-wrapper"> {% raw %}{{ content }}{% endraw %} </div> {% raw %}footer.html{% endraw %}');
