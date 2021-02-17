@@ -29,23 +29,17 @@ var isMobile = window.mobileCheck();
 // Use raw tags to prevent literal processing of liquid variables
 var main = document.getElementById('main-div');
 
-/*
 var mobileheader = (('{% include mobileheader.html %}').replace(/(\r\n|\n|\r)/gm, "")).toString();
 var header = (('{% include header.html %}').replace(/(\r\n|\n|\r)/gm, "")).toString();
 var content = (('{{ content }}').replace(/(\r\n|\n|\r)/gm, "")).toString();
 var footer = (('{% include footer.html %}').replace(/(\r\n|\n|\r)/gm, "")).toString();
-*/
   
 if (isMobile) {
-  {% capture newstuff %} {% include mobileheader.html %} {% endcapture %}
-  console.log({{newstuff}});
-  //main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + content1 + '</div>' + footer);
+  main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + content1 + '</div>' + footer);
 } 
   
 if (!isMobile) {
-  {% capture newstuff %} {% include mobileheader.html %} {% endcapture %}
-  console.log({{newstuff}});
-  //main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + content1 + '</div>' + footer);
+  main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + content1 + '</div>' + footer);
 }
 </script>
 
