@@ -16,15 +16,14 @@
     </div>
   </div>
   <script>
-  // Fix hamburger menu hover on mobile
   function revealDropdown() {
-    var x = document.getElementById("special-div");  // Dropdown content
+    var x = document.getElementById("special-div");  
     var y = document.getElementById("special-button");
-    if (x.style.display === "none" || x.style.display === "") {  // If we have "" it means we are getting first read (Default state is hidden)
+    if (x.style.display === "none" || x.style.display === "") {  
       x.style.display = "block";
-      x.style.top = "100%";  // Position fix
+      x.style.top = "100%"; 
       y.style.backgroundColor = "#f1f1f1";
-    } else {    // If its showing, hide
+    } else { 
       x.style.display = "none";
       y.style.backgroundColor = "white";
     }
