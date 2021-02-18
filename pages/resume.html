@@ -12,7 +12,15 @@ window.mobileCheck = function() {
   
 if (window.mobileCheck()) {  
     window.location.replace("https://kyletimmermans.github.io/KyleTimmermansResume.pdf"); // Open PDF resume in new tab
-}  
+} 
+
+if (window.mobileCheck()) { 
+  alert("Desktop");
+}
+
+if (!window.mobileCheck()) { 
+  alert("Mobile");
+}
 </script>
 
 <embed src="https://kyletimmermans.github.io/KyleTimmermansResume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="850px"/>
