@@ -35,6 +35,21 @@ var content = '{{ content | strip_newlines }}';
 var footer = '{% capture footer %}{% include footer.html %}{% endcapture %}{{ footer | strip_newlines }}';
   
 if (isMobile) {
+ 
+ // Able to click on dropdown to close and open as well, don't stay open and not be able to close on a 2nd click of the same button
+ function revealDropdown() {
+   var x = document.getElementById("special-div");  // Dropdown content
+   var y = document.getElementById("special-button");  // Dropdown button
+   if (x.style.display === "none" || x.style.display === "") {  
+     x.style.display = "block";
+     x.style.top = "100%"; 
+     y.style.backgroundColor = "#f1f1f1";
+    } else { 
+     x.style.display = "none";
+     y.style.backgroundColor = "white";
+    }
+  } 
+  
   main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + content + '</div>' + footer);
 } 
   
@@ -50,20 +65,8 @@ if (isMobile) {
     // Check for click on dropdown menu, if clicked outside, close menu
     window.onload = function() {   // Wait for window to load so we don't return null values
       
-     var x = document.getElementById("special-div");  // Dropdown content
-     var y = document.getElementById("special-button");  // Dropdown button
-      
-     // Able to click on dropdown to close and open as well, don't stay open and not be able to close on a 2nd click of the same button
-     function revealDropdown() {
-       if (x.style.display === "none" || x.style.display === "") {  
-         x.style.display = "block";
-         x.style.top = "100%"; 
-         y.style.backgroundColor = "#f1f1f1";
-        } else { 
-         x.style.display = "none";
-         y.style.backgroundColor = "white";
-        }
-      } 
+      var x = document.getElementById("special-div");  // Dropdown content
+      var y = document.getElementById("special-button");  // Dropdown button
       
       var specifiedElement1 = document.getElementsByClassName('dropdown-content-3')[0];
       var specifiedElement2 = document.getElementsByClassName('dropdown-3')[0];
