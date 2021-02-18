@@ -42,4 +42,4 @@
 <div>&ensp;&ensp;-Hardcoded w/o its original javascript, that javascript is found further down in default.html</div>
 <div>&ensp;&ensp;- Want to fix mobileheader.html in includes? Place it in default.html in layouts b/c it's hardcoded there</div>
 
-### Add the js code that was in CVE and Resume in pages folder, to default.html and use isMobile and !isMobile to act accordingly
+### Removed the js code that was in CVE and Resume in pages folder, to default.html
