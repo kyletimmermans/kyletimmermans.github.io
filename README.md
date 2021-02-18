@@ -38,4 +38,4 @@
 ### Hamburger menu fix - Toggle between display block and none to show on click (no more :hover) and then toggle backgroundColor between white and gray, and finally, set the dropdown-content box to top: 100% because this is relative to the the dropbtn
 ### To fix all mobile page headers (CVE, Projects, etc), fix default.html and check for mobile and docment.createElement() as necessary
 ### For Jekyll Liquid tags (variables that use {}) "Front matter" must be added "--- ---"
-### filler
+### Add in safe apostraphes by using \'
