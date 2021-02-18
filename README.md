@@ -39,3 +39,4 @@
 ### To fix all mobile page headers (CVE, Projects, etc), fix default.html and check for mobile and docment.createElement() as necessary
 ### For Jekyll Liquid tags (variables that use {}) "Front matter" must be added "--- ---"
 ### Add in safe apostraphes by using \\'
+### mobilheader.html had to be minified and hard coded into the layout: default.html
