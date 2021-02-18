@@ -43,4 +43,3 @@
 <div>&ensp;&ensp;- Want to fix mobileheader.html in includes? Place it in default.html in layouts b/c it's hardcoded there</div>
 
 ### Removed the js code that was in CVE and Resume in pages folder, to default.html in layouts folder
-### CVE github gist is now local and is embeded over at CVE page in pages folder
