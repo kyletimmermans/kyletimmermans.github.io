@@ -7,4 +7,4 @@ tags: [DijkstrasCanvas]
 image: dijkstracanvas.png
 ---
 
-Dijkstra's Canvas
+Dijkstra\'s Canvas
