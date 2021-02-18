@@ -40,4 +40,5 @@
 ### For Jekyll Liquid tags (variables that use {}) "Front matter" must be added "--- ---"
 ### Add in safe apostraphes by using \\'
 ### mobilheader.html had to be minified and hard coded into the layout: default.html
-### Had to fix harcoded <script> tags so we can have script tag within script tag they're now '<scr' + 'ipt>'
+### Had to fix harcoded <script> with +'s and split them up
+### Want to fix mobileheader.html in includes? Place it in default.html in layouts b/c it's hardcoded there
