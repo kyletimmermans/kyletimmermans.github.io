@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Dijkstra\'s Canvas"
+title: "Dijkstra&#39;s Canvas"
 author: "Kyle Timmermans"
 categories: dijkstras-canvas
 tags: [DijkstrasCanvas]
 image: dijkstracanvas.png
 ---
 
-Dijkstra\'s Canvas
+Dijkstra&#39;s Canvas
