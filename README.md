@@ -4,7 +4,6 @@
 ## ToDo
 
 <div>Fix CVE page - Whole thing is weird on mobile and desktop</div>
-<div>Fix Resume page - Not embeding on desktop, and not opening in new tab on mobile</div>
 
 </br>
 
