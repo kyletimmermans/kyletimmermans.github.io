@@ -3,6 +3,7 @@
 
 ## ToDo
 
+<div>Flowing resume pdf, only one scrollbar, not inner and outer</div>
 <div>Fix CVE page - Whole thing is weird on mobile and desktop</div>
 
 </br>
