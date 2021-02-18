@@ -3,7 +3,7 @@
 
 ## ToDo
 
-<div>Fix CVE page - Whole thing is weird on mobile and desktop</div>
+<div>Fix CVE page - CVE gist not showing up</div>
 
 </br>
 
