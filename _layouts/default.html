@@ -98,5 +98,14 @@ if (isMobile) {
 }
 </script>
   
+<script>
+var myURL = window.location.href;
+if (myURL.includes("cves")) {
+  var gist_script = document.createElement("script");
+  gist_script.innerHTML = '<script src="https://gist.github.com/kyletimmermans/2a692caf6bbf14c0d28a4ed9d8920ff3.js?file=CVE-2020-9008.md">' + '</scr' + 'ipt>';
+  document.body.appendChild(gist_script);
+} 
+</script>
+  
 </body>
 </html>
