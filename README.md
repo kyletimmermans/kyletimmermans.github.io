@@ -40,5 +40,5 @@
 ### For Jekyll Liquid tags (variables that use {}) "Front matter" must be added "--- ---"
 ### Add in safe apostraphes by using \\'
 ### mobilheader.html had to be minified and hard coded into the layout: default.html
-### Had to fix harcoded <script> tag and added a backlash to make it a string e.g. <\\/script>
-### Want to fix mobileheader.html in includes? Place it in default.html in layouts b/c it's hardcoded there
+<div>&ensp;&ensp;-Hardcoded w/o its original javascript, that javascript is found further down in default.html</div>
+<div>&ensp;&ensp;- Want to fix mobileheader.html in includes? Place it in default.html in layouts b/c it's hardcoded there</div>
