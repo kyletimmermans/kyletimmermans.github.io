@@ -3,8 +3,8 @@
 
 ## ToDo
 
-<div>-Mobile Version</div>
-<div>&ensp;&ensp;-Make all pages mobile (CVE, projects, about, etc) so they all have fixed hamburger menu</div>
+<div>Fix CVE page - Whole thing is weird on mobile and desktop</div>
+<div>Fix Resume page - Not embeding on desktop, and not opening in new tab on mobile</div>
 
 </br>
 
