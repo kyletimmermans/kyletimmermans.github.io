@@ -29,7 +29,7 @@ var isMobile = window.mobileCheck();
 // Filler
 var main = document.getElementById('main-div');
 
-//var mobileheader = '{% capture mobileheader %}{% include mobileheader.html %}{% endcapture %}{{ mobileheader | strip_newlines }}';
+var mobileheader = {% capture mobileheader %}{% include mobileheader.html %}{% endcapture %}{{ mobileheader | strip_newlines }};
 var header = '{% capture header %}{% include header.html %}{% endcapture %}{{ header | strip_newlines }}';
 var content = '{{ content | escape | strip_newlines }}');
 var footer = '{% capture footer %}{% include footer.html %}{% endcapture %}{{ footer | strip_newlines }}';
