@@ -3,7 +3,7 @@
 
 ## ToDo
 
-<div>Fix CVE page - CVE gist not showing up</div>
+<div>Fix CVE page - CVE gist not showing up (Fix cve gist string in cves.html)</div>
 
 </br>
 
