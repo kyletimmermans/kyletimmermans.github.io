@@ -4,6 +4,7 @@
 ## ToDo
 
 <div>Fix CVE page - CVE gist not showing up (Fix cve gist string in cves.html)</div>
+<div>&ensp;&ensp;-Try escaping javascript // comments which are actually supposed to be links</div>
 
 </br>
 
