@@ -43,3 +43,4 @@
 <div>&ensp;&ensp;- Want to fix mobileheader.html in includes? Place it in default.html in layouts b/c it's hardcoded there</div>
 
 ### Handle resume javascript in default.html
+### Add apostrophes and +'s to cves.html so it can be handled properly by default.html
