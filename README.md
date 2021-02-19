@@ -43,4 +43,4 @@
 <div>&ensp;&ensp;- Want to fix mobileheader.html in includes? Place it in default.html in layouts b/c it's hardcoded there</div>
 
 ### Handle mobile resume pdf redirecct javascript in default.html
-### Hosting github cve gist locally at cves.html in pages folder 
+### Hosting github cve gist locally at cves.html in pages folder, added in apostrophes and +'s so it is read by default.html properly
