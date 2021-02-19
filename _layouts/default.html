@@ -89,8 +89,8 @@ if (isMobile) {
           var isClicked5 = specifiedElement5.contains(event.target);
           var isClicked6 = specifiedElement6.contains(event.target);
 
-          if (!isClicked1 && !isClicked2 && !isClicked3 && !isClicked4 && !isClicked5 && !isClicked6) {  // If clicked outside, close menu
-              x.style.display = "none";
+          if (!isClicked1 && !isClicked2 && !isClicked3 && !isClicked4 && !isClicked5 && !isClicked6) {  // If clicked outside, close menu (All must be not clicked to ensure-
+              x.style.display = "none";                                                                  // -That it is nothing in the menu
               y.style.backgroundColor = "white";
           }
       });
