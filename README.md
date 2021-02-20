@@ -40,7 +40,8 @@
 ### Add in safe apostraphes by using \\'
 ### mobilheader.html had to be minified and hard coded into the layout: default.html
 <div>&ensp;&ensp;-Hardcoded w/o its original javascript, that javascript is found further down in default.html</div>
-<div>&ensp;&ensp;- Want to fix mobileheader.html in includes? Place it in default.html in layouts b/c it's hardcoded there</div>
+<div>&ensp;&ensp;-Want to fix mobileheader.html in includes? Place it in default.html in layouts b/c it's hardcoded there</div>
 
 ### Handle mobile resume pdf redirecct javascript in default.html
 ### CVE Github Gist Fix: Make gist into html and have that be the cves.html content (Hosted locally in cves.html)
+<div>&ensp;&ensp;-String escapes needed for script tags</div>
