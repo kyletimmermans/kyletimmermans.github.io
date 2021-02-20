@@ -45,3 +45,4 @@
 ### Handle mobile resume pdf redirecct javascript in default.html
 ### CVE Github Gist Fix: Make gist into html and have that be the cves.html content (Hosted locally in cves.html)
 <div>&ensp;&ensp;-String escapes needed for script tags</div>
+<div>&ensp;&ensp;-Article tag escape</div>
