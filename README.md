@@ -47,3 +47,4 @@
 <div>&ensp;&ensp;-To make it content, just remove html, body, and head tags</div>
 <div>&ensp;&ensp;-String escapes needed for script tags</div>
 <div>&ensp;&ensp;-Article tag escape</div>
+<div>&ensp;&ensp;-Apostrophe escapes</div>
