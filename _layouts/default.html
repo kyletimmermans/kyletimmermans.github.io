@@ -97,6 +97,17 @@ if (isMobile) {
     };
 }
 </script>
+  
+<script>
+// Handle cve gists
+var myURL = window.location.href;
+if (myURL.includes("cves")) {
+  var gist_script = document.createElement('script');
+  var article = document.getElementsByTagName("article")[0];
+  gist_script.src = "https://gist.github.com/kyletimmermans/2a692caf6bbf14c0d28a4ed9d8920ff3.js?file=CVE-2020-9008.md";
+  article.insertAdjcentHTML('beforeend', gist_script); 
+}
+</script>
 
 </body>
 </html>
