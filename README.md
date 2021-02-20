@@ -43,4 +43,4 @@
 <div>&ensp;&ensp;- Want to fix mobileheader.html in includes? Place it in default.html in layouts b/c it's hardcoded there</div>
 
 ### Handle mobile resume pdf redirecct javascript in default.html
-### Content removed from cves.html and now handled by default.html
+### Content in cves.html wrapped in gistReveal(); and called in default.html
