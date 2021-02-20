@@ -4,7 +4,6 @@
 ## ToDo
 
 <div>Fix CVE page - CVE gist not showing up (Fix cve gist string in cves.html)</div>
-<div>&ensp;&ensp;-Try escaping javascript // comments which are actually supposed to be links</div>
 
 </br>
 
@@ -44,4 +43,4 @@
 <div>&ensp;&ensp;- Want to fix mobileheader.html in includes? Place it in default.html in layouts b/c it's hardcoded there</div>
 
 ### Handle mobile resume pdf redirecct javascript in default.html
-### Hosting github cve gist locally at cves.html in pages folder, added in apostrophes and +'s so it is read by default.html properly
+### Content removed from cves.html and now handled by default.html
