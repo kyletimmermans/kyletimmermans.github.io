@@ -43,6 +43,6 @@
 <div>&ensp;&ensp;-Want to fix mobileheader.html in includes? Place it in default.html in layouts b/c it's hardcoded there</div>
 
 ### Handle mobile resume pdf redirecct javascript in default.html
-### CVE Github Gist Fix: Make gist into html and have that be the cves.html content (Hosted locally in cves.html)
+### CVE Github Gist Fix: Host gist locally and don't import as src file.js
 <div>&ensp;&ensp;-String escapes needed for script tags</div>
 <div>&ensp;&ensp;-Article tag escape</div>
