@@ -44,5 +44,6 @@
 
 ### Handle mobile resume pdf redirecct javascript in default.html
 ### CVE Github Gist Fix: Host gist locally and don't import as src file.js (Full github gist css and html can be copied in full)
+<div>&ensp;&ensp;-To make it content, just remove html, body, and head tags</div>
 <div>&ensp;&ensp;-String escapes needed for script tags</div>
 <div>&ensp;&ensp;-Article tag escape</div>
