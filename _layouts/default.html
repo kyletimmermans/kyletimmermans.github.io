@@ -107,7 +107,7 @@ if (myURL.includes("cves")) {
   //var link1 = "https://gist.github.com/kyletimmermans/2a692caf6bbf14c0d28a4ed9d8920ff3.js?file=CVE-2020-9008.md";  // Add in post to avoid // being comments
   //var gist_script = '<scr' + 'ipt' + ' src=' +  link1 + '>' + '</sc' + 'ript>';
   var gist_script = '<scr' + 'ipt type=' + '"text/javascript"' + '>' + 'alert(1);' + '</sc' + 'ript>';
-  article.insertAdjacentHTML('afterend', gist_script); 
+  article.insertAdjacentHTML('beforeend', gist_script); 
   };
 }
 </script>
