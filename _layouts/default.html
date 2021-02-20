@@ -102,12 +102,8 @@ if (isMobile) {
 // Handle cve gists
 var myURL = window.location.href;
 if (myURL.includes("cves")) {
-  var article = document.getElementsByTagName("article")[0];
-  var gist_script = '<scr' + 'ipt' + ' src=' +  content + '>' + '</sc' + 'ript>';   // Content defined in earlier script tag
-  article.insertAdjacentHTML('beforeend', gist_script); 
+  gistReveal();   // gistReveal defined locally in cves.html
 }
-
-gistReveal();   // gistReveal defined locally in cves.html
 </script>
 
 </body>
