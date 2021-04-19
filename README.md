@@ -1,10 +1,5 @@
 # kyletimmermans.github.io
 
-
-## ToDo
-
-<div>Fix CVE page - CVE gist not showing up (Fix cve gist string in cves.html)</div>
-
 </br>
 
 # Notes
