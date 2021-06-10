@@ -2,6 +2,7 @@
 
 ## ToDo
 - [ ] Bootstrap the homepage so each section takes up the whole screen - https://alvarotrigo.com/fullPage/
+- [ ] Fix CVE gist heart spacing
 
 </br>
 
