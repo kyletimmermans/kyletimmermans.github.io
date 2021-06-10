@@ -44,6 +44,7 @@
 <div>&ensp;&ensp;-String escapes needed for script tags (Back slashes)</div>
 <div>&ensp;&ensp;-Article tag escape (Closed to begin code and an open one for the end</div>
 <div>&ensp;&ensp;-Apostrophe escapes (Back slashes)</div>
+<div>&ensp;&ensp;-Add an extra space after the heart where it says "with heart by GitHub"</div>
 
 ### IF YOU MAKE EDITS TO CVE GISTS IN OFFICIAL GITHUB GISTS, YOU MUST UPDATE IT HERE INSIDE cves.html
 
