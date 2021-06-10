@@ -46,3 +46,5 @@
 <div>&ensp;&ensp;-Apostrophe escapes (Back slashes)</div>
 
 ### IF YOU MAKE EDITS TO CVE GISTS IN OFFICIAL GITHUB GISTS, YOU MUST UPDATE IT HERE INSIDE cves.html
+
+<div>&ensp;&ensp;-Permalinks put in main pages so they are accessible outside of /pages/ and without .html
