@@ -1,7 +1,7 @@
 # kyletimmermans.github.io
 
 ## ToDo
-- [ ] Bootstrap the homepage so each section takes up the whole screen
+- [ ] Bootstrap the homepage so each section takes up the whole screen - https://alvarotrigo.com/fullPage/
 
 </br>
 
