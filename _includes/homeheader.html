@@ -4,7 +4,7 @@
   </h3>
   <nav class="menu-list-2">
     {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}{{ item.folder }}/{{ item.file }}" class="menu-link-2">{{ item.name }}</a>
+      <a href="{{ site.github.url }}{{ item.name }}" class="menu-link-2">{{ item.name }}</a>
     {% endfor %}
   </nav>
   <div class="dropdown-2">
