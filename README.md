@@ -1,5 +1,8 @@
 # kyletimmermans.github.io
 
+## ToDo
+- [ ] Bootstrap the homepage so each section takes up the whole screen
+
 </br>
 
 # Notes
