@@ -1,4 +1,5 @@
 ---
+permalink: /about/
 layout: misc
 title: About
 ---
