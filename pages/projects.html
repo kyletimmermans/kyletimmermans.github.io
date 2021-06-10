@@ -1,4 +1,5 @@
 ---
+permalink: /projects/
 layout: page
 title: Projects
 ---
