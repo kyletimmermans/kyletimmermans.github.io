@@ -4,7 +4,7 @@ title: "Kyle's Mind"
 author: "Kyle Timmermans"
 categories: kyles_mind
 tags: [kylesmind]
-image: colorful.jpeg
+image: colorful.png
 ---
 
 Kyle's Mind
