@@ -55,3 +55,5 @@
 
 <div>&ensp;&ensp;-Permalinks put in main pages so they are accessible outside of /pages/ and without .html by removing item.file to item.name in layouts/default.html, includes/header.html, includes/homeheader.html, includes/mobileheader.html. Have to do this for the normal view and the dropdown view.
 | downcase to fix endpoint names after the /
+
+<div>When putting in a project post, the title cannot have an apostrophe so use this code instead: &"#39;  but just remove the quote in there
