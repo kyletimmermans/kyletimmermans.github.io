@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kyle's Mind"
+title: "Kyle&#39;s Mind"
 author: "Kyle Timmermans"
 categories: kyles_mind
 tags: [kylesmind]
