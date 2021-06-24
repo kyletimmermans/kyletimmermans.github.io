@@ -2,7 +2,7 @@
 
 ## ToDo
 - [ ] Bootstrap the homepage so each section takes up the whole screen - https://alvarotrigo.com/fullPage/
-  - [ ] Make the header text black when next page, make the scrollbounce arrow bottom centered, center glitch text on 2nd page 
+  - [ ] Make the header text black when next page, center glitch text on 2nd page 
 - [ ] Bootstrap the video into mobile homepage too - https://medium.com/just-goe-frontend-adventures/how-to-fullscreen-background-autoplay-video-on-mobile-in-2018-208dfee26bc1
 - [ ] Fix CVE gist heart spacing
 
