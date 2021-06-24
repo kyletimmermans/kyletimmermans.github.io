@@ -3,6 +3,8 @@
     
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<link rel="stylesheet" type="text/css" href="../fullpage/fullpage.css" />
     
 <script>
 // Check for mobile
@@ -22,21 +24,90 @@ if (window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
 {% include head.html %}
 
 <style>
-    #video-bg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+    .section{
+        text-align:center;
         overflow: hidden;
     }
-    #video-bg > video {
-        top: 0;
-        left: 0;
+
+    #myVideo{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top:0;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        background-size: 100% 100%;
+        background-color: black; /* in case the video doesn't fit the whole page*/
+        background-image: /* our video */;
+        background-position: center center;
+        background-size: contain;
+        object-fit: cover; /*cover video background */
+        z-index:3;
     }
+
+    #section0 .layer{
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+    #section0 .layer2{
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+    #section1 .layer {
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        left: 0;
+        top: 60%;
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+    /*solves problem with overflowing video in Mac with Chrome */
+    #section0{
+        overflow: hidden;
+    }
+
+    video::-webkit-media-controls {
+      display:none !important;
+    }
+
+    #header{
+        position:absolute;
+        height: 50px;
+        display:block;
+        width: 100%;
+        background: #ffffff00;
+        z-index:9;
+        text-align:center;
+        color: #f2f2f2;
+        top: 0px;
+    }
+
+    #footing {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(0%);
+        -webkit-transform: translateX(-50%) translateY(0%);
+        transform: translateX(-50%) translateY(0%);
+    }
+
     .centered {
         position: absolute;
         top: 50%;
@@ -54,50 +125,64 @@ if (window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
  
 <body>
 
-<div id="video-bg">
- <video autoplay muted loop>
-   <source src="https://kyletimmermans.github.io/croatia.webm" type="video/webm">
-   Your browser does not support the video tag. Switch from mobile or upgrade browser!
- </video>
-</div>
- 
-<div id="p2" class="container-3">
-   {% include homeheader.html %}
-  <div class="posts-wrapper-3">
-    {{ content }}
-  </div>
+<div id="header">
+    <div class="container-3">
+       {% include homeheader.html %}
+      <div class="posts-wrapper-3">
+        {{ content }}
+      </div>
+    </div>
 </div>
 
-<div id="p3" class="centered"></div>  <!-- Div for holding welcome text -->
+<!------->
+<div id="fullpage">
+    <div class="section " id="section0">
+        <video id="myVideo" loop muted data-autoplay>
+            <source src="https://kyletimmermans.github.io/croatia.webm" type="video/webm">
+            Your browser does not support the video tag. Switch from mobile or upgrade browser!
+        </video>
+        <div class="layer">
+            <div id="p3" class="centered"></div>
+        </div>
+        <div class="layer2">
+            <div class="scrollbounce"></div>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <div class="layer">
+            <h1 class="glitch" data-text="Enjoy your stay!">Enjoy your stay!</h1>
+        </div>
+        <div id="footing">
+            <div class="container"> {% include footer.html %} </div>
+        </div>
+    </div>
+</div>
 
-<div class="scrollbounce"></div>
+<script type="text/javascript" src="../fullpage/fullpage.js"></script>
 
-<div id="p1"><div>  <!-- Div for spacing and creating new page -->
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: true,
+        sectionsColor: ['#FFFFFF', '#FFFFFF'],
+        onLeave: function(index, nextIndex, direction){
+            // Scroll down, make header into black text on white background
+            // Scroll up, make header text white
+            if (direction == "down") {
+                setTimeout(function() {
+                    document.getElementById("header").classList.remove("container-3"); 
+                    document.getElementById("header").classList.add("container-4");
+                }, 500)  // Goldilocks timing, down needs time for shift (more distance down than up)
+            } else {  // if not down, then "up"
+                document.getElementById("header").classList.remove("container-4");
+                document.getElementById("header").classList.add("container-3");
 
-<h1 class="glitch" data-text="Enjoy your stay!">Enjoy your stay!</h1>
+            }
+        },
+    });
+</script>
+<!------->
 
 <script>
-// To create extra scrollable space to next page
-document.getElementById("p1").style.paddingTop = 179 + "vh";  // Push past first page and create second page that is the size of browser window (dynamic)
-
-// Change white header text to black if it passed the video and is on top of white background.
-// if currentScrollHeight > the target element top value + target element bottom value e.g. 0 + 900
-window.addEventListener("scroll", function() {
- var elementTarget = document.getElementById("video-bg");
- // Only change to black once after we set it once, while we're in the white zone, don't keep changing it, so we check with the second-
- // -Condition to make sure we changed it already. Otherwise it would just keep making it black because we are below the video
- // This is done to prevent an infinte loop of it attempting to change colors while it's already changed and not JUST because it's below a certain line
- // If (Below video && not-fixed-yet) otherwise if it's fixed, wait for a scroll
- // -32 is a measure of pixel length that is the true line where text color should change
- if ((window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight - 32)) && (document.getElementById("p2").classList.contains("container-3"))) {   
-    document.getElementById("p2").classList.remove("container-3");  // Get rid of white font
-    document.getElementById("p2").classList.add("container-4");  // Add black font
- } else if ((window.scrollY < (elementTarget.offsetTop + elementTarget.offsetHeight - 32)) && (document.getElementById("p2").classList.contains("container-4"))) {
-    document.getElementById("p2").classList.remove("container-4");  // Revert back to white font again if scrolled back up, also checks if we fixed already - 
-    document.getElementById("p2").classList.add("container-3");  // -Just like the firt if statement
- }
-});
-
 // Welcome text loop
 var messages = ["Welcome", "Добро пожаловать", "स्वागत", "환영", "ようこそ", "Bienvenue", "欢迎", "Willkommen", "خوش آمدید", "ברוך הבא", "Bienvenidos", "Dobrodošli", "Fáilte", "Benvenuto"]; 
 var i = 0; // Start at 0 bc increment comes first
@@ -123,8 +208,6 @@ function welcome() {
 
 welcome(); // Call welcome func
 </script>
- 
-<div class="container"> {% include footer.html %} </div>
  
 </body>
 </html>
