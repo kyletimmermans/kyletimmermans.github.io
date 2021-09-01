@@ -3,6 +3,7 @@
 ## ToDo
 - [ ] Bootstrap the video into mobile homepage too - https://medium.com/just-goe-frontend-adventures/how-to-fullscreen-background-autoplay-video-on-mobile-in-2018-208dfee26bc1
 - [ ] Fix CVE gist heart spacing
+- [ ] https://developers.google.com/speed/pagespeed/insights/
 
 </br>
 
