@@ -16,7 +16,7 @@ menu:
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/kyle-timmermans/'}
-- {icon: 'envelope', link: 'mailto:ktimmermans@fordham.edu'}
+- {icon: 'envelope', link: 'mailto:kyle@kyles.world'}
 - {icon: 'github', link: 'https://github.com/kyletimmermans'}
 - {icon: 'twitter', link: 'https://twitter.com/kyletimmermans'}
 - {icon: 'instagram', link: 'https://instagram.com/kyle_timmermans'}
