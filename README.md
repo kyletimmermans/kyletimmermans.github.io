@@ -46,6 +46,7 @@
 ### CVE Github Gist Fix: Host gist locally and don't import as src file.js (Full github gist css and html can be copied in full)
 <div>&ensp;&ensp;-Inspect element on page that only has normal gist embeded and copy everything</div>
 <div>&ensp;&ensp;-To make it content, just remove html, body, and head tags and minify it with http://minifycode.com/html-minifier/</div>
+<div>&ensp;&ensp;-Should be all the code beginning with link rel and finish with heart from github</div>
 <div>&ensp;&ensp;-String escapes needed for script tags (Back slashes)</div>
 <div>&ensp;&ensp;-Article tag escape (Closed to begin code and an open one for the end</div>
 <div>&ensp;&ensp;-Apostrophe escapes (Back slashes)</div>
