@@ -59,3 +59,5 @@
 
   <div>&ensp;</div>
 <div>&ensp;&ensp;-When putting in a project post, the title cannot have an apostrophe so use this code instead: &"#39;  but just remove the quote in there
+
+### Don't make website make new connections in href, e.g. '../croatia.webm' instead of 'https://github.com/croatia.webm'. It's already loaded, don't load again
