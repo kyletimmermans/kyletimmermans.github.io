@@ -1,7 +1,6 @@
 # kyletimmermans.github.io
 
 ## ToDo
-- [ ] Background video not working in Safari
 - [ ] Bootstrap the video into mobile homepage too - https://medium.com/just-goe-frontend-adventures/how-to-fullscreen-background-autoplay-video-on-mobile-in-2018-208dfee26bc1
 
 </br>
