@@ -17,7 +17,15 @@ window.mobileCheck = function() {
     
 if (window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
     window.location.replace("/mobile");
-}  
+}
+    
+var ua = navigator.userAgent.toLowerCase();
+
+// Not an apple mobile device and it's safari browser,
+// But not coupled with another browser
+if (ua.indexOf('cpu') == -1 && ua.indexOf('safari') > -1 && ua.indexOf('chrome') == -1 && ua.indexOf('firefox') == -1) {
+	window.location.replace("/safari");
+}
 </script>
 
 </head>
