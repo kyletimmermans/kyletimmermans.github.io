@@ -1,6 +1,7 @@
 # kyletimmermans.github.io
 
 ## ToDo
+- [ ] Background video not working in Safari
 - [ ] Bootstrap the video into mobile homepage too - https://medium.com/just-goe-frontend-adventures/how-to-fullscreen-background-autoplay-video-on-mobile-in-2018-208dfee26bc1
 
 </br>
@@ -55,7 +56,7 @@
 <div>&ensp;&ensp;-Permalinks put in main pages so they are accessible outside of /pages/ and without .html by removing item.file to item.name in layouts/default.html, includes/header.html, includes/homeheader.html, includes/mobileheader.html. Have to do this for the normal view and the dropdown view.
 | downcase to fix endpoint names after the /
 
-  <div>&ensp;</div>
+<div>&ensp;</div>
 <div>&ensp;&ensp;-When putting in a project post, the title cannot have an apostrophe so use this code instead: &"#39;  but just remove the quote in there
 
 ### Don't make website make new connections in href, e.g. '../croatia.webm' instead of 'https://github.com/croatia.webm'. It's already loaded, don't load again
