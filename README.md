@@ -1,11 +1,11 @@
 # kyletimmermans.github.io
 
-## ToDo
+# <div align="center">ToDo</div>
 - [ ] Bootstrap the video into mobile homepage too - https://medium.com/just-goe-frontend-adventures/how-to-fullscreen-background-autoplay-video-on-mobile-in-2018-208dfee26bc1
 
 </br>
 
-# Notes
+# <div align="center">Notes</div>
 ### POSTS NEEDS DATE IN FILENAME WITH yyyy-mm-dd format in the front
 ### To use gists with image, create gist. Then push image, get raw image url, update link on gist. Finally, edit the gist url (?file=) to include just the one part of the gist with the new name, just copied, not the whole thing that would repeat any standalone images
 ### jsincluded > home(jsincluded) > index.html(home(jsincluded)) A.K.A. jsincluded is essentially default layout for the homepage but with all the javascript things needed
