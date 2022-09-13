@@ -1,7 +1,7 @@
 ---
 permalink: /contact/
 layout: center
-title: &nbsp;&nbsp;&nbsp;Contact
+title:         Contact
 ---
 
 
