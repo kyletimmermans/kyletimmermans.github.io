@@ -69,11 +69,11 @@ if (isMobile) {
       // For Resume and CV page, if mobile, just open in new tab
       var myURL = window.location.href;
       if (myURL.includes("resume") || myURL.includes("Resume") || myURL.includes("RESUME")) {
-        window.location.replace("https://kyletimmermans.github.io/assets/KyleTimmermansResume.pdf"); // Open PDF resume in new tab
+        window.location.replace("../assets/KyleTimmermansResume.pdf"); // Open PDF resume in new tab
       }
       
       if (myURL.includes("cv") || myURL.includes("Cv") || myURL.includes("CV")) {
-        window.location.replace("https://kyletimmermans.github.io/assets/KyleTimmermansCV.pdf"); // Open PDF CV in new tab
+        window.location.replace("../assets/KyleTimmermansCV.pdf"); // Open PDF CV in new tab
       }
   
       var x = document.getElementById("special-div");  // Dropdown content
