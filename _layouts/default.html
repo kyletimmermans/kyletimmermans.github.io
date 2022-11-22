@@ -66,12 +66,16 @@ if (isMobile) {
     // Check for click on dropdown menu, if clicked outside, close menu
     window.onload = function() {   // Wait for window to load so we don't return null values
       
-      // For Resume page, if mobile, just open in new tab
+      // For Resume and CV page, if mobile, just open in new tab
       var myURL = window.location.href;
-      if (myURL.includes("resume")) {
+      if (myURL.includes("resume") || myURL.includes("Resume") || myURL.includes("RESUME")) {
         window.location.replace("https://kyletimmermans.github.io/assets/KyleTimmermansResume.pdf"); // Open PDF resume in new tab
-      } 
+      }
       
+      if ((myURL.includes("cv") || myURL.includes("Cv") || myURL.includes("CV")) {
+        window.location.replace("https://kyletimmermans.github.io/assets/KyleTimmermansCV.pdf"); // Open PDF CV in new tab
+      }
+  
       var x = document.getElementById("special-div");  // Dropdown content
       var y = document.getElementById("special-button");  // Dropdown button
       
