@@ -59,4 +59,4 @@
 ### Don't make website make new connections in href, e.g. '../assets/croatia.webm' instead of 'https://github.com/croatia.webm'. It's already loaded, don't load again
   
 <div>&ensp;</div>
-<div>&ensp;-Filenames for files in _posts cannot be in the future, otherwise they do not show up on /projects</div>
+<div>&ensp;-Filename dates for files in _posts cannot be in the future, otherwise they do not show up on /projects</div>
