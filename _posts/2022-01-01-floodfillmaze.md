@@ -2,7 +2,7 @@
 layout: post
 title: "Flood Fill Maze"
 author: "Kyle Timmermans"
-categories: flood-fill-maze
+categories: FloodFillMaze
 tags: [floodfillmaze]
 image: Maze.png
 ---
