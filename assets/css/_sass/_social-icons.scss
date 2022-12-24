@@ -11,6 +11,7 @@ $medium-color: #00AB6C;
 $codepen-color: black;
 $rss-color: #ff6600;
 $youtube-play-color: #ff0000;
+$stack-overflow-color: #f47f24;
 
 @mixin social-media-icon($color, $transition){
   -webkit-transition: $transition;
@@ -82,3 +83,9 @@ $youtube-play-color: #ff0000;
   padding: 5px;
   @include social-media-icon($youtube-play-color, $icon-transition-time);
 }
+
+.fa-stack-overflow {
+  padding: 5px;
+  @include social-media-icon($stack-overflow-color, $icon-transition-time);
+}
+
