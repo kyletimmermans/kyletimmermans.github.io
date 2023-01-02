@@ -9,21 +9,31 @@ title: I'm a teapot
 </head>
 
 <style>
-.centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
+img {
+        margin-top: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+div {
+        text-align: center;
         font-weight: bold;
         font-size: 72px;
         white-space: nowrap;
         overflow: hidden;
 }
+
+.a-black { color: black; text-decoration: none; }
+
+.a-gray { color: gray; text-decoration: none; }
 </style>
 
-<div class="centered"><span style="color: black;">Error 418</span><span style="color: gray;"> - I'm a teapot</span></div>
+<img src="teapot.png" alt="Red Teapot">
+<div>
+        <span><a class="a-black" href="https://save418.com/">Error 418</a></span>
+        <span><a class="a-gray" href="https://save418.com/"> - I'm a teapot</a></span>
+</div>
 
 <script>
 const exception = new Error();
