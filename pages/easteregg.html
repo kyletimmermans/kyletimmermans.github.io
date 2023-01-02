@@ -23,16 +23,16 @@ title: I'm a teapot
 }
 </style>
 
-<div class="centered"><span style="color: black;">418</span><span style="color: gray;"> - I'm a teapot</span></div>
+<div class="centered"><span style="color: black;">Error 418</span><span style="color: gray;"> - I'm a teapot</span></div>
 
 <script>
 const exception = new Error();
-exception.name = "418 - I'm a teapot";
+exception.name = "Error 418 - I'm a teapot";
 
 exception.response = {
   status: 418,
   data: {
-    detail: "418 - I'm a teapot",
+    detail: "Error 418 - I'm a teapot",
   },
 };
 
