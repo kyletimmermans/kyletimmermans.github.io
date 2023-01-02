@@ -1,0 +1,40 @@
+---
+permalink: /easteregg/
+title: I'm a teapot
+---
+
+<head>
+  <title>I'm a teapot</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/img/teapot.ico?">
+</head>
+
+<style>
+.centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        font-weight: bold;
+        font-size: 72px;
+        white-space: nowrap;
+        overflow: hidden;
+}
+</style>
+
+<div class="centered"><b>418</b> - I'm a teapot</div>
+
+<script>
+const exception = new Error();
+exception.name = "I'm a teapot";
+
+exception.response = {
+  status: 418,
+  data: {
+    detail: "I'm a teapot",
+  },
+};
+
+throw exception;
+</script>
