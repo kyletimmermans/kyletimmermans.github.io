@@ -15,7 +15,6 @@ title: About
 
 @media screen and (max-width : 1000px) {
 	.language-switcher {	
-		position: relative;
 		margin-left: 70px;
 		transform: translateY(-0.5px);
 	}
