@@ -32,7 +32,7 @@ $height: 32px;
   .select-en,
   .select-ru {
     position: absolute;
-    font-size: #{$height / 2.5};
+    font-size: #{$height / 3};
     top: #{$height / 4};
     color: #fff;
     mix-blend-mode: difference;    
