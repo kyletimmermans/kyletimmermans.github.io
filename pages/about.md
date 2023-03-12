@@ -5,7 +5,7 @@ title: About
 ---
 
 <style>
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1400px) {
 	.language-switcher {	
 		float: right;
 		margin-right: -200px; 
