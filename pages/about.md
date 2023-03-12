@@ -17,7 +17,7 @@ title: About
 	.language-switcher {	
 		position: absolute;
 		margin-left: 200px;
-		transform: translateY(-0.5px);
+		transform: translateY(-2px);
 	}
 }
 </style>
