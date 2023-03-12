@@ -13,7 +13,7 @@ title: About
 	}
 }
 
-@media screen and (min-width: 3000px) {
+@media screen and (max-width: 1000px) {
 	.language-switcher {	
 		position: absolute;
 		margin-left: 200px;
