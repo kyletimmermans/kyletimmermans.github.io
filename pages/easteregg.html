@@ -6,6 +6,12 @@ title: I'm a teapot
 <head>
   <title>I'm a teapot</title>
   <link rel="shortcut icon" type="image/x-icon" href="../assets/img/teapot.ico?">
+  <meta name="next-head-count" content="2" />
+  <script src="../assets/javascript/confetti/webpack.js" defer=""></script>
+  <script src="../assets/javascript/confetti/framework.js" defer=""></script>
+  <script src="../assets/javascript/confetti/main.js" defer=""></script>
+  <script src="../assets/javascript/confetti/app.js" defer=""></script>
+  <script src="../assets/javascript/confetti/index.js" defer=""></script>
 </head>
 
 <style>
@@ -59,12 +65,29 @@ div {
     }
 }
 </style>
+<body>
+    <div id="__next"></div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": {
+          "pageProps": {}
+        },
+        "page": "/",
+        "query": {},
+        "buildId": "ZLznILy7AX3dzNlpxXhiy",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false,
+        "scriptLoader": []
+      }
+    </script>
 
 <img src="../assets/img/teapot.png" alt="Red Teapot">
 <div>
         <span><a class="a-black" href="https://save418.com/">Error 418</a></span>
         <span><a class="a-gray" href="https://save418.com/"> - I'm a teapot</a></span>
 </div>
+</body>
 
 <script>
 const exception = new Error();
