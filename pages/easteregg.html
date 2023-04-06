@@ -15,7 +15,7 @@ title: I'm a teapot
 </head>
 
 <style>
-img {
+.special-img {
         position: absolute;
         top: 30%;
         left: 50%;
@@ -24,7 +24,7 @@ img {
         transform: translateX(-50%) translateY(-30%);
 }
 
-div {
+.special-div {
         position: absolute;
         top: 60%;
         left: 50%;
@@ -42,7 +42,7 @@ div {
 .a-gray { color: gray; text-decoration: none; }
 
 @media screen and (max-width : 1000px) {
-    img {
+    .special-img {
         position: absolute;
         top: 45%;
         left: 50%;
@@ -51,7 +51,7 @@ div {
         transform: translateX(-50%) translateY(-45%);
     }
 
-    div {
+    .special-div {
         position: absolute;
         top: 55%;
         left: 50%;
@@ -82,11 +82,11 @@ div {
       }
     </script>
 
-<img src="../assets/img/teapot.png" alt="Red Teapot">
-<div>
-        <span><a class="a-black" href="https://save418.com/">Error 418</a></span>
-        <span><a class="a-gray" href="https://save418.com/"> - I'm a teapot</a></span>
-</div>
+    <img class="special-img" src="../assets/img/teapot.png" alt="Red Teapot">
+    <div class="special-div">
+            <span><a class="a-black" href="https://save418.com/">Error 418</a></span>
+            <span><a class="a-gray" href="https://save418.com/"> - I'm a teapot</a></span>
+    </div>
 </body>
 
 <script>
