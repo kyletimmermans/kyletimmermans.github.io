@@ -60,3 +60,6 @@
   
 <div>&ensp;</div>
 <div>&ensp;-Filename dates for files in _posts cannot be in the future, otherwise they do not show up on /projects</div>
+
+<div>&ensp;</div>
+<div>&ensp;-Do not use "../" in any href, use absolute file paths with href="/any-home-directory"</div>
