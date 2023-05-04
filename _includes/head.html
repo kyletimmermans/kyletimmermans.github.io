@@ -9,8 +9,28 @@
   </title>
   
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
-  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.png">
+  <script>
+    // Firefox favicon hack
+    if (navigator.userAgent.indexOf("Firefox") !== -1) {
+      var faviconIco = document.createElement('link');
+      faviconIco.rel = 'icon';
+      faviconIco.type = 'image/x-icon';
+      faviconIco.href = '/favicon.ico';
+      document.head.appendChild(faviconIco);
+    } else {
+      var faviconSvg = document.createElement('link');
+      faviconSvg.rel = 'icon';
+      faviconSvg.type = 'image/svg+xml';
+      faviconSvg.href = '/assets/img/favicon/favicon.svg';
+      document.head.appendChild(faviconSvg);
+      
+      var faviconPng = document.createElement('link');
+      faviconPng.rel = 'icon';
+      faviconPng.type = 'image/png';
+      faviconPng.href = '/assets/img/favicon/favicon.png';
+      document.head.appendChild(faviconPng);
+    }
+  </script>
   <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
   <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#004000">
   <meta name="msapplication-TileColor" content="#00aba9">
