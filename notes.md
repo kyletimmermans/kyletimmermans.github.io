@@ -66,3 +66,8 @@
 <div>&ensp;</div>
   
 ### Firefox bookmarks and toolbar will not show any normal favicon, SVG or PNG unless there is a favicon.ico at the root of your website directory. However, if you have one that is being set in your &lt;head> tags, that will override it going to your root. Basically, if you have more than one favicon assigned in &lt;head> it will only load one of those, and never check the root dir. So if the user agent is firefox, do not load favicons in &lt;head> and just let Firefox find it in our root dir
+
+<div>&ensp;</div>
+<div>&ensp;-https://realfavicongenerator.net/favicon_checker?protocol=https&site=www.kyles.world</div>
+<div>&ensp;</div>
+  
