@@ -3,6 +3,8 @@ permalink: /about/
 redirect_from:
   - /About
   - /ABOUT
+  - /About/
+  - /ABOUT/
 layout: misc
 title: About
 ---
