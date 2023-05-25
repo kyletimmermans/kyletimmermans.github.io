@@ -1,5 +1,8 @@
 ---
 permalink: /contact/
+redirect_from:
+  - /Contact
+  - /CONTACT
 layout: center
 title: Contact
 ---
