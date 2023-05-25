@@ -67,11 +67,11 @@ if (isMobile) {
       
       // For Resume and CV page, if mobile, just open in new tab
       var myURL = window.location.href;
-      if (myURL.includes("resume") || myURL.includes("Resume") || myURL.includes("RESUME")) {
+      if (/resume/i.test(myURL)) {
         window.location.replace("/assets/KyleTimmermansResume.pdf"); // Open PDF resume in new tab
       }
       
-      if (myURL.includes("cv") || myURL.includes("Cv") || myURL.includes("CV")) {
+      if (/\bCV\b/i.test(myURL)) {
         window.location.replace("/assets/KyleTimmermansCV.pdf"); // Open PDF CV in new tab
       }
   
