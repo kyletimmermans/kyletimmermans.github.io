@@ -2,7 +2,7 @@
 layout: post
 title: "Russian Grammar Exercises Website"
 author: "Kyle Timmermans"
-categories: rusgrammar
+categories: rus-grammar-site
 tags: [rusgrammar]
 image: rusgrammar.png
 ---
