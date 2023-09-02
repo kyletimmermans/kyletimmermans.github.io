@@ -4,7 +4,7 @@ title: "Flood Fill Maze"
 author: "Kyle Timmermans"
 categories: FloodFillMaze
 tags: [floodfillmaze]
-image: Maze.png
+image: Mazes.png
 ---
 
 Flood Fill Maze
