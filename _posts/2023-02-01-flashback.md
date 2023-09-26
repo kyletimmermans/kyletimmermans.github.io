@@ -2,7 +2,7 @@
 layout: post
 title: "Flashback"
 author: "Kyle Timmermans"
-categories: flashback
+link: https://www.github.com/kyletimmermans/flashback
 tags: [flashback]
 image: flashback.png
 ---
