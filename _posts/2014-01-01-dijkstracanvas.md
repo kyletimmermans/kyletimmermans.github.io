@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Dijkstra&#39;s Canvas"
+title: "Tkinter Dijkstra&#39;s Canvas"
 author: "Kyle Timmermans"
-link: https://www.github.com/kyletimmermans/dijkstras-canvas
-tags: [DijkstrasCanvas]
+link: https://www.github.com/kyletimmermans/tkinter-dijkstras-canvas
+tags: [TkinterDijkstrasCanvas]
 image: dijkstracanvas.png
 ---
 
-Dijkstra&#39;s Canvas
+Tkinter Dijkstra&#39;s Canvas
