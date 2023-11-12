@@ -6,12 +6,6 @@ title: I'm a teapot
 <head>
   <title>I'm a teapot</title>
   <link rel="shortcut icon" type="image/x-icon" href="/assets/img/teapot.ico?">
-  <meta name="next-head-count" content="2" />
-  <script src="/assets/javascript/confetti/webpack.js" defer=""></script>
-  <script src="/assets/javascript/confetti/framework.js" defer=""></script>
-  <script src="/assets/javascript/confetti/main.js" defer=""></script>
-  <script src="/assets/javascript/confetti/app.js" defer=""></script>
-  <script src="/assets/javascript/confetti/index.js" defer=""></script>
 </head>
 
 <style>
@@ -66,20 +60,239 @@ title: I'm a teapot
 }
 </style>
 <body>
-    <div id="__next"></div>
-    <script id="__NEXT_DATA__" type="application/json">
-      {
-        "props": {
-          "pageProps": {}
-        },
-        "page": "/",
-        "query": {},
-        "buildId": "ZLznILy7AX3dzNlpxXhiy",
-        "nextExport": true,
-        "autoExport": true,
-        "isFallback": false,
-        "scriptLoader": []
+    <script>
+    // https://github.com/pillowfication/pf-konami/blob/master/src/konami.js
+    ;(function () {
+      'use strict'
+    
+      if (typeof window === 'undefined' || typeof document === 'undefined') {
+        return
       }
+    
+      document.addEventListener('DOMContentLoaded', function () {
+        try {
+    
+          requestAnimationFrame
+          cancelAnimationFrame
+          setTimeout
+    
+        } catch (error) {
+          return
+        }
+    
+        if (window.pfKonami) {
+          return
+        }
+        window.pfKonami = poof
+    
+        var random = Math.random
+        var cos = Math.cos
+        var sin = Math.sin
+        var PI = Math.PI
+        var PI2 = PI * 2
+        var timer
+        var frame
+        var confetti = []
+    
+        var particles = 150
+        var spread = 40
+        var sizeMin = 3
+        var sizeMax = 12 - sizeMin
+        var period = 7777
+        var eccentricity = 10
+        var deviation = 100
+        var dxThetaMin = -0.1
+        var dxThetaMax = -dxThetaMin - dxThetaMin
+        var dyMin = 0.13
+        var dyMax = 0.18
+        var dThetaMin = 0.4
+        var dThetaMax = 0.7 - dThetaMin
+    
+        // Edited to be completely random colors
+        var colorThemes = [
+          function () {
+            return color(256 * random() | 0, 256 * random() | 0, 256 * random() | 0)
+          }
+        ]
+    
+        function color (r, g, b) {
+          return 'rgb(' + r + ',' + g + ',' + b + ')'
+        }
+    
+        function interpolation (a, b, t) {
+          return (1 - cos(PI * t)) / 2 * (b - a) + a
+        }
+    
+        var radius = 1 / eccentricity
+        var radius2 = radius + radius
+        function createPoisson () {
+    
+          var domain = [ radius, 1 - radius ]
+          var measure = 1 - radius2
+          var disc = [ 0, 1 ]
+          while (measure) {
+            var dart = measure * random()
+            var i, l, interval, a, b, c, d
+    
+            for (i = 0, l = domain.length, measure = 0; i < l; i += 2) {
+              a = domain[i]
+              b = domain[i + 1]
+              interval = b - a
+              if (dart < measure + interval) {
+                disc.push(dart += a - measure)
+                break
+              }
+              measure += interval
+            }
+            c = dart - radius
+            d = dart + radius
+    
+            for (i = domain.length - 1; i > 0; i -= 2) {
+              l = i - 1
+              a = domain[l]
+              b = domain[i]
+    
+              if (a >= c && a < d) {
+                if (b > d) {
+                  domain[l] = d
+                } else {
+                  domain.splice(l, 2)
+                }
+              } else if (a < c && b > c) {
+                if (b <= d) {
+                  domain[i] = c
+                } else {
+                  domain.splice(i, 0, c, d)
+                }
+              }
+            }
+    
+            for (i = 0, l = domain.length, measure = 0; i < l; i += 2) {
+              measure += domain[i + 1] - domain[i]
+            }
+          }
+    
+          return disc.sort()
+        }
+    
+        var container = document.createElement('div')
+        container.style.position = 'fixed'
+        container.style.top = '0'
+        container.style.left = '0'
+        container.style.overflow = 'visible'
+        container.style.zIndex = '9999'
+    
+        function Confetto (theme) {
+          this.frame = 0
+          this.outer = document.createElement('div')
+          this.inner = document.createElement('div')
+          this.outer.appendChild(this.inner)
+    
+          var outerStyle = this.outer.style
+          var innerStyle = this.inner.style
+          outerStyle.position = 'absolute'
+          outerStyle.width = (sizeMin + sizeMax * random()) + 'px'
+          outerStyle.height = (sizeMin + sizeMax * random()) + 'px'
+          innerStyle.width = '100%'
+          innerStyle.height = '100%'
+          innerStyle.backgroundColor = theme()
+    
+          outerStyle.perspective = '50px'
+          outerStyle.transform = 'rotate(' + (360 * random()) + 'deg)'
+          this.axis = 'rotate3D(' +
+            cos(PI * random()) + ',' +
+            cos(PI * random()) + ',0,'
+          this.theta = 360 * random()
+          this.dTheta = dThetaMin + dThetaMax * random()
+          innerStyle.transform = this.axis + this.theta + 'deg)'
+    
+          this.x = window.innerWidth * random()
+          this.y = -deviation
+          this.dx = sin(dxThetaMin + dxThetaMax * random())
+          this.dy = dyMin + dyMax * random()
+          outerStyle.left = this.x + 'px'
+          outerStyle.top = this.y + 'px'
+    
+          this.splineX = createPoisson()
+          this.splineY = []
+          for (var i = 1, l = this.splineX.length - 1; i < l; ++i) {
+            this.splineY[i] = deviation * random()
+          }
+          this.splineY[0] = this.splineY[l] = deviation * random()
+    
+          this.update = function (height, delta) {
+            this.frame += delta
+            this.x += this.dx * delta
+            this.y += this.dy * delta
+            this.theta += this.dTheta * delta
+    
+            var phi = this.frame % period / period
+            var i = 0
+            var j = 1
+            while (phi >= this.splineX[j]) i = j++
+            var rho = interpolation(
+              this.splineY[i],
+              this.splineY[j],
+              (phi - this.splineX[i]) / (this.splineX[j] - this.splineX[i])
+            )
+            phi *= PI2
+    
+            outerStyle.left = this.x + rho * cos(phi) + 'px'
+            outerStyle.top = this.y + rho * sin(phi) + 'px'
+            innerStyle.transform = this.axis + this.theta + 'deg)'
+    
+            return this.y > height
+          }
+        }
+    
+        function poof () {
+          'Markus was here. (http://pf-n.co/github/pf-konami)'
+    
+          if (!frame) {
+            document.body.appendChild(container)
+    
+            var theme = colorThemes[0]
+            var count = 0
+            ;(function addConfetto () {
+              if (++count > particles) {
+                timer = undefined
+                return timer
+              }
+    
+              var confetto = new Confetto(theme)
+              confetti.push(confetto)
+              container.appendChild(confetto.outer)
+              timer = setTimeout(addConfetto, spread * random())
+            })(0)
+    
+            var prev
+            requestAnimationFrame(function loop (timestamp) {
+              var delta = prev ? timestamp - prev : 0
+              prev = timestamp
+              var height = window.innerHeight
+    
+              for (var i = confetti.length - 1; i >= 0; --i) {
+                if (confetti[i].update(height + deviation, delta)) {
+                  container.removeChild(confetti[i].outer)
+                  confetti.splice(i, 1)
+                }
+              }
+    
+              if (timer || confetti.length) {
+                frame = requestAnimationFrame(loop)
+                return frame
+              }
+    
+              document.body.removeChild(container)
+              frame = undefined
+            })
+          }
+        }
+    
+        poof()
+    
+      })
+    })()
     </script>
 
     <img class="special-img" src="/assets/img/teapot.png" alt="Red Teapot">
