@@ -138,18 +138,18 @@ if (window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
 <div id="fullpage">
     <div class="section " id="section0">
         <video id="myVideo" width="3840" height="2160" loop muted data-autoplay>
-            <source id="switch">
+            <source id="swapper">
             Your browser does not support the video tag. Switch from mobile or upgrade your browser!
         </video>
         <script>
-        var switch = document.getElementById('switch');
+        var swapper = document.getElementById('swapper');
         var ua = navigator.userAgent.toLowerCase();
         if (ua.indexOf('cpu') == -1 && ua.indexOf('safari') > -1 && ua.indexOf('chrome') == -1 && ua.indexOf('firefox') == -1) {
-            switch.src = "/assets/video/croatia_h264_encoded.mp4";
-            switch.type = "video/mp4";
+            swapper.src = "/assets/video/croatia_h264_encoded.mp4";
+            swapper.type = "video/mp4";
         } else {
-            switch.src = "/assets/video/croatia.webm";
-            switch.type = "video/webm";
+            swapper.src = "/assets/video/croatia.webm";
+            swapper.type = "video/webm";
         }
         </script>
         <div class="layer">
