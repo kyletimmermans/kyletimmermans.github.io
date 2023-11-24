@@ -17,6 +17,14 @@ window.mobileCheck = function() {
 if (window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
     window.location.replace("/mobile");
 }
+
+console.error = function() {
+    var errorMessage = arguments[0];
+    if (errorMessage.includes('licenseKey') || errorMessage.includes('#options')) {
+        return;
+    }
+    window.externalScriptConsoleError.apply(console, arguments);
+};
 </script>
 
 </head>
