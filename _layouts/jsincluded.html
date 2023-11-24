@@ -18,12 +18,15 @@ if (window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
     window.location.replace("/mobile");
 }
 
+window.externalScriptConsoleError = console.error;
 console.error = function() {
     var errorMessage = arguments[0];
     if (errorMessage.includes('licenseKey') || errorMessage.includes('#options')) {
         return;
     }
-    window.externalScriptConsoleError.apply(console, arguments);
+    if (window.externalScriptConsoleError) {
+        window.externalScriptConsoleError.apply(console, arguments);
+    }
 };
 </script>
 
