@@ -1,0 +1,5 @@
+# If you would like to report a security issue,
+# you can do so by using the following information
+Contact: mailto:kyle@kyles.world
+Expires: 2026-01-01T05:00:00.000Z
+Canonical: https://www.kyles.world/security.txt
