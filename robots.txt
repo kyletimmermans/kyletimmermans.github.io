@@ -14,13 +14,17 @@
 # http://www.robotstxt.org/robotstxt.html
 
 User-agent: *
-Allow: /
+Allow: /$
 Allow: /projects/
 Allow: /cves/
 Allow: /resume/
 Allow: /cv/
 Allow: /about/
 Allow: /contact/
+Allow: /apple-touch-icon.png
+Allow: /browserconfig.xml
+Allow: /favicon.ico
+Allow: /.well-known/security.txt
 Disallow: /_data/
 Disallow: /_includes/
 Disallow: /_layouts/
@@ -33,9 +37,6 @@ Disallow: /gemfile
 Disallow: /LICENSE.md
 Disallow: /README.md
 Disallow: /_config.yml
-Disallow: /apple-touch-icon.png
-Disallow: /browserconfig.xml
-Disallow: /favicon.ico
 Disallow: /notes.md
-Disallow: /robots.txt
-Disallow: /sitemap.xml
+
+Sitemap: https://www.kyles.world/sitemap.xml
