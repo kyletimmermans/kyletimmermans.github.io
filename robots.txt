@@ -24,7 +24,7 @@ Allow: /contact/
 Allow: /apple-touch-icon.png
 Allow: /browserconfig.xml
 Allow: /favicon.ico
-Allow: /.well-known/security.txt
+Allow: /security.txt
 Disallow: /_data/
 Disallow: /_includes/
 Disallow: /_layouts/
