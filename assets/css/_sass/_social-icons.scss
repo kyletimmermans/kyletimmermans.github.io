@@ -4,12 +4,6 @@ $twitter-color: #00aced;
 $instagram-color: #d62f85;
 $github-color: #238636;
 $linkedin-color: #0073a4;
-$facebook-color: #3d5b99;
-$google-color: #e64a41;
-$pinterest-color: #bd081c;
-$medium-color: #00AB6C;
-$codepen-color: black;
-$rss-color: #ff6600;
 $youtube-play-color: #ff0000;
 $stack-overflow-color: #f47f24;
 
@@ -49,36 +43,6 @@ $stack-overflow-color: #f47f24;
   @include social-media-icon($linkedin-color, $icon-transition-time);
 }
 
-.fa-facebook {
-  padding: 5px;
-  @include social-media-icon($facebook-color, $icon-transition-time);
-}
-
-.fa-google-plus {
-  padding: 5px;
-  @include social-media-icon($google-color, $icon-transition-time);
-}
-
-.fa-pinterest {
-  padding: 5px;
-  @include social-media-icon($pinterest-color, $icon-transition-time);
-}
-
-.fa-medium {
-  padding: 5px;
-  @include social-media-icon($medium-color, $icon-transition-time);
-}
-
-.fa-codepen {
-  padding: 5px;
-  @include social-media-icon($codepen-color, $icon-transition-time);
-}
-
-.fa-rss-square {
-  padding: 5px;
-  @include social-media-icon($rss-color, $icon-transition-time);
-}
-
 .fa-youtube-play {
   padding: 5px;
   @include social-media-icon($youtube-play-color, $icon-transition-time);
@@ -88,4 +52,3 @@ $stack-overflow-color: #f47f24;
   padding: 5px;
   @include social-media-icon($stack-overflow-color, $icon-transition-time);
 }
-
