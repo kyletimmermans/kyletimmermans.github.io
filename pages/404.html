@@ -21,8 +21,10 @@ window.mobileCheck = function() {
 };
     
 if (window.mobileCheck()) {
-  var errImage = document.getElementById('errImage');
-  errImage.style.maxWidth = '100%';
-  errImage.style.maxHeight = '100%';   
+  document.addEventListener('DOMContentLoaded', function() {
+    var errImage = document.getElementById('errImage');
+    errImage.style.maxWidth = '100%';
+    errImage.style.maxHeight = '100%';   
+  });
 }
 </script>
