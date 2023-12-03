@@ -14,10 +14,11 @@ title: Resume
 
 <script>
 if (isMobile) {
-    var myURL = window.location.href;
-
-    if (/resume/i.test(myURL)) {
-      window.location.replace("/assets/KyleTimmermansResume.pdf"); // Open PDF resume in new tab
-    }
+  // For Resume page, if mobile, just open in new tab
+  var myURL = window.location.href;
+  
+  if (/resume/i.test(myURL)) {
+    window.location.replace("/assets/KyleTimmermansResume.pdf"); // Open PDF Resume in new tab
+  }
 }
 </script>
