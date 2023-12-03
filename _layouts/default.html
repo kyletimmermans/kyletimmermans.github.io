@@ -54,7 +54,7 @@ if (isMobile) {
 } 
   
 if (!isMobile) {
-  main.insertAdjacentHTML('beforeend', `${header}<div class="posts-wrapper">${(new DOMParser().parseFromString(content, 'text/html').body.innerHTML)}</div>${footer}`);
+  main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + content + '</div>' + footer);
 }
 </script>
 
