@@ -32,7 +32,6 @@ var main = document.getElementById('main-div');
 var mobileheader = '<header class="site-header-3"><h3 class="site-title-3"> <a href="{{ site.github.url }}/">Kyle Timmermans</a></h3> <nav class="menu-list-3"> {% for item in site.data.settings.menu %} <a href="{{ site.github.url }}/{{ item.name | downcase }}" class="menu-link-3">{{ item.name }}</a> {% endfor %} </nav><div class="dropdown-3"> <button onclick="revealDropdown()" id="special-button" class="dropbtn-3"><i class="fa fa-bars" aria-hidden="true"></i></button><div id="special-div" class="dropdown-content-3"> {% for item in site.data.settings.menu %} <a href="{{ site.github.url }}/{{ item.name | downcase }}" class="menu-link-3">{{ item.name }}</a> {% endfor %}</div></div></header>';                                                                      
 var header = '{% capture header %}{% include header.html %}{% endcapture %}{{ header | strip_newlines }}';
 var content = '{{ content | strip_newlines | xml_escape }}';
-content = content.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
 var footer = '{% capture footer %}{% include footer.html %}{% endcapture %}{{ footer | strip_newlines }}';
   
 if (isMobile) {
