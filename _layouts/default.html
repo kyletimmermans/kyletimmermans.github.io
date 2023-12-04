@@ -36,7 +36,6 @@ var content = '{{ content | strip_newlines | xml_escape }}';
 var tempElement = document.createElement('div');
 tempElement.innerHTML = content;
 var decodedContent = tempElement.textContent || tempElement.innerText;
-console.log(decodedContent);
   
 var footer = '{% capture footer %}{% include footer.html %}{% endcapture %}{{ footer | strip_newlines }}';
   
@@ -56,11 +55,11 @@ if (isMobile) {
     }
   } 
   
-  main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + content + '</div>' + footer);
+  main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + decodedContent + '</div>' + footer);
 } 
   
 if (!isMobile) {
-  main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + content + '</div>' + footer);
+  main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + decodedContent + '</div>' + footer);
 }
 </script>
 
