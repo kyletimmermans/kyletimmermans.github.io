@@ -39,7 +39,7 @@ var content = '{{ content | strip_newlines | xml_escape }}';
 var decodedContent = new DOMParser().parseFromString(content, 'text/html').body.textContent || "";
 var postsWrapper = document.createElement('div');
 postsWrapper.className = 'posts-wrapper';
-postsWrapper.textContent = decodedContent;
+postsWrapper.innerHTML = decodedContent;
   
 var footer = '{% capture footer %}{% include footer.html %}{% endcapture %}{{ footer | strip_newlines }}';
   
