@@ -11,13 +11,11 @@ title: Resume
 
 <script>
 /* For Resume page, if mobile, just open in new tab */
-window.onload = function() { 
-  if (isMobile) {
-    window.location.replace("/assets/KyleTimmermansResume.pdf");
-  } else {
-    console.log("Hi!");
-  }
-};
+if (isMobile) {
+  window.location.replace("/assets/KyleTimmermansResume.pdf");
+} else {
+  console.log("Hi!");
+}
 </script>
 
 <embed src="/assets/KyleTimmermansResume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="2270px"/>
