@@ -70,4 +70,7 @@
 <div>&ensp;</div>
 <div>&ensp;-https://realfavicongenerator.net/favicon_checker?protocol=https&site=www.kyles.world</div>
 <div>&ensp;</div>
+
+### _layouts/default.html cannot handle pages w/ JS code that has comments with no end-signifier, you must use comments like /* coment */ so it
+know where to stop reading the ccomments
   
