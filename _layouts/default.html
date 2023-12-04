@@ -36,9 +36,10 @@ var header = '{% capture header %}{% include header.html %}{% endcapture %}{{ he
 var content = '{{ content | strip_newlines | xml_escape }}';
 
 // HTML codes to symbol e.g. &lt; == <
-var tempElement = document.createElement('div');
-tempElement.innerHTML = content;
-var decodedContent = tempElement.textContent || tempElement.innerText;
+var decodedContent = new DOMParser().parseFromString(content, 'text/html').body.textContent || "";
+var postsWrapper = document.createElement('div');
+postsWrapper.className = 'posts-wrapper';
+postsWrapper.innerHTML = decodedContent;
   
 var footer = '{% capture footer %}{% include footer.html %}{% endcapture %}{{ footer | strip_newlines }}';
   
@@ -58,11 +59,15 @@ if (isMobile) {
     }
   } 
   
-  main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + decodedContent + '</div>' + footer);
+  main.appendChild(document.createRange().createContextualFragment(mobileheader));
+  main.appendChild(postsWrapper);
+  main.appendChild(document.createRange().createContextualFragment(footer));
 } 
   
 if (!isMobile) {
-  main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + decodedContent + '</div>' + footer);
+  main.appendChild(document.createRange().createContextualFragment(header));
+  main.appendChild(postsWrapper);
+  main.appendChild(document.createRange().createContextualFragment(footer));
 }
 </script>
 
