@@ -31,16 +31,7 @@ var main = document.getElementById('main-div');
 
 var mobileheader = '<header class="site-header-3"><h3 class="site-title-3"> <a href="{{ site.github.url }}/">Kyle Timmermans</a></h3> <nav class="menu-list-3"> {% for item in site.data.settings.menu %} <a href="{{ site.github.url }}/{{ item.name | downcase }}" class="menu-link-3">{{ item.name }}</a> {% endfor %} </nav><div class="dropdown-3"> <button onclick="revealDropdown()" id="special-button" class="dropbtn-3"><i class="fa fa-bars" aria-hidden="true"></i></button><div id="special-div" class="dropdown-content-3"> {% for item in site.data.settings.menu %} <a href="{{ site.github.url }}/{{ item.name | downcase }}" class="menu-link-3">{{ item.name }}</a> {% endfor %}</div></div></header>';                                                                      
 var header = '{% capture header %}{% include header.html %}{% endcapture %}{{ header | strip_newlines }}';
-
-// xml_escape so we can also use JS within pages that use this template (default.html)
-var content = '{{ content | strip_newlines | xml_escape }}';
-
-// HTML codes to symbol e.g. &lt; == <
-var decodedContent = new DOMParser().parseFromString(content, 'text/html').body.textContent || "";
-var postsWrapper = document.createElement('div');
-postsWrapper.className = 'posts-wrapper';
-postsWrapper.innerHTML = decodedContent;
-  
+var content = '{{ content | strip_newlines }}';
 var footer = '{% capture footer %}{% include footer.html %}{% endcapture %}{{ footer | strip_newlines }}';
   
 if (isMobile) {
@@ -59,15 +50,11 @@ if (isMobile) {
     }
   } 
   
-  main.appendChild(document.createRange().createContextualFragment(mobileheader));
-  main.appendChild(postsWrapper);
-  main.appendChild(document.createRange().createContextualFragment(footer));
+  main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + content + '</div>' + footer);
 } 
   
 if (!isMobile) {
-  main.appendChild(document.createRange().createContextualFragment(header));
-  main.appendChild(postsWrapper);
-  main.appendChild(document.createRange().createContextualFragment(footer));
+  main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + content + '</div>' + footer);
 }
 </script>
 
@@ -77,6 +64,16 @@ if (isMobile) {
     
     // Check for click on dropdown menu, if clicked outside, close menu
     window.onload = function() {   // Wait for window to load so we don't return null values
+      
+      // For Resume and CV page, if mobile, just open in new tab
+      var myURL = window.location.href;
+      if (/resume/i.test(myURL)) {
+        window.location.replace("/assets/KyleTimmermansResume.pdf"); // Open PDF resume in new tab
+      }
+      
+      if (/\bCV\b/i.test(myURL)) {
+        window.location.replace("/assets/KyleTimmermansCV.pdf"); // Open PDF CV in new tab
+      }
   
       var x = document.getElementById("special-div");  // Dropdown content
       var y = document.getElementById("special-button");  // Dropdown button
