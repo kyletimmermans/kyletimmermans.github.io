@@ -34,7 +34,6 @@ Disallow: /pages/
 Disallow: /CNAME
 Disallow: /gemfile
 Disallow: /LICENSE.md
-Disallow: /README.md
 Disallow: /_config.yml
 Disallow: /notes.md
 
