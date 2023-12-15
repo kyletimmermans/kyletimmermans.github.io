@@ -1,17 +1,23 @@
+# robots.txt 
 #
-# robots.txt
+#    .__________________________.
+#    | .___________________. |==|
+#    | | ................. | |  |
+#    | | ::[ Dear robot ]: | |  |
+#    | | ::::[ be nice ]:: | |  |
+#    | | ::::::::::::::::: | |  |
+#    | | ::::::::::::::::: | |  |
+#    | | ::::::::::::::::: | |  |
+#    | | ::::::::::::::::: | | ,|
+#    | !___________________! |(c|
+#    !_______________________!__!
+#   /                            \
+#  /  [][][][][][][][][][][][][]  \
+# /  [][][][][][][][][][][][][][]  \
+#(  [][][][][____________][][][][]  )
+# \ ------------------------------ /
+#  \______________________________/
 #
-# This file is to prevent the crawling and indexing of certain parts
-# of your site by web crawlers and spiders run by sites like Yahoo!
-# and Google. By telling these "robots" where not to go on your site,
-# you save bandwidth and server resources.
-#
-# This file will be ignored unless it is at the root of your host:
-# Used:    http://example.com/robots.txt
-# Ignored: http://example.com/site/robots.txt
-#
-# For more information about the robots.txt standard, see:
-# http://www.robotstxt.org/robotstxt.html
 
 User-agent: *
 Allow: /$
@@ -21,16 +27,17 @@ Allow: /resume/
 Allow: /cv/
 Allow: /about/
 Allow: /contact/
-Allow: /apple-touch-icon.png
-Allow: /browserconfig.xml
-Allow: /favicon.ico
-Allow: /security.txt
 Disallow: /_data/
 Disallow: /_includes/
 Disallow: /_layouts/
 Disallow: /_posts/
 Disallow: /assets/
 Disallow: /pages/
+Disallow: /mobile/
+Disallow: /apple-touch-icon.png
+Disallow: /browserconfig.xml
+Disallow: /favicon.ico
+Disallow: /security.txt
 Disallow: /CNAME
 Disallow: /gemfile
 Disallow: /LICENSE.md
