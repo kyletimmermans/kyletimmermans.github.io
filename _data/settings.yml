@@ -16,13 +16,13 @@ menu:
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
-- {icon: 'linkedin', link: 'https://www.linkedin.com/in/kyle-timmermans/'}
-- {icon: 'envelope', link: 'mailto:kyle@kyles.world'}
-- {icon: 'github', link: 'https://github.com/kyletimmermans'}
-- {icon: 'twitter', link: 'https://twitter.com/kyletimmermans'}
-- {icon: 'instagram', link: 'https://instagram.com/kyle_timmermans'}
-- {icon: 'youtube-play', link: 'https://www.youtube.com/@TheXeXKyle'}
-- {icon: 'stack-overflow', link: 'https://stackoverflow.com/users/11200327/kyle?tab=profile'}
+- {icon: 'fa-solid fa-envelope', link: 'mailto:kyle@kyles.world'}
+- {icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/kyle-timmermans/'}
+- {icon: 'fa-brands fa-github', link: 'https://github.com/kyletimmermans'}
+- {icon: 'fa-brands fa-twitter', link: 'https://twitter.com/kyletimmermans'}
+- {icon: 'fa-brands fa-instagram', link: 'https://instagram.com/kyle_timmermans'}
+- {icon: 'fa-brands fa-youtube', link: 'https://www.youtube.com/@TheXeXKyle'}
+- {icon: 'fa-brands fa-discord', link: 'https://discord.com/users/194488028863922176'}
 
 # - {icon: 'rss-square', link: 'rss-feed.xml'}
 
