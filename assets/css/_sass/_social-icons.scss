@@ -5,7 +5,7 @@ $instagram-color: #d62f85;
 $github-color: #238636;
 $linkedin-color: #0073a4;
 $youtube-play-color: #ff0000;
-$stack-overflow-color: #f47f24;
+$discord-color: #737cf8;
 
 @mixin social-media-icon($color, $transition){
   -webkit-transition: $transition;
@@ -48,7 +48,7 @@ $stack-overflow-color: #f47f24;
   @include social-media-icon($youtube-play-color, $icon-transition-time);
 }
 
-.fa-stack-overflow {
+.fa-discord {
   padding: 5px;
-  @include social-media-icon($stack-overflow-color, $icon-transition-time);
+  @include social-media-icon($discord-color, $icon-transition-time);
 }
