@@ -69,4 +69,8 @@
 
 <div>&ensp;</div>
 <div>&ensp;-https://realfavicongenerator.net/favicon_checker?protocol=https&site=www.kyles.world</div>
-<div>&ensp;</div>  
+<div>&ensp;</div>
+
+<div>&ensp;</div>
+<div>&ensp;-Homepages, desktop and mobile, must have their code in _layouts</div>
+<div>&ensp;</div>
