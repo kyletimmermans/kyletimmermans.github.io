@@ -25,6 +25,12 @@ title: About
 		transform: translateY(-53px);
 	}
 }
+
+@media screen and (min-width: 2000px), screen and (min-height: 1100px) {
+	article {
+		font-size: 1vw;
+	}
+}
 </style>
 
 <label class="language-switcher">
