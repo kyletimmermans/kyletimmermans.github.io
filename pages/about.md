@@ -10,7 +10,7 @@ title: About
 ---
 
 <style>
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1001px) {
 	.language-switcher {	
 		float: right;
 		margin-right: -200px; 
@@ -26,7 +26,7 @@ title: About
 	}
 }
 
-@media screen and (min-width: 2000px), screen and (min-height: 1100px) {
+@media screen and (min-width: 2000px), screen and (min-height: 1200px) {
 	article {
 		font-size: 1vw;
 	}
