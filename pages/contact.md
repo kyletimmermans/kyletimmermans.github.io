@@ -10,7 +10,7 @@ title: Contact
 ---
 
 <style>
-@media screen and (min-width: 2000px), screen and (min-height: 1100px) {
+@media screen and (min-width: 2000px), screen and (min-height: 1200px) {
 	article {
 		font-size: 1vw;
 	}
