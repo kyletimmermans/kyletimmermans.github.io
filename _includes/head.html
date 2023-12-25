@@ -2,9 +2,9 @@
 
   <title>
     {% if page.title == "Kyle's World" or page.title == "404: Delicious Disappearance" %}
-      {{ page.title }}
+      {{ page.title | strip }}
     {% else %}
-      {{ page.title }} | {{ site.title }}
+      {{ page.title | strip }} | {{ site.title | strip }}
     {% endif %}
   </title>
   
