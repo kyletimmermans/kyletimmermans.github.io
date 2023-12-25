@@ -74,3 +74,7 @@
 <div>&ensp;</div>
 <div>&ensp;-Homepages, desktop and mobile, must have their code in _layouts</div>
 <div>&ensp;</div>
+
+<div>&ensp;</div>
+<div>&ensp;-GH Pages Jekyll Dependency Versions: https://pages.github.com/versions/</div>
+<div>&ensp;</div>
