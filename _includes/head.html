@@ -1,11 +1,11 @@
 <head>
 
   <title>
-    {% if page.title == "Kyle&#39;s World" or page.title == "404: Delicious Disappearance" %}
-      {{ page.title | strip }}
-    {% else %}
-      {{ page.title | strip }} | {{ site.title | strip }}
-    {% endif %}
+    {% if page.title == "Kyle&#39;s World" or page.title == "404: Delicious Disappearance" -%}
+      {{ page.title }}
+    {%- else -%}
+      {{ page.title }} | {{ site.title }}
+    {%- endif %}
   </title>
   
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
