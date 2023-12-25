@@ -19,7 +19,7 @@ sass:
   style: :nested
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title: "Kyle's World"
+title: "Kyle&#39;s World"
 description: "Not used"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
