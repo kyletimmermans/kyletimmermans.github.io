@@ -1,8 +1,8 @@
 <head>
 
   <title>
-    {% if page.title == "Home" %}
-      {{ site.title }}
+    {% if page.title == "Kyle's World" or page.title == "404: Delicious Disappearance" %}
+      {{ page.title }}
     {% else %}
       {{ page.title }} | {{ site.title }}
     {% endif %}
