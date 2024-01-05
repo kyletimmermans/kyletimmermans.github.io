@@ -47,11 +47,11 @@ if (isMobile) {
     }
   } 
   
-  main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + content + '</div>' + footer + '{{ 'now' | date: "%Y" }}');
+  main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + content + '</div>' + footer);
 } 
   
 if (!isMobile) {
-  main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + content + '</div>' + footer + '{{ 'now' | date: "%m" }}');
+  main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + content + '</div>' + footer);
 }
 </script>
 
