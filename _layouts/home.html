@@ -13,7 +13,7 @@ window.mobileCheck = function() {
   return check;
 };
     
-if (window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
+if (window.mobileCheck()) {   /* Redirect to mobile homepage if "check == true"  */
     window.location.replace("/mobile");
 }
 
@@ -88,7 +88,7 @@ console.error = function() {
         transform: translate3d(0,0,0);
     }
 
-    /*solves problem with overflowing video in Mac with Chrome */
+    /* Solves problem with overflowing video in Mac with Chrome */
     #section0{
         overflow: hidden;
     }
@@ -201,14 +201,14 @@ console.error = function() {
         verticalCentered: true,
         sectionsColor: ['#FFFFFF', '#FFFFFF'],
         onLeave: function(index, nextIndex, direction){
-            // Scroll down, make header into black text on white background
-            // Scroll up, make header text white
+            /* Scroll down, make header into black text on white background */
+            /* Scroll up, make header text white */
             if (direction == "down") {
                 setTimeout(function() {
                     document.getElementById("header").classList.remove("container-3"); 
                     document.getElementById("header").classList.add("container-4");
-                }, 500)  // Goldilocks timing, down needs time for shift (more distance down than up)
-            } else {  // if not down, then "up"
+                }, 500)  /* Goldilocks timing, down needs time for shift (more distance down than up) */
+            } else {  /* if not down, then "up" */
                 document.getElementById("header").classList.remove("container-4");
                 document.getElementById("header").classList.add("container-3");
 
@@ -216,35 +216,34 @@ console.error = function() {
         },
     });
 </script>
-<!------->
 
 <script>
-// Welcome text loop
+/* Welcome text loop */
 var messages = ["Welcome", "Добро пожаловать", "स्वागत", "환영", "ようこそ", "Bienvenue", "欢迎", "Willkommen", "خوش آمدید", "ברוך הבא", "Bienvenidos", "Dobrodošli", "Fáilte", "Benvenuto"]; 
-var i = 0; // Start at 0 bc increment comes first
-// Recursively increment and go through array and each time use setTimeout to delay, just keep going back to last two conditions after this runs once
+var i = 0; /* Start at 0 bc increment comes first */
+/* Recursively increment and go through array and each time use setTimeout to delay, just keep going back to last two conditions after this runs once */
 function welcome() {
- if (i == 0) {  // First word shouldn't be delayed, it should already be present, only start delaying after the first welcome for the effect
+ if (i == 0) {  /* First word shouldn't be delayed, it should already be present, only start delaying after the first welcome for the effect */
    document.getElementById("p3").innerHTML = messages[i];
-   i++;  // No need for delay on this one as the next element will already have a delay in front of it anyways
+   i++;  /* No need for delay on this one as the next element will already have a delay in front of it anyways */
    welcome(); // Recurse
- } else {  // Now we can start using the delay because the first welcome was printed without delay before it
+ } else {  /* Now we can start using the delay because the first welcome was printed without delay before it */
    setTimeout(function() {
      document.getElementById("p3").innerHTML = messages[i];
      i++;
-     if (i == messages.length) {  // If at last element, do the last and then set i back to 0 for infinite loop. Never going back up to i==0 condition and loops here
-       welcome(); // Do last element
-       i = 0;  // Then reset back to beginning of for-loop
-     } else if (i < messages.length) {  // If not last element, print normally, don't reset for-loop yet
-       welcome(); // Run again recursively with the next increment
+     if (i == messages.length) {  /* If at last element, do the last and then set i back to 0 for infinite loop. Never going back up to i==0 condition and loops here */
+       welcome(); /* Do last element */
+       i = 0;  /* Then reset back to beginning of for-loop */
+     } else if (i < messages.length) {  /* If not last element, print normally, don't reset for-loop yet */
+       welcome(); /* Run again recursively with the next increment */
      }
    }, 1000)
  }
 }
 
-welcome(); // Call welcome func
+welcome(); /* Call welcome func */
 
-// ???
+/* ??? */
 console.info("/rnfgrertt/");
 </script>
  
