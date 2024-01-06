@@ -20,83 +20,41 @@ var isMobile = window.mobileCheck();
 <!-- Main -->
 <div id="main-div" class="container">
 </div>
-  
+
 <script>
+// https://stackoverflow.com/a/69190644
+function executeScriptElements(containerElement) {
+  const scriptElements = containerElement.querySelectorAll("script");
+
+  Array.from(scriptElements).forEach((scriptElement) => {
+    const clonedElement = document.createElement("script");
+
+    Array.from(scriptElement.attributes).forEach((attribute) => {
+      clonedElement.setAttribute(attribute.name, attribute.value);
+    });
+    
+    clonedElement.text = scriptElement.text;
+
+    scriptElement.parentNode.replaceChild(clonedElement, scriptElement);
+  });
+}
+
 // Essentially we are chosing which header to display depending if it's mobile or not
-// Mobile header needs to be added manually
 var main = document.getElementById('main-div');
 
-var mobileheader = '<header class="site-header-3"><h3 class="site-title-3"> <a href="{{ site.github.url }}/">Kyle Timmermans</a></h3> <nav class="menu-list-3"> {% for item in site.data.settings.menu %} <a href="{{ site.github.url }}/{{ item.name | downcase }}" class="menu-link-3">{{ item.name }}</a> {% endfor %} </nav><div class="dropdown-3"> <button onclick="revealDropdown()" id="special-button" class="dropbtn-3"><i class="fa-solid fa-bars" aria-hidden="true"></i></button><div id="special-div" class="dropdown-content-3"> {% for item in site.data.settings.menu %} <a href="{{ site.github.url }}/{{ item.name | downcase }}" class="menu-link-3">{{ item.name }}</a> {% endfor %}</div></div></header>';                                                                      
-var header = '{% capture header %}{% include header.html %}{% endcapture %}{{ header | strip_newlines }}';
-var content = '{{ content | strip_newlines }}';
-var footer = '{% capture footer %}{% include footer.html %}{% endcapture %}{{ footer | strip_newlines }}';
-  
+var mobileheader = '{% include mobileheader.html %}';
+var header = '{% include header.html %}';
+var content = '{{ content }}';
+var footer = '{% include footer.html %}';
+
 if (isMobile) {
- 
- // Able to click on dropdown to close and open as well, don't stay open and not be able to close on a 2nd click of the same button
- function revealDropdown() {
-   var x = document.getElementById("special-div");  // Dropdown content
-   var y = document.getElementById("special-button");  // Dropdown button
-   if (x.style.display === "none" || x.style.display === "") {  
-     x.style.display = "block";
-     x.style.top = "100%"; 
-     y.style.backgroundColor = "#f1f1f1";
-    } else { 
-     x.style.display = "none";
-     y.style.backgroundColor = "white";
-    }
-  } 
-  
   main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + content + '</div>' + footer);
-} 
-  
-if (!isMobile) {
+} else {
   main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + content + '</div>' + footer);
 }
-</script>
 
-
-<script>
-if (isMobile) {
-    
-    // Check for click on dropdown menu, if clicked outside, close menu
-    window.onload = function() {   // Wait for window to load so we don't return null values
-      
-      // For Resume and CV page, if mobile, just open in new tab
-      var myURL = window.location.href;
-      if (/resume/i.test(myURL)) {
-        window.location.replace("/assets/KyleTimmermansResume.pdf"); // Open PDF resume in new tab
-      }
-      
-      if (/\bCV\b/i.test(myURL)) {
-        window.location.replace("/assets/KyleTimmermansCV.pdf"); // Open PDF CV in new tab
-      }
-  
-      var x = document.getElementById("special-div");  // Dropdown content
-      var y = document.getElementById("special-button");  // Dropdown button
-      
-      var specifiedElement1 = document.getElementsByClassName('dropdown-content-3')[0];
-      var specifiedElement2 = document.getElementsByClassName('dropdown-3')[0];
-      var specifiedElement3 = document.getElementsByClassName('dropbtn-3')[0];
-      var specifiedElement4 = document.getElementsByClassName('menu-list-3')[0];
-      var specifiedElement5 = document.getElementsByClassName('menu-link-3')[0];
-      var specifiedElement6 = document.getElementsByClassName('fa fa-bars')[0];
-
-      document.addEventListener('click', function(event) {   
-          var isClicked1 = specifiedElement1.contains(event.target);
-          var isClicked2 = specifiedElement2.contains(event.target);
-          var isClicked3 = specifiedElement3.contains(event.target);
-          var isClicked4 = specifiedElement4.contains(event.target);
-          var isClicked5 = specifiedElement5.contains(event.target);
-          var isClicked6 = specifiedElement6.contains(event.target);
-
-          if (!isClicked1 && !isClicked2 && !isClicked3 && !isClicked4 && !isClicked5 && !isClicked6) {  // If clicked outside, close menu (All must be not clicked to ensure-
-              x.style.display = "none";                                                                  // -that it is nothing in the menu
-              y.style.backgroundColor = "white";                                                       
-          }
-      });
-    };
-}
+// Make inserted JavaScript code executable
+executeScriptElements(document.getElementsByTagName("body")[0]);
 </script>
 
 </body>
