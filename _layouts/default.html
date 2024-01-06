@@ -22,7 +22,7 @@ var isMobile = window.mobileCheck();
 </div>
 
 <script>
-// https://stackoverflow.com/a/69190644
+/* https://stackoverflow.com/a/69190644 */
 function executeScriptElements(containerElement) {
   const scriptElements = containerElement.querySelectorAll("script");
 
@@ -39,13 +39,13 @@ function executeScriptElements(containerElement) {
   });
 }
 
-// Essentially we are chosing which header to display depending if it's mobile or not
+/* Essentially we are chosing which header to display depending if it's mobile or not */
 var main = document.getElementById('main-div');
 
-var mobileheader = '{% include mobileheader.html %}';
-var header = '{% include header.html %}';
-var content = '{{ content }}';
-var footer = '{% include footer.html %}';
+var mobileheader = '{% include mobileheader.html | strip_newlines %}';
+var header = '{% include header.html | strip_newlines %}';
+var content = '{{ content | strip_newlines }}';
+var footer = '{% include footer.html | strip_newlines %}';
 
 if (isMobile) {
   main.insertAdjacentHTML('beforeend', mobileheader + '<div class="posts-wrapper">' + content + '</div>' + footer);
@@ -53,7 +53,7 @@ if (isMobile) {
   main.insertAdjacentHTML('beforeend', header + '<div class="posts-wrapper">' + content + '</div>' + footer);
 }
 
-// Make inserted JavaScript code executable
+/* Make inserted JavaScript code executable */
 executeScriptElements(document.getElementsByTagName("body")[0]);
 </script>
 
