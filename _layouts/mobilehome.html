@@ -59,35 +59,10 @@ if (!window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
 </style>
     
 <body>
-    
+
+{% include mobilejs.html %}
+
 <script>
-// Check for click on dropdown menu, if clicked outside, close menu
-window.onload = function() {   // Wait for window to load so we don't return null values
-  var specifiedElement1 = document.getElementsByClassName('dropdown-content-3')[0];
-  var specifiedElement2 = document.getElementsByClassName('dropdown-3')[0];
-  var specifiedElement3 = document.getElementsByClassName('dropbtn-3')[0];
-  var specifiedElement4 = document.getElementsByClassName('menu-list-3')[0];
-  var specifiedElement5 = document.getElementsByClassName('menu-link-3')[0];
-  var specifiedElement6 = document.getElementsByClassName('fa-solid fa-bars')[0];
-
-  var x = document.getElementById("special-div");  // Dropdown content
-  var y = document.getElementById("special-button");  // Dropdown button
-  
-  document.addEventListener('click', function(event) {   
-    var isClicked1 = specifiedElement1.contains(event.target);
-    var isClicked2 = specifiedElement2.contains(event.target);
-    var isClicked3 = specifiedElement3.contains(event.target);
-    var isClicked4 = specifiedElement4.contains(event.target);
-    var isClicked5 = specifiedElement5.contains(event.target);
-    var isClicked6 = specifiedElement6.contains(event.target);
-
-    if (!isClicked1 && !isClicked2 && !isClicked3 && !isClicked4 && !isClicked5 && !isClicked6) {  // If clicked outside, close menu
-        x.style.display = "none";
-        y.style.backgroundColor = "white";
-    }
-  });
-};
-
 // ???
 console.info("/rnfgrertt/");
 </script>
@@ -100,9 +75,9 @@ console.info("/rnfgrertt/");
 </div>
 
 <div id="center1"><h1 class="glitch" data-text="Enjoy">Enjoy</h1><div>
-<br/>
+<br>
 <div id="center2"><h1 class="glitch" data-text="your">your</h1><div>
-<br/>
+<br>
 <div id="center3"><h1 class="glitch" data-text="stay!">stay!</h1><div>
 
 <div id="center4" class="container"> {% include footer.html %} </div> 
