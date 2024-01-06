@@ -9,6 +9,8 @@ layout: misc
 title: About
 ---
 
+<script>alert(0);</script>
+
 <style>
 @media screen and (min-width: 1001px) {
 	.language-switcher {	
