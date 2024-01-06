@@ -1,15 +1,15 @@
 <script>
-// Wait for window to load so we don't return null values
+/* Wait for window to load so we don't return null values */
 window.onload = function() {
   
-  // Mobile Firefox sometimes doesn't start at the top of the page
+  /* Mobile Firefox sometimes doesn't start at the top of the page */
 	if (indexOf("Firefox") != -1 || indexOf("FxiOS") != -1) {
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
-  // Check for click on dropdown menu, if clicked outside, close menu
-  var x = document.getElementById("special-div");  // Dropdown content
-  var y = document.getElementById("special-button");  // Dropdown button
+  /* Check for click on dropdown menu, if clicked outside, close menu */
+  var x = document.getElementById("special-div");  /* Dropdown content */
+  var y = document.getElementById("special-button");  /* Dropdown button */
   
   var specifiedElement1 = document.getElementsByClassName('dropdown-content-3')[0];
   var specifiedElement2 = document.getElementsByClassName('dropdown-3')[0];
@@ -26,8 +26,7 @@ window.onload = function() {
       var isClicked5 = specifiedElement5.contains(event.target);
       var isClicked6 = specifiedElement6.contains(event.target);
 
-      // If clicked outside, close menu (All must be not clicked to ensure-
-      // -that it is nothing in the menu
+      /* If clicked outside, close menu (All must be not clicked to ensure that it is nothing in the menu */
       if (!isClicked1 && !isClicked2 && !isClicked3 && !isClicked4 && !isClicked5 && !isClicked6) {
           x.style.display = "none";
           y.style.backgroundColor = "white";
