@@ -11,6 +11,10 @@ if (window.mobileCheck()) {
     document.querySelector('.dropdown .dropdown-content').style.display = '';
     document.querySelector('.dropdown .dropbtn').style.backgroundColor = '';
 
+    // Check for click on dropdown menu, if clicked outside, close menu
+    var x = document.getElementById("special-div"); // Dropdown content
+    var y = document.getElementById("special-button"); //Dropdown button
+
     // Better mobile dropwdown
     function revealDropdown() {
         if (x.style.display === "none" || x.style.display === "") {
@@ -29,15 +33,11 @@ if (window.mobileCheck()) {
         revealDropdown();
     };
 
-    // Check for click on dropdown menu, if clicked outside, close menu
-    var x = document.getElementById("special-div"); // Dropdown content
-    var y = document.getElementById("special-button"); //Dropdown button
-
-    var specifiedElement1 = document.getElementsByClassName('dropdown-content-3')[0];
-    var specifiedElement2 = document.getElementsByClassName('dropdown-3')[0];
-    var specifiedElement3 = document.getElementsByClassName('dropbtn-3')[0];
-    var specifiedElement4 = document.getElementsByClassName('menu-list-3')[0];
-    var specifiedElement5 = document.getElementsByClassName('menu-link-3')[0];
+    var specifiedElement1 = document.getElementsByClassName('dropdown-content')[0];
+    var specifiedElement2 = document.getElementsByClassName('dropdown')[0];
+    var specifiedElement3 = document.getElementsByClassName('dropbtn')[0];
+    var specifiedElement4 = document.getElementsByClassName('menu-list')[0];
+    var specifiedElement5 = document.getElementsByClassName('menu-link')[0];
     var specifiedElement6 = document.getElementsByClassName('fa fa-bars')[0];
 
     document.addEventListener('click', function(event) {
