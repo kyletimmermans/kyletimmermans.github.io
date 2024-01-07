@@ -7,38 +7,24 @@ if (window.mobileCheck()) {
         if (navigator.userAgent.indexOf("Firefox") != -1 || navigator.userAgent.indexOf("FxiOS") != -1) {
             document.body.scrollTop = document.documentElement.scrollTop = 0;
         }
-    
-        // Check for click on dropdown menu, if clicked outside, close menu
-        var x = document.getElementById("special-div"); // Dropdown content
-        var y = document.getElementById("special-button"); //Dropdown button
 
-        var toggle = 0;
-    
-        // Better mobile dropwdown
-        function revealDropdown() {
-            if (toggle == 0) {
-                x.style.display = "block";
-                x.style.top = "100%";
-                y.style.backgroundColor = "#f1f1f1";
-                toggle = 1;
-            } else {
-                x.style.display = "none";
-                y.style.backgroundColor = "white";
-                toggle = 0;
+        document.addEventListener('DOMContentLoaded', function () {
+          // Get the dropdown button and the dropdown content
+          var dropdownButton = document.querySelector('.dropbtn');
+          var dropdownContent = document.querySelector('.dropdown-content');
+        
+          // Toggle the dropdown visibility when the button is clicked
+          dropdownButton.addEventListener('click', function () {
+            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+          });
+        
+          // Close the dropdown when clicking anywhere else on the website
+          document.addEventListener('click', function (event) {
+            if (!event.target.matches('.dropbtn')) {
+              dropdownContent.style.display = 'none';
             }
-        }
-    
-        // Mobile onclick event added to dropdown menu 
-        var menuButton = document.getElementById('special-button');
-        menuButton.addEventListener('click', revealDropdown);
-
-        window.onclick = function(event) {
-          if (!event.target.matches('.special-button')) {
-                x.style.display = "none";
-                y.style.backgroundColor = "white";
-                toggle = 0;
-          }
-        }
+          });
+        });
     };
 }
 </script>
