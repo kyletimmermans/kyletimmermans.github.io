@@ -91,13 +91,4 @@
   .dropdown:hover .dropbtn {
       background-color: #f1f1f1;
   }
-  .dropdown input[type="checkbox"] {
-    display: none;
-  }
-  .dropdown input[type="checkbox"]:checked + .dropdown-content {
-    display: block;
-  }
-  body:not(.dropdown:hover) .dropdown input[type="checkbox"]:checked + .dropdown-content {
-    display: none;
-  }
 }
