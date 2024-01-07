@@ -8,23 +8,22 @@ if (window.mobileCheck()) {
             document.body.scrollTop = document.documentElement.scrollTop = 0;
         }
 
-        document.addEventListener('DOMContentLoaded', function () {
-          // Get the dropdown button and the dropdown content
-          var dropdownButton = document.querySelector('.dropbtn');
-          var dropdownContent = document.querySelector('.dropdown-content');
-        
-          // Toggle the dropdown visibility when the button is clicked
-          dropdownButton.addEventListener('click', function () {
-            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
-          });
-        
-          // Close the dropdown when clicking anywhere else on the website
-          document.addEventListener('click', function (event) {
-            if (!event.target.matches('.dropbtn')) {
-              dropdownContent.style.display = 'none';
+        // Dropdown menu open/close toggling
+        function dropdownToggle() {
+            alert(1);
+        }
+
+        // Hook into button click
+        var menuButton = document.getElementById('special-button');
+        menuButton.addEventListener('click', dropdownToggle);
+
+        // If clicked anywhere besides the button, close
+        window.onclick = function(event) {
+            if (!event.target.matches('special-button')) {
+                alert(2);
             }
-          });
-        });
+        }
+
     };
 }
 </script>
