@@ -15,8 +15,13 @@ if (window.mobileCheck()) {
 
         if (isClicked) {
             var x = document.getElementsByClassName('dropdown-content')[0];
+            var y = document.getElementsByClassName('dropdown')[0];
             if (window.getComputedStyle(x).display === "block") {
                 x.style.display = "none";
+                y.style.backgroundColor = "white";
+            } else if (window.getComputedStyle(x).display === "none" || window.getComputedStyle(x).display === "") {
+                x.style.display = "block";
+                y.style.backgroundColor = "#f1f1f1";
             }
         }
     });
