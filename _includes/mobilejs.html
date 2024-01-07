@@ -7,29 +7,6 @@ if (window.mobileCheck()) {
         if (navigator.userAgent.indexOf("Firefox") != -1 || navigator.userAgent.indexOf("FxiOS") != -1) {
             document.body.scrollTop = document.documentElement.scrollTop = 0;
         }
-
-        // Dropdown menu open/close toggling
-        function dropdownToggle() {
-            alert(1);
-            let x = getElementsByClassName("dropdown-content")[0];
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            // Hook into button click
-            var dropdown = document.getElementsByClassName('dropbtn')[0];
-            dropdown.addEventListener('click', dropdownToggle);
-    
-            // If clicked anywhere besides the button, close
-            window.onclick = function(event) {
-                if (!event.target.matches('.dropbtn')) {
-                    dropdownToggle()
-                }
-            }
-        });
-
     };
 }
 </script>
