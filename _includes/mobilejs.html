@@ -7,28 +7,58 @@ if (window.mobileCheck()) {
         if (navigator.userAgent.indexOf("Firefox") != -1 || navigator.userAgent.indexOf("FxiOS") != -1) {
             document.body.scrollTop = document.documentElement.scrollTop = 0;
         }
+    
+        // Remove the desktop CSS which would break the mobile look
+        document.querySelectorAll('.dropdown-content a').forEach(link => link.style.backgroundColor = '');
+        document.querySelector('.dropdown .dropdown-content').style.display = '';
+        document.querySelector('.dropdown .dropbtn').style.backgroundColor = '';
+    
+        // Check for click on dropdown menu, if clicked outside, close menu
+        var x = document.getElementById("special-div"); // Dropdown content
+        var y = document.getElementById("special-button"); //Dropdown button
 
-        var dropbtn = document.getElementsByClassName('dropbtn')[0];
-
-        function reveal() {
-            dropbtn.classList.toggle("show");
-        }
-
-        dropbtn.addEventListener('click', reveal);
-
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
+        var toggle = 0;
+    
+        // Better mobile dropwdown
+        function revealDropdown() {
+            if (toggle == 0) {
+                x.style.display = "block";
+                x.style.top = "100%";
+                y.style.backgroundColor = "#f1f1f1";
+                toggle = 1;
+            } else {
+                x.style.display = "none";
+                y.style.backgroundColor = "white";
+                toggle = 0;
             }
-          }
         }
-        
+    
+        // Mobile onclick event added to dropdown menu 
+        var menuButton = document.getElementById('special-button');
+        menuButton.addEventListener('click', revealDropdown);
+    
+        var specifiedElement1 = document.getElementsByClassName('dropdown-content')[0];
+        var specifiedElement2 = document.getElementsByClassName('dropdown')[0];
+        var specifiedElement3 = document.getElementsByClassName('dropbtn')[0];
+        var specifiedElement4 = document.getElementsByClassName('menu-list')[0];
+        var specifiedElement5 = document.getElementsByClassName('menu-link')[0];
+        var specifiedElement6 = document.getElementsByClassName('fa fa-bars')[0];
+    
+        document.addEventListener('click', function(event) {
+            var isClicked1 = specifiedElement1.contains(event.target);
+            var isClicked2 = specifiedElement2.contains(event.target);
+            var isClicked3 = specifiedElement3.contains(event.target);
+            var isClicked4 = specifiedElement4.contains(event.target);
+            var isClicked5 = specifiedElement5.contains(event.target);
+            var isClicked6 = specifiedElement6.contains(event.target);
+    
+            // If clicked outside, close menu (All must be not clicked to ensure that it is nothing in the menu
+            if (!isClicked1 && !isClicked2 && !isClicked3 && !isClicked4 && !isClicked5 && !isClicked6) {
+                x.style.display = "none";
+                y.style.backgroundColor = "white";
+                toggle = 0;
+            }
+        });
     };
 }
 </script>
