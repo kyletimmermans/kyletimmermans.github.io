@@ -10,17 +10,18 @@ if (window.mobileCheck()) {
 
         // Dropdown menu open/close toggling
         function dropdownToggle() {
-            alert(1);
+            var dropdownContent = dropdown.querySelector('.dropdown-content');
+            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
         }
 
         // Hook into button click
-        var menuButton = document.getElementById('special-button');
-        menuButton.addEventListener('click', dropdownToggle);
+        var dropdown = document.getElementsByClassName('dropdown')[0];
+        dropdown.addEventListener('click', dropdownToggle);
 
         // If clicked anywhere besides the button, close
         window.onclick = function(event) {
-            if (!event.target.matches('special-button')) {
-                alert(2);
+            if (!event.target.matches('.dropdown')) {
+                dropdownToggle();
             }
         }
 
