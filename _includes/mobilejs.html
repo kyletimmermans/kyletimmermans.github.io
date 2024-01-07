@@ -30,10 +30,8 @@ if (window.mobileCheck()) {
         }
     
         // Mobile onclick event added to dropdown menu 
-        var myButton = document.getElementById('special-button');
-        myButton.onclick = function() {
-            revealDropdown();
-        };
+        var menuButton = document.getElementById('special-button');
+        menuButton.addEventListener('click', revealDropdown);
     
         var specifiedElement1 = document.getElementsByClassName('dropdown-content')[0];
         var specifiedElement2 = document.getElementsByClassName('dropdown')[0];
