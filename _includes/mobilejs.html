@@ -10,8 +10,7 @@ if (window.mobileCheck()) {
 
         // Dropdown menu open/close toggling
         function dropdownToggle() {
-            var dropdownContent = dropdown.querySelector('.dropdown-content');
-            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+            console.log(1);
         }
 
         // Hook into button click
@@ -21,7 +20,7 @@ if (window.mobileCheck()) {
         // If clicked anywhere besides the button, close
         window.onclick = function(event) {
             if (!event.target.matches('.dropbtn')) {
-                dropdownToggle();
+                console.log(2);
             }
         }
 
