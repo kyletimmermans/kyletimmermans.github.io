@@ -14,9 +14,8 @@ if (window.mobileCheck()) {
         var isClicked = dropdown.contains(event.target);
 
         if (isClicked) {
-            alert(1);
             var x = document.getElementsByClassName('dropdown-content')[0];
-            if (x.style.display === "block") {
+            if (window.getComputedStyle(x).display === "block") {
                 x.style.display = "none";
             }
         }
