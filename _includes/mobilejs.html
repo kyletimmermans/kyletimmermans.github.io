@@ -1,8 +1,6 @@
 <script>
 if (window.mobileCheck()) {
 
-    alert(1);
-
     // Mobile Firefox sometimes doesn't start at the top of the page
     if (navigator.userAgent.indexOf("Firefox") != -1 || navigator.userAgent.indexOf("FxiOS") != -1) {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
