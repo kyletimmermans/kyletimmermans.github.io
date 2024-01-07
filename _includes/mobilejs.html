@@ -10,17 +10,22 @@ if (window.mobileCheck()) {
 
         // Dropdown menu open/close toggling
         function dropdownToggle() {
-            alert(1);
+            let x = getElementsByClassName("dropdown-content")[0];
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else if (x.style.display === "block") {
+                x.style.display = "none";
+            }
         }
 
         // Hook into button click
-        var dropdown = document.getElementsByClassName('dropwdown')[0];
+        var dropdown = document.getElementsByClassName('dropbtn')[0];
         dropdown.addEventListener('click', dropdownToggle);
 
         // If clicked anywhere besides the button, close
         window.onclick = function(event) {
-            if (!event.target.matches('.dropdown')) {
-                //console.log(2);
+            if (!event.target.matches('.dropbtn')) {
+                dropdownToggle()
             }
         }
 
