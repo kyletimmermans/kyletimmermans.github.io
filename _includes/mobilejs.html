@@ -8,5 +8,12 @@ if (window.mobileCheck()) {
             document.body.scrollTop = document.documentElement.scrollTop = 0;
         }
     };
+
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector('.dropbtn').addEventListener('click', function() {
+            var dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        });
+     });
 }
 </script>
