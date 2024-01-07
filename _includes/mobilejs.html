@@ -14,13 +14,13 @@ if (window.mobileCheck()) {
         }
 
         // Hook into button click
-        var dropdown = document.getElementsByClassName('dropbtn')[0];
+        var dropdown = document.getElementsByClassName('dropwdown')[0];
         dropdown.addEventListener('click', dropdownToggle);
 
         // If clicked anywhere besides the button, close
         window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                console.log(2);
+            if (!event.target.matches('.dropdown')) {
+                //console.log(2);
             }
         }
 
