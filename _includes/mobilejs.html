@@ -11,6 +11,7 @@ if (window.mobileCheck()) {
 
     document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('.dropbtn').addEventListener('click', function() {
+            alert(1);
             var dropdownContent = document.querySelector('.dropdown-content');
             dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
         });
