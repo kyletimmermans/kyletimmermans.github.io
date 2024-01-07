@@ -18,16 +18,18 @@ if (window.mobileCheck()) {
             }
         }
 
-        // Hook into button click
-        var dropdown = document.getElementsByClassName('dropbtn')[0];
-        dropdown.addEventListener('click', dropdownToggle);
-
-        // If clicked anywhere besides the button, close
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                dropdownToggle()
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hook into button click
+            var dropdown = document.getElementsByClassName('dropbtn')[0];
+            dropdown.addEventListener('click', dropdownToggle);
+    
+            // If clicked anywhere besides the button, close
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    dropdownToggle()
+                }
             }
-        }
+        });
 
     };
 }
