@@ -78,5 +78,3 @@
 <div>&ensp;</div>
 <div>&ensp;-GH Pages Jekyll Dependency Versions: https://pages.github.com/versions/</div>
 <div>&ensp;</div>
-
-### Every JavaScript line must use /\* \*/ and not //, because when it is pulled in by default.html, all of the newlines are stripped, and the // comment doesn't know where to end and it just ends up commenting everything out, but the /\* \*/ knows where to start and stop
