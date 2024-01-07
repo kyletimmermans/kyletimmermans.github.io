@@ -9,11 +9,10 @@ if (window.mobileCheck()) {
         }
     };
 
-    document.addEventListener("DOMContentLoaded", function() {
-        document.querySelector('.dropbtn').addEventListener('click', function() {
-            var dropdownContent = document.querySelector('.dropdown-content');
-            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
-        });
-     });
+    window.onclick = function(event) {
+      if (event.target.matches('.dropbtn')) {
+          alert(1);
+      }
+    }
 }
 </script>
