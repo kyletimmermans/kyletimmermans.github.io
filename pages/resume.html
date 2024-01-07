@@ -12,7 +12,7 @@ title: Resume
 <script>
 /* If mobile, show the raw PDF */
 window.onload = function() { 
-  if (isMobile) {
+  if (window.mobileCheck()) {
     window.location.replace("/assets/KyleTimmermansResume.pdf");
   }
 };
