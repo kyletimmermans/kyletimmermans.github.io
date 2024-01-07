@@ -9,10 +9,13 @@ if (window.mobileCheck()) {
         }
     };
 
-    window.onclick = function(event) {
-      if (event.target.matches('.dropbtn')) {
-          alert(1);
-      }
-    }
+    document.addEventListener('click', function(event) {
+        var dropdown = document.getElementsByClassName('dropbtn')[0];
+        var isClicked = dropdown.contains(event.target);
+
+        if (isClicked) {
+            alert(1);
+        }
+    });
 }
 </script>
