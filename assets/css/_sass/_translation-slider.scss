@@ -3,7 +3,7 @@
 $deep-blue: #1e3470;
 $speed3: cubic-bezier(0.26, 0.48, 0.08, 0.9);
 
-$height: 64px;
+$height: 36px;
 
 .language-switcher {
   position: relative;
@@ -16,7 +16,6 @@ $height: 64px;
   -o-transform: translateY(40%);
   transform: translateY(40%);
 
-  // Closing Animation
   -webkit-transition: transform 0.17s $speed3;
   -moz-transition: transform 0.17s $speed3;
   -ms-transition: transform 0.17s $speed3;
