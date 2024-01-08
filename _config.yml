@@ -17,7 +17,3 @@ whitelist:
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title: "Kyle&#39;s World"
 description: "Not used"
-
-# RSS 2.0 can be used instead of Atom by uncommenting following two lines
-#feed:
-#  path: rss-feed.xml
