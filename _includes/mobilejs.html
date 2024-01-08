@@ -11,26 +11,28 @@ if (window.mobileCheck()) {
 
     document.addEventListener('DOMContentLoaded', function() {
 
+        // Remove default CSS for dropdown
         document.querySelector('.dropdown .dropdown-content').style.display = '';
         document.querySelector('.dropdown .dropbtn').style.backgroundColor = '';
         
         document.addEventListener('click', function(event) {
-            var dropdown = document.getElementsByClassName('dropbtn')[0];
-            var isClicked = dropdown.contains(event.target);
+            var dropdown = document.getElementsByClassName('dropdown')[0];
+            var dropbtn = document.getElementsByClassName('dropbtn')[0];
+            var dropdownContent = document.getElementsByClassName('dropdown-content')[0];
+
+            var isClicked = dropbtn.contains(event.target) || dropdown.contains(event.target);
     
             if (isClicked) {
-                var x = document.getElementsByClassName('dropdown-content')[0];
-                var y = document.getElementsByClassName('dropdown')[0];
-                if (window.getComputedStyle(x).display === "block") {
-                    x.style.display = "none";
-                    y.style.backgroundColor = "white";
-                } else if (window.getComputedStyle(x).display === "none" || window.getComputedStyle(x).display === "") {
-                    x.style.display = "block";
-                    y.style.backgroundColor = "#f1f1f1";
+                if (window.getComputedStyle(dropdownContent).display === "none" || window.getComputedStyle(dropdownContent).display === "") {
+                    dropdownContent.style.display = "block";
+                    dropbtn.style.backgroundColor = "#f1f1f1";
+                } else if (window.getComputedStyle(dropdownContent).display === "block") {
+                    dropdownContent.style.display = "none";
+                    dropbtn.style.backgroundColor = "white";
                 }
             } else {
-                x.style.display = "none";
-                y.style.backgroundColor = "white";
+                dropdownContent.style.display = "none";
+                dropbtn.style.backgroundColor = "white";
             }
         });
     });
