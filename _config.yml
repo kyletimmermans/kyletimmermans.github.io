@@ -14,10 +14,6 @@ gems:
 whitelist:
   - jekyll-redirect-from
 
-sass:
-  sass_dir: assets/css
-  style: :nested
-
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title: "Kyle&#39;s World"
 description: "Not used"
