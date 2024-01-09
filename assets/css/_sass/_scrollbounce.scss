@@ -1,0 +1,28 @@
+.scrollbounce {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 50%;
+  color: RGB(100, 251, 130);
+}
+
+.scrollbounce::before {
+  animation: bounce 4s ease infinite;
+  color: RGB(100, 251, 130);
+  content: '↓';
+  font-size: 4rem;
+  opacity: 0.8;
+}
+
+@keyframes bounce {
+  20%, 100% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
