@@ -78,3 +78,7 @@
 <div>&ensp;</div>
 <div>&ensp;-GH Pages Jekyll Dependency Versions: https://pages.github.com/versions/</div>
 <div>&ensp;</div>
+
+<div>&ensp;</div>
+<div>&ensp;-CVE gist can be copied as src js (default embed copy)</div>
+<div>&ensp;</div>
