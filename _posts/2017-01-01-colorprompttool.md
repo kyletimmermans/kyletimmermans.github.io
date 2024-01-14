@@ -6,5 +6,3 @@ link: https://www.github.com/kyletimmermans/zsh-color-prompt-tool
 tags: [ZshColorPromptTool]
 image: colorprompttool.png
 ---
-
-Zsh Color Prompt Tool
