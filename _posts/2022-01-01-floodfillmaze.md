@@ -6,5 +6,3 @@ link: https://www.github.com/kyletimmermans/FloodFillMaze
 tags: [floodfillmaze]
 image: Mazes.png
 ---
-
-Flood Fill Maze
