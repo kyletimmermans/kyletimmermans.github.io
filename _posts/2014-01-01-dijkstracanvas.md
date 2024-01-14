@@ -6,5 +6,3 @@ link: https://www.github.com/kyletimmermans/dijkstras-canvas
 tags: [DijkstrasCanvas]
 image: dijkstracanvas.png
 ---
-
-Dijkstra&#39;s Canvas
