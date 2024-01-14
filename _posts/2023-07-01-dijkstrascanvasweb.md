@@ -6,5 +6,3 @@ link: https://www.github.com/kyletimmermans/WebDijkstrasCanvas
 tags: [WebDijkstrasWeb]
 image: webdijkstracanvas.png
 ---
-
-Web Dijkstra&#39;s Canvas
