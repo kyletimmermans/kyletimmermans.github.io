@@ -6,5 +6,3 @@ link: https://www.github.com/kyletimmermans/kyles_mind
 tags: [kylesmind]
 image: lolcat_final.jpeg
 ---
-
-Kyle's Mind
