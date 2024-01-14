@@ -6,5 +6,3 @@ link: https://www.github.com/kyletimmermans/flashback
 tags: [flashback]
 image: flashback.png
 ---
-
-Flashback
