@@ -6,5 +6,3 @@ link: https://www.github.com/kyletimmermans/nypd-twitter-tool
 tags: [NYPDTwitterTool]
 image: nypdtwittertool.png
 ---
-
-Dijkstra's Canvas
