@@ -6,5 +6,3 @@ link: https://www.github.com/kyletimmermans/employee-directory-tool
 tags: [employeedirectorytool]
 image: overall1.png
 ---
-
-Employee Directory Tool
