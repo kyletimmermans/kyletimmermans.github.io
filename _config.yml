@@ -13,5 +13,6 @@ sass:
 
 title: "Kyle&#39;s World"
 
+# To make _videos iterable by the for loop in _pages/videos.html
 collections:
   - videos
