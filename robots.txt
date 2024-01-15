@@ -31,6 +31,7 @@ Disallow: /_data/
 Disallow: /_includes/
 Disallow: /_layouts/
 Disallow: /_posts/
+Disallow: /_videos/
 Disallow: /assets/
 Disallow: /pages/
 Disallow: /mobile/

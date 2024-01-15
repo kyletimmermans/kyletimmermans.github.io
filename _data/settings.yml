@@ -1,6 +1,7 @@
 menu:
 - {name: 'Projects', folder: 'pages', file: 'projects.html'}
 - {name: 'CVEs', folder: 'pages', file: 'cves.html'}
+- {name: 'Videos', folder: 'pages', file: 'videos.html'}
 - {name: 'Resume', folder: 'pages', file: 'resume.html'}
 - {name: 'CV', folder: 'pages', file: 'cv.html'}
 - {name: 'About', folder: 'pages', file: 'about.html'}
