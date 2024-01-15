@@ -42,9 +42,16 @@ if (window.mobileCheck()) {
         });
     });
 
-    // Fix glitch getting overlapped by the header on mobile landscape
+    /* Fix glitch getting overlapped by the header on mobile landscape */
+
+    // On start
+    if (screen.orientation == 90 || screen.orientation == -90) {
+    	document.getElementById('center1').style.paddingTop = '5%';
+    }
+
+    // On change
     window.addEventListener("orientationchange", function() {
-	    if (screen.orientation == 90 || screen.orientation == -90) {
+	if (screen.orientation == 90 || screen.orientation == -90) {
             document.getElementById('center1').style.paddingTop = '5%';
         } else {
             document.getElementById('center1').style.paddingTop = null;
