@@ -12,3 +12,6 @@ sass:
   style: :nested
 
 title: "Kyle&#39;s World"
+
+collections:
+  - videos
