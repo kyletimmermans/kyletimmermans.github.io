@@ -47,14 +47,17 @@ if (window.mobileCheck()) {
     // On start
     if (screen.orientation == 90 || screen.orientation == -90) {
     	document.getElementById('center1').style.paddingTop = '5%';
+	alert(1);
     }
 
     // On change
     window.addEventListener("orientationchange", function() {
 	if (screen.orientation == 90 || screen.orientation == -90) {
             document.getElementById('center1').style.paddingTop = '5%';
+	    alert(2);
         } else {
             document.getElementById('center1').style.paddingTop = null;
+	    alert(3);
         }
     }, false);
 }
