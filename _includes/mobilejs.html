@@ -43,13 +43,13 @@ if (window.mobileCheck()) {
     });
 
     /* Fix glitch getting overlapped by the header on mobile landscape */
-    if (window.matchMedia("(orientation: portrait)").matches) {
-   	    document.getElementById('center1').style.paddingTop = null;
-        alert(1);
-    }
-    if (window.matchMedia("(orientation: landscape)").matches) {
-   	    document.getElementById('center1').style.paddingTop = '5%';
-        alert(2);
-    }
+    window.addEventListener('orientationchange', function() {
+        if (window.matchMedia("(orientation: portrait)").matches) {
+       	    document.getElementById('center1').style.paddingTop = null;
+        }
+        if (window.matchMedia("(orientation: landscape)").matches) {
+       	    document.getElementById('center1').style.paddingTop = '5%';
+        }
+    });
 }
 </script>
