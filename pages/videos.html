@@ -15,7 +15,7 @@ title: Videos
 
 {% for video in site.videos %}
   <a href="{{ video.link }}" target="_blank">
-    <div class="featured-videos" {% if video.image %}style="background-image:url({{ site.github.url }}/assets/img/{{ video.image }})"{% endif %}>
+    <div class="featured-posts" {% if video.image %}style="background-image:url({{ site.github.url }}/assets/img/{{ video.image }})"{% endif %}>
       <h2><span>{{ video.title }}</span></h2>
     </div>
   </a>
