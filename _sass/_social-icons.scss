@@ -1,4 +1,3 @@
-$icon-transition-time: 1.0s;
 $envelope-color: #f39c12;
 $twitter-color: #00aced;
 $instagram-color: #d62f85;
@@ -7,48 +6,56 @@ $linkedin-color: #0073a4;
 $youtube-color: #ff0000;
 $discord-color: #737cf8;
 
-@mixin social-media-icon($color, $transition){
-  -webkit-transition: $transition;
-  -o-transition: $transition;
-  -ms-transition: $transition;
-  -moz-transition: $transition;
-  transition: $transition;
-  &:hover{
-    color: $color;
+@mixin social-media-icon($color) {
+  /* Hover creates color when we have a mouse pointer */
+  @media (hover: hover) and (pointer: fine) {
+    -webkit-transition: 1.0s;
+    -o-transition: 1.0s;
+    -ms-transition: 1.0s;
+    -moz-transition: 1.0s;
+    transition: 1.0s;
+    &:hover{
+      color: $color;
+    }
+  }
+
+  /* For touchscreen devices, just have color right away bc we can't hover */
+  @media (hover: none) and (pointer: none), (hover: none) and (pointer: coarse) {
+      color: $color;
   }
 }
 
 .fa-envelope {
   padding: 5px;
-  @include social-media-icon($envelope-color, $icon-transition-time);
+  @include social-media-icon($envelope-color);
 }
 
 .fa-twitter {
   padding: 5px;
-  @include social-media-icon($twitter-color, $icon-transition-time);
+  @include social-media-icon($twitter-color);
 }
 
 .fa-instagram {
   padding: 5px;
-  @include social-media-icon($instagram-color, $icon-transition-time);
+  @include social-media-icon($instagram-color);
 }
 
 .fa-github {
   padding: 5px;
-  @include social-media-icon($github-color, $icon-transition-time);
+  @include social-media-icon($github-color);
 }
 
 .fa-linkedin {
   padding: 5px;
-  @include social-media-icon($linkedin-color, $icon-transition-time);
+  @include social-media-icon($linkedin-color);
 }
 
 .fa-youtube {
   padding: 5px;
-  @include social-media-icon($youtube-color, $icon-transition-time);
+  @include social-media-icon($youtube-color);
 }
 
 .fa-discord {
   padding: 5px;
-  @include social-media-icon($discord-color, $icon-transition-time);
+  @include social-media-icon($discord-color);
 }
