@@ -26,103 +26,113 @@ console.error = function() {
 </head>
 
 <style>
-    .section{
-        text-align:center;
-        overflow: hidden;
-    }
+.section {
+    text-align: center;
+    overflow: hidden;
+}
 
-    #myVideo{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        top:0;
-        width: 100%;
-        height: 100%;
-        background-size: 100% 100%;
-        background-color: black; /* in case the video doesn't fit the whole page */
-        background-image: /* our video */;
-        background-position: center center;
-        background-size: contain;
-        object-fit: cover; /* cover video background */
-        z-index:3;
-    }
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page */
+    background-image: /* our video */;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover; /* cover video background */
+    z-index: 3;
+}
 
-    #section0 .layer{
-        position: absolute;
-        z-index: 4;
-        width: 100%;
-        left: 0;
-        top: 50%;
-        -webkit-transform: translate3d(0,0,0);
-        -ms-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
-    }
+#section0 .layer {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
 
-    #section0 .layer2{
-        position: absolute;
-        z-index: 4;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        -webkit-transform: translate3d(0,0,0);
-        -ms-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
-    }
+#section0 .layer2 {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
 
-    #section1 .layer {
-        position: absolute;
-        z-index: 4;
-        width: 100%;
-        left: 0;
-        top: 60%;
-        -webkit-transform: translate3d(0,0,0);
-        -ms-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
-    }
+#section1 .layer {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 60%;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
 
-    /* Solves problem with overflowing video in Mac with Chrome */
-    #section0{
-        overflow: hidden;
-    }
+/* Solves problem with overflowing video in Mac with Chrome */
+#section0{
+    overflow: hidden;
+}
 
-    video::-webkit-media-controls {
-      display:none !important;
-    }
+video::-webkit-media-controls {
+  display:none !important;
+}
 
-    #header{
-        position:absolute;
-        height: 50px;
-        display:block;
-        width: 100%;
-        background: #ffffff00;
-        z-index:9;
-        text-align:center;
-        color: #f2f2f2;
-        top: 0px;
-    }
+#header{
+    position:absolute;
+    height: 50px;
+    display:block;
+    width: 100%;
+    background: #ffffff00;
+    z-index: 9;
+    text-align:center;
+    color: #f2f2f2;
+    top: 0px;
+}
 
-    #footing {
-        position: absolute;
-        bottom: 0px;
-        left: 50%;
-        -moz-transform: translateX(-50%) translateY(0%);
-        -webkit-transform: translateX(-50%) translateY(0%);
-        transform: translateX(-50%) translateY(0%);
-    }
+#footing {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(0%);
+    -webkit-transform: translateX(-50%) translateY(0%);
+    transform: translateX(-50%) translateY(0%);
+}
 
-    .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-        color: white;
-        font-weight: bold;
-        font-size: 72px;
-        white-space: nowrap;
-        overflow: hidden;
-  }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 72px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.glitch {
+    position: absolute;
+    margin: 0 auto;
+    top: 150%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-150%);
+    -webkit-transform: translateX(-50%) translateY(-150%);
+    transform: translateX(-50%) translateY(-150%);
+}
 
 @media screen and (min-width: 2000px), screen and (min-height: 1200px) {
   .centered {
