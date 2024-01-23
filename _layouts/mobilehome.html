@@ -13,12 +13,9 @@ if (!window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
 
 <style>
 @media screen and (orientation:landscape) {
-    #top-space {
-        position: relative;
-        margin-top: 0%;
-    }
-
     .posts-wrapper {
+        margin-top: 0;
+        padding-top: 0;
         padding-bottom: 0;
         margin-bottom: 0;
     }
@@ -35,7 +32,7 @@ console.info("/rnfgrertt/");
 <div class="container">
    {% include header.html %}
   <div class="posts-wrapper" style="padding-bottom: 10%">
-    <h1 class="glitch" id="top-space" style="margin-top: 17%; margin-bottom: -3%;" data-text="Enjoy">Enjoy</h1>
+    <h1 class="glitch" style="margin-top: 17%; margin-bottom: -3%;" data-text="Enjoy">Enjoy</h1>
     <h1 class="glitch" style="margin-top: -3%; margin-bottom: -3%;" data-text="your">your</h1>
     <h1 class="glitch" style="margin-top: -3%;" data-text="stay!">stay!</h1>
   </div>
