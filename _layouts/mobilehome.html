@@ -39,15 +39,6 @@ if (!window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
         transform: translateX(-50%) translateY(535%);
         white-space: nowrap;
     }
-    #center4 {
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        -moz-transform: translateX(-50%) translateY(65%);
-        -webkit-transform: translateX(-50%) translateY(65%);
-        transform: translateX(-50%) translateY(65%);
-        white-space: nowrap;
-    }
     
     @media screen and (orientation:landscape) {
         #center1 {
@@ -66,17 +57,14 @@ console.info("/rnfgrertt/");
 <div class="container">
    {% include header.html %}
   <div class="posts-wrapper">
-    {{ content }}
+    <div id="center1"><h1 class="glitch" data-text="Enjoy">Enjoy</h1><div>
+    <br>
+    <div id="center2"><h1 class="glitch" data-text="your">your</h1><div>
+    <br>
+    <div id="center3"><h1 class="glitch" data-text="stay!">stay!</h1><div>
   </div>
+  {% include footer.html %}
 </div>
-
-<div id="center1"><h1 class="glitch" data-text="Enjoy">Enjoy</h1><div>
-<br>
-<div id="center2"><h1 class="glitch" data-text="your">your</h1><div>
-<br>
-<div id="center3"><h1 class="glitch" data-text="stay!">stay!</h1><div>
-
-<div id="center4" class="container"> {% include footer.html %} </div> 
     
 </body>
 </html>
