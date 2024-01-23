@@ -65,15 +65,18 @@ console.info("/rnfgrertt/");
     
 <div class="container">
    {% include header.html %}
-
-    <div id="center1"><h1 class="glitch" data-text="Enjoy">Enjoy</h1><div>
-    <br>
-    <div id="center2"><h1 class="glitch" data-text="your">your</h1><div>
-    <br>
-    <div id="center3"><h1 class="glitch" data-text="stay!">stay!</h1><div>
-
-    {% include footer.html %}
+  <div class="posts-wrapper">
+    {{ content }}
+  </div>
 </div>
+
+<div id="center1"><h1 class="glitch" data-text="Enjoy">Enjoy</h1><div>
+<br>
+<div id="center2"><h1 class="glitch" data-text="your">your</h1><div>
+<br>
+<div id="center3"><h1 class="glitch" data-text="stay!">stay!</h1><div>
+
+<div id="center4" class="container"> {% include footer.html %} </div> 
     
 </body>
 </html>
