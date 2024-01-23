@@ -11,44 +11,7 @@ if (!window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
 </script>
 </head>
 
-<style>
-    #center1 {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        -moz-transform: translateX(-50%) translateY(40%);
-        -webkit-transform: translateX(-50%) translateY(40%);
-        transform: translateX(-50%) translateY(40%);
-        white-space: nowrap;
-    }
-    #center2 {
-        position: absolute;
-        top: 190%;
-        left: 50%;
-        -moz-transform: translateX(-50%) translateY(190%);
-        -webkit-transform: translateX(-50%) translateY(190%);
-        transform: translateX(-50%) translateY(190%);
-        white-space: nowrap;
-    }
-    #center3 {
-        position: absolute;
-        top: 535%;
-        left: 50%;
-        -moz-transform: translateX(-50%) translateY(535%);
-        -webkit-transform: translateX(-50%) translateY(535%);
-        transform: translateX(-50%) translateY(535%);
-        white-space: nowrap;
-    }
-    #center4 {
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        -moz-transform: translateX(-50%) translateY(65%);
-        -webkit-transform: translateX(-50%) translateY(65%);
-        transform: translateX(-50%) translateY(65%);
-        white-space: nowrap;
-    }
-    
+<style> 
     @media screen and (orientation:landscape) {
         #center1 {
             padding-top: 5%;
@@ -64,19 +27,14 @@ console.info("/rnfgrertt/");
 </script>
     
 <div class="container">
-   {% include header.html %}
+  {% include header.html %}
   <div class="posts-wrapper">
-    {{ content }}
+      <div id="center1"><h1 class="glitch" data-text="Enjoy">Enjoy</h1><div>
+      <div id="center2"><h1 class="glitch" data-text="your">your</h1><div>
+      <div id="center3"><h1 class="glitch" data-text="stay!">stay!</h1><div>
   </div>
+  {% include footer.html %}
 </div>
-
-<div id="center1"><h1 class="glitch" data-text="Enjoy">Enjoy</h1><div>
-<br>
-<div id="center2"><h1 class="glitch" data-text="your">your</h1><div>
-<br>
-<div id="center3"><h1 class="glitch" data-text="stay!">stay!</h1><div>
-
-<div id="center4" class="container"> {% include footer.html %} </div> 
     
 </body>
 </html>
