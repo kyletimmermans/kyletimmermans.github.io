@@ -8,23 +8,9 @@
     {%- endif -%}
   </title>
   
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <script>
-    // Firefox favicon hack, put no favicon for firefox and it will go to root dir
-    if (navigator.userAgent.indexOf("Firefox") == -1) {
-      var faviconSvg = document.createElement('link');
-      faviconSvg.rel = 'icon';
-      faviconSvg.type = 'image/svg+xml';
-      faviconSvg.href = '/assets/img/favicon/favicon.svg';
-      document.head.appendChild(faviconSvg);
-      
-      var faviconPng = document.createElement('link');
-      faviconPng.rel = 'icon';
-      faviconPng.type = 'image/png';
-      faviconPng.href = '/assets/img/favicon/favicon.png';
-      document.head.appendChild(faviconPng);
-    }
-  </script>
   <meta name="description" content="Enjoy Your Stay!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
