@@ -21,4 +21,4 @@ title: Contact
 Feel free to contact me at my email: __kyle@kyles.world__
 
 
-&nbsp;Or use any of the icon-links below!
+Or use any of the icon-links below!
