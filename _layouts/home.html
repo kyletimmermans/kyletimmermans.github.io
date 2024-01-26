@@ -187,25 +187,27 @@ video::-webkit-media-controls {
 </div>
 
 <script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        licenseKey: 'ABCD-EFGH-IJKL-MNOP',
-        verticalCentered: true,
-        sectionsColor: ['#FFFFFF', '#FFFFFF'],
-        onLeave: function(index, nextIndex, direction){
-            // Scroll down, make header into black text on white background
-            // Scroll up, make header text white
-            if (direction == "down") {
-                setTimeout(function() {
-                    document.getElementById("header").classList.remove("container-3"); 
-                    document.getElementById("header").classList.add("container-4");
-                }, 500)  // Goldilocks timing, down needs time for shift (more distance down than up)
-            } else {  // if not down, then "up"
-                document.getElementById("header").classList.remove("container-4");
-                document.getElementById("header").classList.add("container-3");
-
-            }
-        },
-    });
+var switchColorElems = document.querySelectorAll('.container a');
+var myFullpage = new fullpage('#fullpage', {
+    licenseKey: 'ABCD-EFGH-IJKL-MNOP',
+    verticalCentered: true,
+    sectionsColor: ['#FFFFFF', '#FFFFFF'],
+    onLeave: function(index, nextIndex, direction) {
+        // Scroll down, make header into black text on white background
+        // Scroll up, make header text white
+        if (direction == "down") {
+            setTimeout(function() {
+                    switchColorElems.forEach(function(elem) {
+                        elem.style.color = 'black';
+                });
+            }, 500)  // Goldilocks timing, down needs time for shift (more distance going down than going up)
+        } else if (direction == "up") {
+          switchColorElems.forEach(function(elem) {
+            elem.style.color = 'white';
+          });
+        }
+    },
+});
 </script>
 
 <script>
