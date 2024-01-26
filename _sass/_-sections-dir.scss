@@ -1,4 +1,4 @@
-// Importing Sass/SCSS partials from `sass_dir` (defaults to `_sass`)
+// SCSS files roughly correspond to HTML files in _includes and _layouts
 @import "base",
         "default",
         "home",
@@ -8,9 +8,6 @@
         "footer",
         "code",
         "social-icons",
-        "homedefault",
-        "defaultblack",
         "glitch",
         "scrollbounce",
         "translation-slider";
-// SCSS files roughly correspond to HTML files in _includes and _layouts
