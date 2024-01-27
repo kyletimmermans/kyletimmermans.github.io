@@ -1,10 +1,10 @@
 <header class="site-header-home">
   <h3 class="site-title">
-    <a href="{{ site.github.url }}/">Kyle Timmermans</a>
+    <a style="color: white" href="{{ site.github.url }}/">Kyle Timmermans</a>
   </h3>
   <nav class="menu-list">
     {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}/{{ item.name | downcase }}" class="menu-link">{{ item.name }}</a>
+      <a style="color: white" href="{{ site.github.url }}/{{ item.name | downcase }}" class="menu-link">{{ item.name }}</a>
     {% endfor %}
   </nav>
   <div class="dropdown">
