@@ -26,7 +26,7 @@ title: About
 	}
 }
 
-@media screen and (min-width: 2000px), screen and (min-height: 900px) {
+@media screen and (min-width: 1600px), screen and (min-height: 900px) {
 	article { font-size: 1vw; }
 	.misc-content { max-width: 800px }
 }
