@@ -14,11 +14,18 @@
 }
 @media (max-width: $container-width) {
   .footer {
-    background: white;
-    color: $brand-color;
-    text-align: center;
-    min-height: 56px;
-    line-height: 45px;
     width: 95vw;
   }
+}
+/* Big monitor */
+@media screen and (min-width: 1600px), screen and (min-height: 900px) {
+    .footer .menu-link { font-size: 0.9vw }
+    .footer .name-year { font-size: 0.7vw }
+}
+/* Very small-width mobile */
+@media screen and (max-width: 374px) {
+    .footer a {
+        padding-left: 2.15vw;
+        padding-right: 2.15vw;
+    }
 }
