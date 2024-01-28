@@ -49,7 +49,7 @@ $steps: 20;
     }  
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
     .glitch { font-size: 100px; }
 }
 
