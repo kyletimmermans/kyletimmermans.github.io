@@ -50,7 +50,7 @@ $steps: 20;
 }
 
 /* Mobile width greater than 500px */
-@media ((hover: none) and (pointer: none)), ((hover: none) and (pointer: coarse)) {
+@media (hover: none) and (pointer: none), (pointer: coarse) {
     @media screen and (min-width: 500px) {
         .glitch { font-size: 100px; }
     }
