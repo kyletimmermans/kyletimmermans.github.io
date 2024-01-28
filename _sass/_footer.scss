@@ -17,8 +17,8 @@
     width: 95vw;
   }
 }
-/* Big monitor */
-@media screen and (min-width: 1600px), screen and (min-height: 900px) {
+/* Big monitor - Non-mobile */
+@media (screen and (min-width: 1600px), screen and (min-height: 900px)) and ((hover: hover) and (pointer: fine)) {
     .footer .menu-link { font-size: 0.9vw }
     .footer .name-year { font-size: 0.7vw }
 }
