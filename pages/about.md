@@ -10,22 +10,6 @@ title: About
 ---
 
 <style>
-@media screen and (min-width: 1001px) {
-	.language-switcher {	
-		float: right;
-		margin-right: -200px; 
-		margin-top: -50px;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	.language-switcher {	
-		position: absolute;
-		margin-left: 200px;
-		transform: translateY(-53px);
-	}
-}
-
 @media screen and (min-width: 1600px), screen and (min-height: 900px) {
 	article { font-size: 1vw; }
 	.misc-content { max-width: 800px }
