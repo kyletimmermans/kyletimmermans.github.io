@@ -30,7 +30,7 @@ Allow: /contact/
 Disallow: /_data/
 Disallow: /_includes/
 Disallow: /_layouts/
-Disallow: /_posts/
+Disallow: /_projects/
 Disallow: /_sass/
 Disallow: /_videos/
 Disallow: /assets/
