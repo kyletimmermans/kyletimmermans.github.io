@@ -51,7 +51,9 @@ $steps: 20;
 }
 
 @media screen and (min-width: 500px) {
-    .glitch {
-        font-size: 100px;
-    }
+    .glitch { font-size: 100px; }
+}
+
+@media screen and (min-width: 1600px) and (min-height: 900px) {
+    .glitch { font-size: 5vw; }
 }
