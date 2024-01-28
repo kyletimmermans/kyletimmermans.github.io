@@ -93,3 +93,19 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+@media screen and (min-width: 1001px) {
+    .language-switcher {	
+	      float: right;
+	      margin-right: -200px; 
+	      margin-top: -50px;
+	  }
+}
+
+@media screen and (max-width: 1000px) {
+	  .language-switcher {	
+	      position: absolute;
+	      margin-left: 200px;
+	      transform: translateY(-53px);
+	  }
+}
