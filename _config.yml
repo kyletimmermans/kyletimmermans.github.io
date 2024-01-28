@@ -9,6 +9,7 @@ whitelist:
 
 title: "Kyle&#39;s World"
 
-# To make _videos iterable by the for loop in _pages/videos.html
+# To make _projects & _videos iterable by the for-loops in projects.html and videos.html
 collections:
+  - projects
   - videos
