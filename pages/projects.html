@@ -13,10 +13,10 @@ layout: page
 title: Projects
 ---
 
-{% for post in site.posts %}
-  <a href="{{ post.link }}" target="_blank">
-    <div class="featured-posts" style="background-image:url({{ site.github.url }}/assets/img/{{ post.image }}){% if forloop.last == false %}; margin-bottom: 4.75vh;{% endif %}">
-      <h2><span>{{ post.title }}</span></h2>
+{% for project in site.projects %}
+  <a href="{{ project.link }}" target="_blank">
+    <div class="featured-posts" style="background-image:url({{ site.github.url }}/assets/img/{{ project.image }}){% if forloop.last == false %}; margin-bottom: 4.75vh;{% endif %}">
+      <h2><span>{{ project.title }}</span></h2>
     </div>
   </a>
 {% endfor %}
