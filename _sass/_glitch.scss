@@ -49,8 +49,11 @@ $steps: 20;
     }  
 }
 
-@media screen and (max-width: 500px) {
-    .glitch { font-size: 100px; }
+/* Mobile width greater than 500px */
+@media ((hover: none) and (pointer: none)), ((hover: none) and (pointer: coarse)) {
+    @media screen and (min-width: 500px) {
+        .glitch { font-size: 100px; }
+    }
 }
 
 @media screen and (min-width: 1600px) and (min-height: 900px) {
