@@ -20,14 +20,24 @@
 /* Big monitor - Non-mobile */
 @media (hover: hover) and (pointer: fine) {
   @media screen and (min-width: 1600px), screen and (min-height: 900px) {
-      .footer .menu-link { font-size: 0.9vw }
-      .footer .name-year { font-size: 0.7vw }
+      .footer .menu-link { font-size: 0.9vw; }
+      .footer .name-year { font-size: 0.7vw; }
   }
 }
-/* Very small-width mobile */
-@media screen and (max-width: 374px) {
-    .footer a {
-        padding-left: 2.15vw;
-        padding-right: 2.15vw;
+/* Very small mobile and very big mobile */
+@media (hover: none) { 
+    @media (pointer: none), (pointer: coarse) {
+        /* Very small-width mobile */
+        @media screen and (max-width: 374px) {
+            .footer a {
+                padding-left: 2.15vw;
+                padding-right: 2.15vw;
+            }
+        }
+        /* Very big-width mobile */
+        @media screen and (min-width: 600px) {
+            .footer .menu-link { font-size: 3vw; }
+            .footer .name-year { font-size: 3vw; }
+        }
     }
 }
