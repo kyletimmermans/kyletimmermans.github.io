@@ -20,8 +20,10 @@ $discord-color: #737cf8;
   }
 
   /* For touchscreen devices, just have color right away bc we can't hover */
-  @media (hover: none) and (pointer: none), (pointer: coarse) {
-      color: $color;
+  @media (hover: none) {
+      @media (pointer: none), (pointer: coarse) {
+          color: $color;
+    }
   }
 }
 
