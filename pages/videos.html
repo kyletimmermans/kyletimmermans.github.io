@@ -15,8 +15,9 @@ title: Videos
 
 {% for video in site.videos reversed %}
   <a href="{{ video.link }}" target="_blank">
-    <div class="featured-posts" style="background-image:url({{ site.github.url }}/assets/img/{{ video.image }}){% if forloop.last == false %}; margin-bottom: 4.75vh;{% endif %}">
+    <div class="featured-posts" style="background-image:url({{ site.github.url }}/assets/img/{{ video.image }})">
       <h2><span>{{ video.title }}</span></h2>
     </div>
   </a>
+  {% if forloop.last == false %}<div>&nbsp;</div>{% endif %}
 {% endfor %}
