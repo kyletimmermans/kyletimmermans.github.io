@@ -36,7 +36,6 @@ Disallow: /_videos/
 Disallow: /assets/
 Disallow: /pages/
 Disallow: /mobile/
-Disallow: /apple-touch-icon.png
 Disallow: /browserconfig.xml
 Disallow: /favicon.ico
 Disallow: /security.txt
