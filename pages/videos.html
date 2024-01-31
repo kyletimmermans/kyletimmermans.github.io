@@ -13,6 +13,17 @@ layout: page
 title: Videos
 ---
 
+/* Big non-mobile monitor */
+@media (hover: hover) and (pointer: fine) {
+    @media screen and (min-width: 1600px) and (min-height: 1000px) {
+          .container { width: 54.7vw; }
+          .site-header { width: 54.7vw; }
+          .posts-wrapper { width: 50.8vw; }
+          .footer { width: 54.7vw; }
+          .featured-posts { height: 39.3vh; }
+    }
+}
+
 {% for video in site.videos reversed %}
   <a href="{{ video.link }}" target="_blank">
     <div class="featured-posts" style="background-image:url({{ site.github.url }}/assets/img/{{ video.image }})">
