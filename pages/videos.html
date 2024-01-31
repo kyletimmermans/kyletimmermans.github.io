@@ -13,6 +13,7 @@ layout: page
 title: Videos
 ---
 
+<style>
 /* Big non-mobile monitor */
 @media (hover: hover) and (pointer: fine) {
     @media screen and (min-width: 1600px) and (min-height: 1000px) {
@@ -23,6 +24,7 @@ title: Videos
           .featured-posts { height: 39.3vh; }
     }
 }
+</style>
 
 {% for video in site.videos reversed %}
   <a href="{{ video.link }}" target="_blank">
