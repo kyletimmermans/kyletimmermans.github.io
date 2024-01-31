@@ -13,6 +13,7 @@ layout: page
 title: Projects
 ---
 
+<style>
 /* Big non-mobile monitor */
 @media (hover: hover) and (pointer: fine) {
     @media screen and (min-width: 1600px) and (min-height: 1000px) {
@@ -23,6 +24,7 @@ title: Projects
           .featured-posts { height: 39.3vh; }
     }
 }
+</style>
 
 {% for project in site.projects reversed %}
   <a href="{{ project.link }}" target="_blank">
