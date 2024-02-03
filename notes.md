@@ -50,3 +50,7 @@
 <div>&ensp;</div>
 <div>&ensp;-CVE gist can be copied as src js (default embed copy)</div>
 <div>&ensp;</div>
+
+<div>&ensp;</div>
+<div>&ensp;-When checking px height and width of screen, use: window.visualViewport.height & window.visualViewport.width</div>
+<div>&ensp;</div>
