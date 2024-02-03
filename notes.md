@@ -52,5 +52,6 @@
 <div>&ensp;</div>
 
 <div>&ensp;</div>
-<div>&ensp;-When checking px height and width of screen, use: window.visualViewport.height & window.visualViewport.width</div>
+<div>&ensp;-When checking px height and width of screen for Desktop, use: window.visualViewport.height & window.visualViewport.width</div>
+<div>&ensp;-When checking px height and width of screen for Mobile, use: window.screen.height & window.screen.width</div>
 <div>&ensp;</div>
