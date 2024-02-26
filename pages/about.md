@@ -10,6 +10,8 @@ title: About
 ---
 
 <style>
+article { font-size: 18px }
+
 @media screen and (min-width: 1600px), screen and (min-height: 900px) {
 	article { font-size: 1vw; }
 	.misc-content { max-width: 800px }
