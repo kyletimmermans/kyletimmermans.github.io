@@ -2,5 +2,5 @@
 layout: post
 title: "Russian Grammar Exercises Website"
 link: https://www.github.com/kyletimmermans/russian-grammar-practice
-image: rusgrammar.png
+image: russiangrammarpractice.png
 ---
