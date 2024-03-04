@@ -20,3 +20,39 @@ permalink: /404.html
 <p align="center" style="overflow: hidden;">
   <a href="/"><img id="errImage" src="/assets/img/misc/404-ice-cream.jpg?raw=true" alt="Error: Delicious Disappearance" title="Error: Delicious Disappearance" style="object-fit: contain;"/></a>
 </p>
+
+<script>
+document.addEventListener("DOMContentLoaded", (event) => {
+    const title = document.querySelector('h1');
+    const orig = "Error 404: Page Not Found";
+    var delay = 300;
+
+    function colorCycle() {
+            var spacesToSkip = 0; // Remove space counts from future wait times
+            for (let i = 0; i < orig.length; i++) {
+                if (orig[i] == ' ') {
+                    spacesToSkip++;
+                    continue;
+            }
+            
+            if (i == 0) {
+                    setTimeout(() => {
+                            title.innerHTML = '<span style="color: #027A01;">E</span>'+orig.slice(1);
+                }, i * delay);
+            } else if (i == orig.length-1) {
+                    setTimeout(() => {
+                            title.innerHTML = orig.slice(0, orig.length-1)+'<span style="color: #027A01;">d</span>';
+                }, i * delay - (delay * spacesToSkip));
+            } else {
+                    setTimeout(() => {
+                            title.innerHTML = orig.slice(0, i)+'<span style="color: #027A01;">'+orig[i]+'</span>'+orig.slice(i+1, orig.length);
+                }, i * delay - (delay * spacesToSkip));
+            }
+        }
+    }
+
+    colorCycle();
+
+    setInterval(colorCycle, 6300);
+});
+</script>
