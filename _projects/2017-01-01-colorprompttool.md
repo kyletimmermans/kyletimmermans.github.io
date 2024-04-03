@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Zsh Color Prompt Tool"
-link: https://www.github.com/kyletimmermans/zsh-color-prompt-tool
-image: colorprompttool.png
+title: "Shell Color Prompt Tool"
+link: https://www.github.com/kyletimmermans/shell-color-prompt-tool
+image: shell-color-prompt-tool.png
 ---
