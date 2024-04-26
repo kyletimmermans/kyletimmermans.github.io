@@ -23,6 +23,7 @@ User-agent: *
 Allow: /$
 Allow: /projects/
 Allow: /cves/
+Allow: /videos/
 Allow: /resume/
 Allow: /cv/
 Allow: /about/
