@@ -134,7 +134,13 @@ video::-webkit-media-controls {
     transform: translateX(-50%) translateY(-150%);
 }
 
-@media screen and (min-width: 1600px) and (min-height: 900px) {
+/* Medium screens */
+@media screen and (min-height: 900px) and (max-height: 1199px) and (min-width: 1600px) and (max-width: 2099px) {
+  .centered { font-size: 4.9vw; }
+}
+
+/* Big screens */
+@media screen and (min-width: 2100px) and (min-height: 1200px) {
   .centered { font-size: 4.6vw; }
 }
 </style>
