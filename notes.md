@@ -1,4 +1,5 @@
 # <div align="center">ToDo</div>
+- [ ] Check to see how site looks on ultra wide and ultra tall monitors
 - [ ] Bootstrap the video into mobile homepage too - https://medium.com/just-goe-frontend-adventures/how-to-fullscreen-background-autoplay-video-on-mobile-in-2018-208dfee26bc1
 
 </br>
