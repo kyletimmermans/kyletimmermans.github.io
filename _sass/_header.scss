@@ -19,7 +19,7 @@
 @media screen and (min-height: 900px) and (max-height: 1199px) and (min-width: 1600px) and (max-width: 2099px) {
   .container { width: 76.389vw; }
   .site-header { min-height: 5vh; width: 76.389vw; }
-  .site-header-home { min-height: 5vh; }
+  .site-header-home { min-height: 5vh; width: 76.389vw; }
   .site-header .menu-link { font-size: 0.95vw; }
   .site-header-home .menu-link { font-size: 0.95vw; }
   .site-title a { font-size: 1.50vw; }
@@ -28,7 +28,7 @@
 @media screen and (min-width: 2100px) and (min-height: 1200px) {
   .container { width: 76.389vw; }
   .site-header { min-height: 4.7vh; width: 76.389vw; }
-  .site-header-home { min-height: 4.7vh; }
+  .site-header-home { min-height: 4.7vh; width: 76.389vw; }
   .site-header .menu-link { font-size: 0.71vw; }
   .site-header-home .menu-link { font-size: 0.71vw; }
   .site-title a { font-size: 1.1vw; }
