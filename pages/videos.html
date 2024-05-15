@@ -18,20 +18,14 @@ title: Videos
 @media (hover: hover) and (pointer: fine) {
     /* Medium screens */
     @media screen and (min-height: 900px) and (max-height: 1199px) and (min-width: 1600px) and (max-width: 2099px) {
-          .container { width: 64.7vw; }
-          .site-header { width: 64.7vw; }
-          .posts-wrapper { width: 61.5vw; }
-          .footer { width: 64.7vw; }
-          .featured-posts { height: 49.3vh; }
+          .posts-wrapper { width: calc(76.389vw - 25px); }
+          .featured-posts { width: 73.611vw; height: 55.71vh; }
     }
 
     /* Big screens */
     @media screen and (min-width: 2100px) and (min-height: 1200px) {
-          .container { width: 54.7vw; }
-          .site-header { width: 54.7vw; }
-          .posts-wrapper { width: 50.8vw; }
-          .footer { width: 54.7vw; }
-          .featured-posts { height: 39.3vh; }
+          .posts-wrapper { width: calc(76.389vw - 50px); }
+          .featured-posts { width: 73.611vw; height: 55.71vh; }
     }
 }
 </style>
