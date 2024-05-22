@@ -5,6 +5,7 @@
   left: 50%;
   color: RGB(100, 251, 130);
   font-family: "Roboto", sans-serif;
+  transform: translateX(-50%);
 }
 
 .scrollbounce::before {
