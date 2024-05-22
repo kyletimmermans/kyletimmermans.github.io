@@ -20,8 +20,8 @@
   .container { width: 76.389vw; }
   .site-header { min-height: 5vh; width: 76.389vw; }
   .site-header-home { min-height: 5vh; width: 76.389vw; }
-  .site-header .menu-link { font-size: 0.95vw; }
-  .site-header-home .menu-link { font-size: 0.95vw; }
+  .site-header .menu-link { font-size: 1vw; padding-right: 0.50vw; }
+  .site-header-home .menu-link { font-size: 1vw; padding-right: 0.50vw; }
   .site-title a { font-size: 1.50vw; }
 }
 /* Big screens */
@@ -29,8 +29,8 @@
   .container { width: 76.389vw; }
   .site-header { min-height: 4.7vh; width: 76.389vw; }
   .site-header-home { min-height: 4.7vh; width: 76.389vw; }
-  .site-header .menu-link { font-size: 0.71vw; }
-  .site-header-home .menu-link { font-size: 0.71vw; }
+  .site-header .menu-link { font-size: 0.80vw; padding-right: 0.58vw; }
+  .site-header-home .menu-link { font-size: 0.80vw; padding-right: 0.58vw; }
   .site-title a { font-size: 1.1vw; }
 }
 @media (max-width: $container-width) {
