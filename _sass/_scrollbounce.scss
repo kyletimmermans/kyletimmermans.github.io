@@ -33,13 +33,13 @@
 
 @media screen and (min-width: 1600px) and (max-width: 2099px) {
     /* Medium screens */
-    @media screen and (min-height: 900px) and (max-height: 984px) {
-      .scrollbounce::before { font-size: 8vw; }
+    @media screen and (min-height: 900px) and (max-height: 974px) {
+      .scrollbounce::before { font-size: 10rem; }
     }
 
     /* Medium-Big screens */
-    @media screen and (min-height: 985px) and (max-height: 1199px) {
-      .scrollbounce::before { font-size: 5.5vw; }
+    @media screen and (min-height: 975px) and (max-height: 1199px) {
+      .scrollbounce::before { font-size: 8rem; }
     }
 }
 
