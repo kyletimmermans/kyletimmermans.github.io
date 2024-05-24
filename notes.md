@@ -60,3 +60,7 @@
 <div>&ensp;</div>
 <div>&ensp;-Run jekyll locally with: bundle exec jekyll serve</div>
 <div>&ensp;</div>
+
+<div>&ensp;</div>
+<div>&ensp;-Better viewport numbers: https://whatismyviewport.com/</div>
+<div>&ensp;</div>
