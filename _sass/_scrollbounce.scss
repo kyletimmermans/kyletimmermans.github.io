@@ -4,14 +4,14 @@
   text-align: center;
   left: 50%;
   color: RGB(100, 251, 130);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   transform: translateX(-50%);
 }
 
 .scrollbounce::before {
   animation: bounce 4s ease infinite;
   color: RGB(100, 251, 130);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   content: '↓';
   font-size: 5rem;
   opacity: 0.8;
