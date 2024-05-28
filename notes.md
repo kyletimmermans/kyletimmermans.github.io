@@ -59,6 +59,7 @@
 
 <div>&ensp;</div>
 <div>&ensp;-Run jekyll locally with: bundle exec jekyll serve</div>
+<div>&ensp;&ensp;-Add the following line to _config.yml to avoid error: repository: kyletimmermans/kyletimmermans.github.io</div>
 <div>&ensp;</div>
 
 <div>&ensp;</div>
