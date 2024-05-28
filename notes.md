@@ -64,3 +64,7 @@
 <div>&ensp;</div>
 <div>&ensp;-Better viewport numbers: https://whatismyviewport.com/</div>
 <div>&ensp;</div>
+
+<div>&ensp;</div>
+<div>&ensp;-For EE: Important: For the noindex rule to be effective, the page or resource must not be blocked by a robots.txt file, and it has to be otherwise accessible to the crawler. If the page is blocked by a robots.txt file or the crawler can't access the page, the crawler will never see the noindex rule, and the page can still appear in search results, for example if other pages link to it.</div>
+<div>&ensp;</div>
