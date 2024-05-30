@@ -20,4 +20,16 @@ window.onload = function() {
 };
 </script>
 
-<embed src="/assets/docs/KyleTimmermansCV.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" width="100%" height="4578px"/>
+<style>
+/* Medium screens */
+@media screen and (min-height: 900px) and (max-height: 1199px) and (min-width: 1600px) and (max-width: 2099px) {
+    .posts-wrapper { width: 70vw; }
+}
+
+/* Big screens */
+@media screen and (min-width: 2100px) and (min-height: 1200px) {
+    .posts-wrapper { width: 55vw; }
+}
+</style>
+
+<object data="/assets/docs/KyleTimmermansCV.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" style="width: 100%; height: 4578px;"</object>
