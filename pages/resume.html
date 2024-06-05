@@ -9,6 +9,15 @@ layout: page
 title: Resume
 ---
 
+<script>
+// If mobile, show the raw PDF
+window.onload = function() { 
+  if (window.mobileCheck()) {
+    window.location.replace("/assets/docs/KyleTimmermansResume.pdf");
+  }
+};
+</script>
+
 <style>
 /* Medium screens */
 @media screen and (min-height: 900px) and (max-height: 1199px) and (min-width: 1600px) and (max-width: 2099px) {
@@ -24,5 +33,5 @@ title: Resume
 </style>
 
 <object data="/assets/docs/KyleTimmermansResume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="3050px">
-  <script>window.location.replace("/assets/docs/KyleTimmermansResume.pdf");</script>
+  <p>PDF is loading or your browser doesn't support PDFs!</p>
 </object>
