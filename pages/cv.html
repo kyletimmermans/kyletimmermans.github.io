@@ -7,7 +7,7 @@ redirect_from:
   - /Cv/
   - /cV
   - /cV/
-layout: page
+layout: default
 title: CV
 ---
 
@@ -20,21 +20,141 @@ window.onload = function() {
 };
 </script>
 
-<style>
-/* Medium screens */
-@media screen and (min-height: 900px) and (max-height: 1199px) and (min-width: 1600px) and (max-width: 2099px) {
-    .posts-wrapper { width: 70vw; }
-    object { height: 5634px; }
-}
 
-/* Big screens */
-@media screen and (min-width: 2100px) and (min-height: 1200px) {
-    .posts-wrapper { width: 55vw; }
-    object { height: 5897px; }
-}
+<style>
+  article { position: relative; }
+
+  #viewerContainer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .page {
+      box-shadow: 0 0 8px #bbb;
+      box-sizing: content-box;
+      margin-bottom: 15px !important;
+      margin-top: 15px !important;
+  }
+
+  #viewerResize { height: var(--viewer-container-height); }
+
+  html { dir: ltr; }
+
+  /* Remove yellow highlighting when hovering over links */
+  .annotationLayer :is(.linkAnnotation, .buttonWidgetAnnotation.pushButton):not(.hasBorder) > a:hover {
+    opacity: 0 !important;
+  }
+
+  svg { vertical-align: middle; }
+
+  /* Medium screens */
+  @media screen and (min-height: 900px) and (max-height: 1199px) and (min-width: 1600px) and (max-width: 2099px) {
+      .posts-wrapper { width: 70vw; }
+  }
+
+  /* Big screens */
+  @media screen and (min-width: 2100px) and (min-height: 1200px) {
+      .posts-wrapper { width: 55vw; }
+  }
 </style>
 
-<object data="/assets/docs/KyleTimmermansCV.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&pagemode=none" type="application/pdf" width="100%" height="4578px">
-  <p>PDF is loading or your browser doesn't support PDFs!</p>
-</object>
+<div class="page-title" style="display: flex; align-items: center; padding-top: 25px;">
+  <h1 style="flex: 1; margin: 0;">{{ page.title }}</h1>
+  <!-- Download Button -->
+  <script>
+    function download(url) {
+        const fileName = url.match(/[^/\\&\?]+\.\w{3,4}(?=([\?&].*$|$))/);
 
+        const elem = (url) => {
+            const link = document.createElement('a');
+            link.setAttribute('download', fileName[0]);
+            link.setAttribute('href', url);
+            link.setAttribute("id", "tempDownloadA");
+            link.click();
+        }
+
+        downloadBlob = (blob) => elem(URL.createObjectURL(blob))
+
+        function removeElements(elements){
+            for(var i = 0; i < elements.length; i++){
+                elements[i].parentNode.removeChild(elements[i]);
+            }
+        }
+
+        fetch(url)
+          .then(response => response.blob())
+          .then(downloadBlob)
+          .then(removeElements(document.querySelectorAll('#tempDownloadA')))
+    }
+</script>
+<button type="button" class="btn btn-success" onclick="download('/assets/docs/KyleTimmermansCV.pdf')">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+    </svg>
+&nbsp;Download as PDF
+</button>
+</div>
+
+<article>
+
+<!-- Begin PDF.js -->
+
+<link rel="stylesheet" href="https://unpkg.com/pdfjs-dist@4.3.136/web/pdf_viewer.css">
+<script src="https://unpkg.com/pdfjs-dist@4.3.136/build/pdf.min.mjs" type="module"></script>
+<script src="https://unpkg.com/pdfjs-dist@4.3.136/web/pdf_viewer.mjs" type="module"></script>
+
+<div id="viewerResize">
+  <div id="viewerContainer">
+    <div id="viewer" class="pdfViewer"></div>
+  </div>
+</div>
+
+<script type="module">
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "https://unpkg.com/pdfjs-dist@4.3.136/build/pdf.worker.min.mjs";
+
+  const container = document.getElementById("viewerContainer");
+  const eventBus = new pdfjsViewer.EventBus();
+
+  const pdfLinkService = new pdfjsViewer.PDFLinkService({
+    eventBus,
+  });
+
+  const pdfViewer = new pdfjsViewer.PDFViewer({
+    container,
+    eventBus,
+    linkService: pdfLinkService,
+    enableScripting: false,
+    enableXfa: false,
+    renderInteractiveForms: false,
+    maxCanvasPixels: 8192 * 8192,
+    printResolution: 300,
+    enableHWA: true,
+  });
+  pdfLinkService.setViewer(pdfViewer);
+
+  eventBus.on("pagesinit", function () {
+    // We can use pdfViewer now, e.g. let's change default scale.
+    pdfViewer.currentScaleValue = "page-width";
+  });
+
+  // Loading document.
+  const loadingTask = pdfjsLib.getDocument({
+    url: "/assets/docs/KyleTimmermansCV.pdf",
+    cMapUrl: "https://unpkg.com/pdfjs-dist@4.3.136/cmaps/",
+    cMapPacked: true,
+    textLayerMode: 2,
+    isEvalSupported: false,
+  });
+
+  const pdfDocument = await loadingTask.promise;
+  pdfViewer.setDocument(pdfDocument);
+
+  pdfLinkService.setDocument(pdfDocument, null);
+</script>
+
+<!-- End PDF.js -->
+
+</article>
