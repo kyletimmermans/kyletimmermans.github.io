@@ -140,7 +140,6 @@ window.onload = function() {
     const viewerResizer = document.getElementById('viewer');
     const resizeObserver = new ResizeObserver(entries => {
       pdfViewer.currentScaleValue = "page-width";
-      console.log(1);
     });
     resizeObserver.observe(viewerResizer);
   });
