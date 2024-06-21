@@ -138,6 +138,12 @@ window.onload = function() {
   eventBus.on("pagesinit", function () {
     // We can use pdfViewer now, e.g. let's change default scale.
     pdfViewer.currentScaleValue = "page-width";
+
+    const viewerResizer = document.getElementById('viewer');
+    const resizeObserver = new ResizeObserver(entries => {
+      pdfViewer.currentScaleValue = "page-width";
+    });
+    resizeObserver.observe(viewerResizer);
   });
 
   // Loading document.
