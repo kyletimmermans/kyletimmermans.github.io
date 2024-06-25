@@ -42,9 +42,11 @@ Disallow: /browserconfig.xml
 Disallow: /favicon.ico
 Disallow: /security.txt
 Disallow: /CNAME
-Disallow: /gemfile
+Disallow: /Gemfile
 Disallow: /LICENSE.md
 Disallow: /_config.yml
 Disallow: /notes.md
+Disallow: /404.html
+Disallow: /humans.txt
 
 Sitemap: https://www.kyles.world/sitemap.xml
