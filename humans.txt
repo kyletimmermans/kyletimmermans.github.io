@@ -1,0 +1,22 @@
+This is a website dedicated to showing off all of the projects I've worked on and it also serves as a playground for anything HTML/CSS/JavaScript that I want to try out.
+
+
+Please
+   take
+     an
+       ice
+         cream!
+
+
+           ()                ()
+        .-"`'"-.          .-"`'"-.
+       /        \        /        \
+       |        |        \        /
+       /'---'--`\        /'---'--`\      
+      |          |      |          |
+      \.--.---.-./      \_.--.__.-./
+      (_.--._.-._)      (_.__..__._)
+        \=-=-=-/          [=-=-=-]
+         \=-=-/            |=-=-|
+          \=-/             |-=-=|
+           \/              '-==-'
