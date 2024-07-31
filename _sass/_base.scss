@@ -1,7 +1,4 @@
-/*
-  Reset some basic elements
-*/
-
+/* Reset some basic elements */
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -9,9 +6,7 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-/*
-  Basic styling
-*/
+/* Basic Styling */
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -24,14 +19,17 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2rem;
 }
+
 h2 {
   margin-top: 1rem;
   font-size: 1.5rem;
 }
+
 h3 {
   margin-top: 1.5rem;
   font-size: 1.25rem;
 }
+
 h4, h5, h6 {
   margin-top: 1rem;
   font-size: 1rem;
@@ -41,6 +39,7 @@ h4, h5, h6 {
 body {
   font-family: $base-font-family;
 }
+
 body img {
     align: middle;
     margin: 5px auto auto auto;
@@ -79,23 +78,18 @@ li {
 dt {
   font-weight: bold;
 }
+
 dd {
   margin-bottom: .5rem;
 }
 
-/*
-  Links
-*/
-
+/* Links */
 a {
   color: $brand-color;
   text-decoration: none;
 }
 
-/*
-  Blockquote
-*/
-
+/* Blockquote */
 blockquote {
   margin: 10px 20px 10px;
   padding: 0px 15px;
@@ -104,19 +98,27 @@ blockquote {
   line-height: 1.5;
 }
 
-/**
- * Tables
- */
- table {
-     border-collapse: collapse;
-     margin-bottom: 30px;
-     width: 100%;
- }
+/* Tables */
+table {
+   border-collapse: collapse;
+   margin-bottom: 30px;
+   width: 100%;
+}
 
- table, th, td {
-     border: 1px solid black;
- }
- th, td {
-     padding: 15px;
-     text-align: left;
- }
+table, th, td {
+   border: 1px solid black;
+}
+
+th, td {
+   padding: 15px;
+   text-align: left;
+}
+
+/* Green text highlighting */
+::selection {
+  background: rgba(34, 139, 34, 0.5) !important;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: rgba(34, 139, 34, 0.5) !important;
+}
