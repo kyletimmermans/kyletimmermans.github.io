@@ -22,10 +22,13 @@
 
   <meta property="og:title" content="{{ title }}">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="{{ url }}">
   <meta property="og:description" content="Enjoy Your Stay!">
   <meta property="og:image" content="https://www.kyles.world/assets/img/favicon/android-chrome-512x512.png">
+  <meta property="og:locale" content="en_US">
+  {%- if page.title == "About" -%}
+    <meta property="og:locale:alternate" content="ru_RU">
+  {%- endif -%}
 
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
   <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.png">
