@@ -8,8 +8,8 @@
 <script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.1/dist/fullpage.min.js"></script>
     
 <script>
-// Redirect to /mobile if its a mobile device but not using the mobile URL
-if (window.mobileCheck() && window.location.href.indexOf("mobile") == -1) {
+// Redirect to /mobile if its a mobile device
+if (window.mobileCheck()) {
     window.location.replace("/mobile");
 }
 
