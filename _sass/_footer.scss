@@ -7,16 +7,19 @@
   width: $container-width;
   margin-top: 4.75vh;
 }
+
 .footer a {
   color: $brand-color;
   padding: 0px 10px 0px;
   text-decoration: none;
 }
+
 @media (max-width: $container-width) {
   .footer {
     width: 95vw;
   }
 }
+
 /* Non-Mobile */
 @media (hover: hover) and (pointer: fine) {
   /* Medium screens */
@@ -33,6 +36,7 @@
       .footer .name-year { font-size: 0.7vw; }
   }
 }
+
 /* Very small mobile and very big mobile */
 @media (hover: none) { 
     @media (pointer: none), (pointer: coarse) {
@@ -43,6 +47,7 @@
                 padding-right: 2.15vw;
             }
         }
+
         /* Very big-width mobile */
         @media screen and (min-width: 600px) {
             .footer .menu-link { font-size: 3vw; }
