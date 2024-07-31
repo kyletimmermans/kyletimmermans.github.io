@@ -1,12 +1,15 @@
 <head>
 
-  <title>
-    {%- if page.title == "Kyle&#39;s World" or page.title == "404: Delicious Disappearance" -%}
-      {{ page.title }}
-    {%- else -%}
-      {{ page.title }} | {{ site.title }}
-    {%- endif -%}
-  </title>
+  {%- if page.title == "Kyle&#39;s World" or page.title == "404: Delicious Disappearance" -%}
+    {% assign title = page.title %}
+    {% assign url = "https://www.kyles.world/" %}
+  {%- else -%}
+    {% assign title = page.title | append: " | " | append: site.title %}
+    {% assign url = site.title %}
+    {% assign url = "https://www.kyles.world/" | append: page.title | downcase | append: "/"  %}
+  {%- endif -%}
+
+  <title>{{ title }}</title>
 
   <meta charset="UTF-8">
   <meta name="description" content="Enjoy Your Stay!">
@@ -14,6 +17,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#6e9582">
+
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="{{ url }}">
+  <meta property="og:description" content="Enjoy Your Stay!">
+  <meta property="og:image" content="https://www.kyles.world/assets/img/favicon/android-chrome-512x512.png">
 
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
   <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.png">
