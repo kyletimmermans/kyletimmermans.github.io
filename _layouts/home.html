@@ -9,9 +9,11 @@
     
 <script>
 // Redirect to /mobile if its a mobile device
-if (window.mobileCheck()) {
-    window.location.replace("/mobile");
-}
+window.onload = function() {
+    if (window.mobileCheck()) {
+        window.location.replace("/mobile");
+    }
+};
 
 window.externalScriptConsoleError = console.error;
 console.error = function() {
