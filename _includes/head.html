@@ -1,8 +1,11 @@
 <head>
 
-  {%- if page.title == "Kyle&#39;s World" or page.title == "404: Delicious Disappearance" -%}
+  {%- if page.title == "Kyle&#39;s World" -%}
     {% assign title = page.title %}
     {% assign url = "https://www.kyles.world/" %}
+  {% elsif page.title == "404: Delicious Disappearance" %}
+    {% assign title = page.title %}
+    {% assign url = "https://www.kyles.world/404.html/" %}
   {%- else -%}
     {% assign title = page.title | append: " | " | append: site.title %}
     {% assign url = "https://www.kyles.world/" | append: page.title | downcase | append: "/"  %}
