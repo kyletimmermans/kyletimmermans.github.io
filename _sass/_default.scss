@@ -1,38 +1,42 @@
-/*
-  Site container
-*/
-
+/* Site container */
 .container {
   width: $container-width;
   margin-left: auto;
   margin-right: auto;
 }
+
 .container a {
   text-decoration: underline;
 }
+
 .posts-wrapper {
   padding-top: $header-thickness+10px;
   margin: auto;
   display: block;
   width: $container-width - 20px;
 }
+
 .posts-wrapper h1 {
   margin: 20px 0px 5px;
 }
+
 /* Medium screens */
 @media screen and (min-height: 900px) and (max-height: 1199px) and (min-width: 1600px) and (max-width: 2099px) {
   .page-title h1 { font-size: 1.82vw; }
 }
+
 /* Big screens */
 @media screen and (min-width: 2100px) and (min-height: 1200px) {
   .page-title h1 { font-size: 1.45vw; }
 }
+
 @media (max-width: $container-width) {
   .container {
     width: 95vw;
     margin-left: auto;
     margin-right: auto;
   }
+
   .posts-wrapper {
     padding-top: $header-thickness+10px;
     margin: auto;
