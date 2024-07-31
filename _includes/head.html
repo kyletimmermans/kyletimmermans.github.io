@@ -5,7 +5,6 @@
     {% assign url = "https://www.kyles.world/" %}
   {%- else -%}
     {% assign title = page.title | append: " | " | append: site.title %}
-    {% assign url = site.title %}
     {% assign url = "https://www.kyles.world/" | append: page.title | downcase | append: "/"  %}
   {%- endif -%}
 
