@@ -58,8 +58,9 @@
 <div>&ensp;</div>
 
 <div>&ensp;</div>
-<div>&ensp;-Run jekyll locally with: bundle exec jekyll serve</div>
+<div>&ensp;-Run jekyll locally with: <i>bundle exec jekyll serve</i></div>
 <div>&ensp;&ensp;-Add the following line to _config.yml to avoid error: repository: kyletimmermans/kyletimmermans.github.io</div>
+<div>&ensp;&ensp;-Also run the following line: <i>bundle add webrick</i></div>
 <div>&ensp;</div>
 
 <div>&ensp;</div>
