@@ -5,7 +5,8 @@
 
 <head>
 <script>
-if (!window.mobileCheck()) {   // Redirect to mobile homepage if "check == true"
+// Redirect to desktop site if its a desktop device but using the mobile URL
+if (!window.mobileCheck() && window.location.href.indexOf("mobile") > -1) {
     window.location.replace("/");
 }
 </script>
