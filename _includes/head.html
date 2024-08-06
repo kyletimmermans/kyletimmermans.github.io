@@ -1,5 +1,7 @@
 <head>
 
+  <script>{% include redirect.js %}</script>
+
   {%- if page.title == "Kyle&#39;s World" -%}
     {% assign title = page.title %}
     {% assign url = "https://www.kyles.world/" %}
@@ -41,7 +43,5 @@
   {%- if page.layout == "mobilehome" -%}
     <link rel="canonical" href="https://www.kyles.world/">
   {%- endif -%}
-  
-  {% include redirectjs.html %}
 
 </head>
