@@ -5,15 +5,15 @@ window.mobileCheck = function() {
 };
 
 // Run once, use later many times
-var mobile = window.mobileCheck();
+var isMobile = window.mobileCheck();
 
 // Redirects to mobile / to desktop
-if (mobile && window.location.pathname == "/") {
+if (isMobile && window.location.pathname == "/") {
   window.location.replace("/mobile/");
-} else if (!mobile && window.location.pathname == "/mobile/") {
+} else if (!isMobile && window.location.pathname == "/mobile/") {
   window.location.replace("/");
-} else if (mobile && window.location.pathname == "/resume/") {
+} else if (isMobile && window.location.pathname == "/resume/") {
   window.location.replace("/assets/docs/KyleTimmermansResume.pdf"); 
-} else if (mobile && window.location.pathname == "/cv/") {
+} else if (isMobile && window.location.pathname == "/cv/") {
   window.location.replace("/assets/docs/KyleTimmermansCV.pdf");
 }
