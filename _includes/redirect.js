@@ -4,13 +4,16 @@ window.mobileCheck = function() {
   return check;
 };
 
+// Run once, use later many times
+var mobile = window.mobileCheck();
+
 // Redirects to mobile / to desktop
-if (window.mobileCheck() && window.location.pathname == "/") {
+if (mobile && window.location.pathname == "/") {
   window.location.replace("/mobile/");
-} else if (!window.mobileCheck() && window.location.pathname == "/mobile/") {
+} else if (!mobile && window.location.pathname == "/mobile/") {
   window.location.replace("/");
-} else if (window.mobileCheck() && window.location.pathname == "/resume/") {
+} else if (mobile && window.location.pathname == "/resume/") {
   window.location.replace("/assets/docs/KyleTimmermansResume.pdf"); 
-} else if (window.mobileCheck() && window.location.pathname == "/cv/") {
+} else if (mobile && window.location.pathname == "/cv/") {
   window.location.replace("/assets/docs/KyleTimmermansCV.pdf");
 }
