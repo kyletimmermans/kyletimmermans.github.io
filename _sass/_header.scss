@@ -7,23 +7,11 @@
   z-index: 100;
 }
 
-.site-header-home {
-  min-height: 56px;
-  width: $container-width;
-  position: fixed;
-  background-color: transparent;
-  color: white;
-  box-shadow: 0 5px 6px -6px #bbb;
-  z-index: 100;
-}
-
 /* Medium screens */
 @media screen and (min-height: 900px) and (max-height: 1199px) and (min-width: 1600px) and (max-width: 2099px) {
   .container { width: 76.389vw; }
   .site-header { min-height: 5vh; width: 76.389vw; }
-  .site-header-home { min-height: 5vh; width: 76.389vw; }
   .site-header .menu-link { font-size: 1vw; padding-right: 0.50vw; }
-  .site-header-home .menu-link { font-size: 1vw; padding-right: 0.50vw; }
   .site-title a { font-size: 1.50vw; }
 }
 
@@ -31,9 +19,7 @@
 @media screen and (min-width: 2100px) and (min-height: 1200px) {
   .container { width: 76.389vw; }
   .site-header { min-height: 4.7vh; width: 76.389vw; }
-  .site-header-home { min-height: 4.7vh; width: 76.389vw; }
   .site-header .menu-link { font-size: 0.80vw; padding-right: 0.58vw; }
-  .site-header-home .menu-link { font-size: 0.80vw; padding-right: 0.58vw; }
   .site-title a { font-size: 1.1vw; }
 }
 
@@ -46,23 +32,9 @@
     box-shadow: 0 5px 6px -6px #bbb;
     z-index: 100;
   }
-
-  .site-header-home {
-    min-height: 56px;
-    width: 95vw;
-    position: fixed;
-    background-color: transparent;
-    color: white;
-    box-shadow: 0 5px 6px -6px #bbb;
-    z-index: 100;
-  }
 }
 
 .site-header a {
-  text-decoration: none;
-}
-
-.site-header-home a {
   text-decoration: none;
 }
 
@@ -91,10 +63,6 @@
     display: none;
   }
 
-  .dropbtn-home {
-    display: none;
-  }
-
   .dropdown-content {
     display: none;
   }
@@ -110,16 +78,6 @@
 
   .dropbtn {
     background-color: white;
-    color: black;
-    padding: 16px;
-    margin-top: 4px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-
-  .dropbtn-home {
-    background-color: transparent;
     color: black;
     padding: 16px;
     margin-top: 4px;
@@ -159,9 +117,5 @@
 
   .dropdown:hover .dropbtn {
     background-color: #f1f1f1;
-  }
-
-  .dropdown:hover .dropbtn-home {
-    background-color: transparent;
   }
 }
