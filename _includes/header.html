@@ -1,5 +1,19 @@
+{%- if page.layout == "home" -%}
+  <style>
+    .site-header {
+      background-color: transparent !important;
+      color: white !important;
+    }
+
+    .dropbtn, .dropdown:hover .dropbtn {
+      background-color: transparent !important;
+    }
+  </style>
+{%- else -%}
+  <script>{% include mobile.js %}</script>
+{%- endif -%}
+
 <header class="site-header">
-  {% include mobilejs.html %}
   <h3 class="site-title">
     <a href="{{ site.github.url }}/">Kyle Timmermans</a>
   </h3>
