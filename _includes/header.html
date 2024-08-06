@@ -1,13 +1,12 @@
 {%- if page.layout == "home" -%}
   <style>
-    .site-header {
-      background-color: transparent !important;
-      color: white !important;
-    }
+    .site-header { background-color: transparent; }
 
-    .dropbtn, .dropdown:hover .dropbtn {
-      background-color: transparent !important;
-    }
+    .site-header a { color: white; }
+
+    .dropbtn, .dropdown:hover .dropbtn { background-color: transparent; }
+
+    .dropdown-content a { color: black; }
   </style>
 {%- else -%}
   <script>{% include mobile.js %}</script>
