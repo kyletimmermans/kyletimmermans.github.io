@@ -1,4 +1,4 @@
-if (window.mobileCheck()) {
+if (isMobile) { // isMobile comes from redirect.js
 
     window.onload = function() {
 
