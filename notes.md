@@ -72,5 +72,5 @@
 <div>&ensp;</div>
 
 <div>&ensp;</div>
-<div>&ensp;-No need to add <!DOCTYPE html> anywhere, I think jekyll does it for you, the pages have it after checking</div>
+<div>&ensp;-No need to add &lt;!DOCTYPE html&gt; anywhere, I think jekyll does it for you, the pages have it after checking</div>
 <div>&ensp;</div>
