@@ -157,6 +157,7 @@ video::-webkit-media-controls {
             Your browser does not support the video tag. Switch from mobile or upgrade your browser!
         </video>
         <script>
+        var video = document.getElementById('myVideo');
         var swapper = document.getElementById('swapper');
         var ua = navigator.userAgent.toLowerCase();
         if (ua.indexOf('cpu') == -1 && ua.indexOf('safari') > -1 && ua.indexOf('chrome') == -1 && ua.indexOf('firefox') == -1) {
