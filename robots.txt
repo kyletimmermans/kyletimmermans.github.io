@@ -38,7 +38,6 @@ Disallow: /assets/
 Disallow: /pages/
 Disallow: /apple-touch-icon.png
 Disallow: /browserconfig.xml
-Disallow: /favicon.ico
 Disallow: /security.txt
 Disallow: /CNAME
 Disallow: /Gemfile
