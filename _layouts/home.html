@@ -152,7 +152,7 @@ video::-webkit-media-controls {
 
 <div id="fullpage">
     <div class="section " id="section0">
-        <video id="myVideo" width="3840" height="2160" loop muted data-autoplay>
+        <video id="myVideo" width="3840" height="2160" loop muted>
             <source id="swapper">
             Your browser does not support the video tag. Switch from mobile or upgrade your browser!
         </video>
@@ -166,6 +166,10 @@ video::-webkit-media-controls {
             swapper.src = "/assets/video/croatia.webm";
             swapper.type = "video/webm";
         }
+
+        // Autoplay before would try running video before it loaded, causing error
+        video.load()
+        video.play().catch(() => {}); // Show no errors
         </script>
         <div class="layer">
             <div id="p3" class="centered" translate="no"></div>
@@ -179,7 +183,7 @@ video::-webkit-media-controls {
             <h1 class="glitch" data-text="Enjoy your stay!">Enjoy your stay!</h1>
         </div>
         <div id="footing">
-            <div class="container"> {% include footer.html %} </div>
+            <div class="container">{% include footer.html %}</div>
         </div>
     </div>
 </div>
