@@ -46,5 +46,6 @@ Disallow: /LICENSE.md
 Disallow: /_config.yml
 Disallow: /notes.md
 Disallow: /humans.txt
+Disallow: /.gitignore
 
 Sitemap: https://www.kyles.world/sitemap.xml
