@@ -7,12 +7,11 @@ menu:
 - {name: 'About', folder: 'pages', file: 'about.html'}
 - {name: 'Contact', folder: 'pages', file: 'contact.html'}
 
-# Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
-- {icon: 'fa-solid fa-envelope', link: 'mailto:kyle@kyles.world'}
-- {icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/kyle-timmermans/'}
-- {icon: 'fa-brands fa-github', link: 'https://github.com/kyletimmermans'}
-- {icon: 'fa-brands fa-twitter', link: 'https://twitter.com/kyletimmermans'}
-- {icon: 'fa-brands fa-instagram', link: 'https://instagram.com/kyle_timmermans'}
-- {icon: 'fa-brands fa-youtube', link: 'https://www.youtube.com/@TheXeXKyle'}
-- {icon: 'fa-brands fa-discord', link: 'https://discord.com/users/194488028863922176'}
+- {name: 'Email', icon: 'fa-solid fa-envelope', link: 'mailto:kyle@kyles.world'}
+- {name: 'LinkedIn', icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/kyle-timmermans/'}
+- {name: 'GitHub', icon: 'fa-brands fa-github', link: 'https://github.com/kyletimmermans'}
+- {name: 'Twitter', icon: 'fa-brands fa-twitter', link: 'https://twitter.com/kyletimmermans'}
+- {name: 'Instagram', icon: 'fa-brands fa-instagram', link: 'https://instagram.com/kyle_timmermans'}
+- {name: 'YouTube', icon: 'fa-brands fa-youtube', link: 'https://www.youtube.com/@TheXeXKyle'}
+- {name: 'Discord', icon: 'fa-brands fa-discord', link: 'https://discord.com/users/194488028863922176'}
