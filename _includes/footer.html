@@ -1,7 +1,6 @@
 <footer class="footer">
   {% for item in site.data.settings.social %}
-    {% assign label = item.icon | remove: " " | remove: "fa-" | remove: "solid" | remove: "brands" | capitalize %}
-    <a href="{{ item.link }}" class="menu-link" target="_blank" rel="noopener noreferrer" title="{{ label }}" aria-label="{{ label }}"><i class="{{ item.icon }}"></i></a>
+    <a href="{{ item.link }}" class="menu-link" target="_blank" rel="noopener noreferrer" title="{{ item.label }}" aria-label="{{ item.label }}"><i class="{{ item.icon }}"></i></a>
   {% endfor %}
   <div class="name-year"><a href="{{ site.github.url }}/">Kyle Timmermans | {{ 'now' | date: "%Y" }}</a></div>
 </footer>
