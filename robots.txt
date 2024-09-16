@@ -44,6 +44,7 @@ Disallow: /Gemfile
 Disallow: /LICENSE.md
 Disallow: /_config.yml
 Disallow: /notes.md
+Disallow: /README.md
 Disallow: /humans.txt
 Disallow: /.gitignore
 
