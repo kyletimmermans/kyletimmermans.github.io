@@ -151,8 +151,9 @@ video::-webkit-media-controls {
 </div>
 
 <div id="fullpage">
-    <div class="section " id="section0">
-        <video id="myVideo" width="3840" height="2160" loop muted>
+    <div class="section" id="section0">
+        <!-- https://github.com/alvarotrigo/fullPage.js?tab=readme-ov-file#pause-on-leave -->
+        <video id="myVideo" width="3840" height="2160" loop muted data-keepplaying>
             <source id="swapper">
             Your browser does not support the video tag. Switch from mobile or upgrade your browser!
         </video>
@@ -168,9 +169,9 @@ video::-webkit-media-controls {
             swapper.type = "video/webm";
         }
 
-        // Autoplay before would try running video before it loaded, causing error
+        // Move autoplay attribute out of html and into JS where we have a load() call to prevent any play-before-load video errors
+        video.autoplay = true;
         video.load()
-        video.play().catch(() => {}); // Show no errors
         </script>
         <div class="layer">
             <div id="p3" class="centered" translate="no"></div>
