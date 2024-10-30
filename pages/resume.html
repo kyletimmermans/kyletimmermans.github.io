@@ -108,7 +108,7 @@ title: Resume
 
   const pdfLinkService = new pdfjsViewer.PDFLinkService({
     eventBus,
-    externalLinkTarget: 2,  // 'BLANK' - Open links in new tab
+    externalLinkTarget: 2,  // 'BLANK' - Open links in new tab (Default link rel is "noopener noreferrer nofollow")
   });
 
   const pdfViewer = new pdfjsViewer.PDFViewer({
