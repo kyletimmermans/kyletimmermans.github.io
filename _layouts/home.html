@@ -4,8 +4,8 @@
 {% include head.html %}
     
 <head>
-<link href="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.1/dist/fullpage.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.1/dist/fullpage.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"></script>
     
 <script>
 window.externalScriptConsoleError = console.error;
@@ -22,6 +22,11 @@ console.error = function() {
 </head>
 
 <style>
+/* Remove fullPage.js watermark */
+div.fp-watermark {
+    display: none;
+}
+
 .section {
     text-align: center;
     overflow: hidden;
