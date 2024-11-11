@@ -92,9 +92,9 @@ title: CV
 
 <!-- Begin PDF.js -->
 
-<link rel="stylesheet" href="https://unpkg.com/pdfjs-dist@4.3.136/web/pdf_viewer.css">
-<script src="https://unpkg.com/pdfjs-dist@4.3.136/build/pdf.min.mjs" type="module"></script>
-<script src="https://unpkg.com/pdfjs-dist@4.3.136/web/pdf_viewer.mjs" type="module"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf_viewer.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf.min.mjs" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf_viewer.mjs" type="module"></script>
 
 <div id="viewerResize">
   <div id="viewerContainer">
@@ -103,7 +103,7 @@ title: CV
 </div>
 
 <script type="module">
-  pdfjsLib.GlobalWorkerOptions.workerSrc = "https://unpkg.com/pdfjs-dist@4.3.136/build/pdf.worker.min.mjs";
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf.worker.min.mj";
 
   const container = document.getElementById("viewerContainer");
   const eventBus = new pdfjsViewer.EventBus();
@@ -140,8 +140,6 @@ title: CV
   // Loading document.
   const loadingTask = pdfjsLib.getDocument({
     url: "/assets/docs/KyleTimmermansCV.pdf",
-    cMapUrl: "https://unpkg.com/pdfjs-dist@4.3.136/cmaps/",
-    cMapPacked: true,
     textLayerMode: 2,
     isEvalSupported: false,
   });
