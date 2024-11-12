@@ -83,9 +83,9 @@ layout: default
 
 <!-- Begin PDF.js -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.3.136/pdf_viewer.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.3.136/pdf.min.mjs" type="module"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.3.136/pdf_viewer.mjs" type="module"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf_viewer.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf.min.mjs" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf_viewer.mjs" type="module"></script>
 
 <div id="viewerResize">
   <div id="viewerContainer">
@@ -94,7 +94,7 @@ layout: default
 </div>
 
 <script type="module">
-  pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.3.136/pdf.worker.min.mjs";
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf.worker.min.mjs";
 
   const container = document.getElementById("viewerContainer");
   const eventBus = new pdfjsViewer.EventBus();
@@ -118,11 +118,11 @@ layout: default
 
   eventBus.on("pagesinit", function () {
     // We can use pdfViewer now, e.g. let's change default scale.
-    pdfViewer.currentScaleValue = "page-width";
+    pdfViewer.currentScaleValue = "auto";
 
     const viewerResizer = document.getElementById('viewer');
     const resizeObserver = new ResizeObserver(entries => {
-      pdfViewer.currentScaleValue = "page-width";
+      pdfViewer.currentScaleValue = "auto";
     });
     resizeObserver.observe(viewerResizer);
   });
