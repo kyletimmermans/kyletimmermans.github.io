@@ -109,7 +109,6 @@ layout: default
     eventBus,
     linkService: pdfLinkService,
     enableScripting: false,
-    enableXfa: false,
     renderInteractiveForms: false,
     maxCanvasPixels: 8192 * 8192,
     printResolution: 300,
@@ -133,6 +132,7 @@ layout: default
     url: "{{ page.pdf-path }}",
     textLayerMode: 2,
     isEvalSupported: false,
+    enableXfa: false,
   });
 
   const pdfDocument = await loadingTask.promise;
