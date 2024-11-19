@@ -12,7 +12,7 @@ $speed3: cubic-bezier(0.26, 0.48, 0.08, 0.9);
 
 /* Big screens */
 @media screen and (min-width: 2100px) and (min-height: 1200px) {
-    :root { --slider-height: 3vh; }
+    :root { --slider-height: 3.2vh; }
 }
 
 .language-switcher {
