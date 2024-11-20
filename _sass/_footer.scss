@@ -10,9 +10,12 @@
 
 .footer a {
   color: $brand-color;
-  padding: 0px 10px 0px;
+  padding: 0px 12px 0px;
   text-decoration: none;
 }
+
+.footer .menu-link { font-size: 1.4vw; }
+.footer .name-year { font-size: 1.2vw; }
 
 @media (max-width: $container-width) {
   .footer {
@@ -25,15 +28,17 @@
   /* Medium screens */
   @media screen and (min-height: 900px) and (max-height: 1199px) and (min-width: 1600px) and (max-width: 2099px) {
       .footer { width: 76.389vw; }
-      .footer .menu-link { font-size: 1.1vw; }
-      .footer .name-year { font-size: 0.9vw; }
+      .footer a { padding: 0px 12.5px 0px; }
+      .footer .menu-link { font-size: 1.2vw; }
+      .footer .name-year { font-size: 1.0vw; }
   }
 
   /* Big screens */
   @media screen and (min-width: 2100px) and (min-height: 1200px) {
       .footer { width: 76.389vw; }
-      .footer .menu-link { font-size: 0.9vw; }
-      .footer .name-year { font-size: 0.7vw; }
+      .footer a { padding: 0px 12.5px 0px; }
+      .footer .menu-link { font-size: 1.0vw; }
+      .footer .name-year { font-size: 0.8vw; }
   }
 }
 
@@ -41,17 +46,24 @@
 @media (hover: none) { 
     @media (pointer: none), (pointer: coarse) {
         /* Very small-width mobile */
-        @media screen and (max-width: 374px) {
-            .footer a {
-                padding-left: 2.15vw;
-                padding-right: 2.15vw;
-            }
+        @media screen and (max-width: 399px) {
+            .footer a { padding: 0px 2.25vw 0px; }
+            .footer .menu-link { font-size: 5.5vw; }
+            .footer .name-year { font-size: 5.25vw; }
+        }
+
+        /* Typical mobile screens */
+        @media screen and (min-width: 400px) and (max-width: 599px) {
+            .footer a { padding: 0px 2.75vw 0px; }
+            .footer .menu-link { font-size: 5.5vw; }
+            .footer .name-year { font-size: 5.25vw; }
         }
 
         /* Very big-width mobile */
         @media screen and (min-width: 600px) {
-            .footer .menu-link { font-size: 3vw; }
-            .footer .name-year { font-size: 3vw; }
+            .footer a { padding: 0px 2.75vw 0px; }
+            .footer .menu-link { font-size: 4vw; }
+            .footer .name-year { font-size: 3.75vw; }
         }
     }
 }
