@@ -12,6 +12,4 @@ social:
 - {name: 'LinkedIn', icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/kyle-timmermans/'}
 - {name: 'GitHub', icon: 'fa-brands fa-github', link: 'https://github.com/kyletimmermans'}
 - {name: 'Twitter', icon: 'fa-brands fa-twitter', link: 'https://twitter.com/kyletimmermans'}
-- {name: 'Instagram', icon: 'fa-brands fa-instagram', link: 'https://instagram.com/kyle_timmermans'}
 - {name: 'YouTube', icon: 'fa-brands fa-youtube', link: 'https://www.youtube.com/@TheXeXKyle'}
-- {name: 'Discord', icon: 'fa-brands fa-discord', link: 'https://discord.com/users/194488028863922176'}
