@@ -1,10 +1,8 @@
 $envelope-color: #f39c12;
 $twitter-color: #00aced;
-$instagram-color: #d62f85;
 $github-color: #238636;
 $linkedin-color: #0073a4;
 $youtube-color: #ff0000;
-$discord-color: #737cf8;
 
 @mixin social-media-icon($color) {
   /* Hover creates color when we have a mouse pointer */
