@@ -37,11 +37,6 @@ $discord-color: #737cf8;
   @include social-media-icon($twitter-color);
 }
 
-.fa-instagram {
-  padding: 5px;
-  @include social-media-icon($instagram-color);
-}
-
 .fa-github {
   padding: 5px;
   @include social-media-icon($github-color);
@@ -55,9 +50,4 @@ $discord-color: #737cf8;
 .fa-youtube {
   padding: 5px;
   @include social-media-icon($youtube-color);
-}
-
-.fa-discord {
-  padding: 5px;
-  @include social-media-icon($discord-color);
 }
