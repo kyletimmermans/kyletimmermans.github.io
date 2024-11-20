@@ -86,3 +86,30 @@
   --bs-btn-disabled-bg: #198754;
   --bs-btn-disabled-border-color: #198754;
 }
+
+.btn-success svg {
+  /* Vertically centered in button */
+  display: inline-block;
+  vertical-align: -.125em;
+  /* Must be the same value as the font-size */
+  height: calc(var(--bs-btn-font-size) * 1.1);
+  width: calc(var(--bs-btn-font-size) * 1.1);
+}
+
+/* Medium screens */
+@media screen and (min-height: 900px) and (max-height: 1199px) and (min-width: 1600px) and (max-width: 2099px) {
+  .btn { 
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-font-size: 1.05rem;
+  }
+}
+
+/* Big screens */ 
+@media screen and (min-width: 2100px) and (min-height: 1200px) {
+  .btn { 
+    --bs-btn-padding-x: 0.80rem;
+    --bs-btn-padding-y: 0.40rem;
+    --bs-btn-font-size: 1.1rem;
+  }
+}
