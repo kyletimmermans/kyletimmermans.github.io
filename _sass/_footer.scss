@@ -47,22 +47,22 @@
     @media (pointer: none), (pointer: coarse) {
         /* Very small-width mobile */
         @media screen and (max-width: 399px) {
-            .footer a { padding: 0px 2.25vw 0px; }
-            .footer .menu-link { font-size: 5.5vw; }
+            .footer a { padding: 0px 2.35vw 0px; }
+            .footer .menu-link { font-size: 5.60vw; }
             .footer .name-year { font-size: 5.25vw; }
         }
 
         /* Typical mobile screens */
         @media screen and (min-width: 400px) and (max-width: 599px) {
-            .footer a { padding: 0px 2.75vw 0px; }
-            .footer .menu-link { font-size: 5.5vw; }
+            .footer a { padding: 0px 2.8vw 0px; }
+            .footer .menu-link { font-size: 5.60vw; }
             .footer .name-year { font-size: 5.25vw; }
         }
 
         /* Very big-width mobile */
         @media screen and (min-width: 600px) {
-            .footer a { padding: 0px 2.75vw 0px; }
-            .footer .menu-link { font-size: 4vw; }
+            .footer a { padding: 0px 2.8vw 0px; }
+            .footer .menu-link { font-size: 4.10vw; }
             .footer .name-year { font-size: 3.75vw; }
         }
     }
