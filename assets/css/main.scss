@@ -1,10 +1,8 @@
 ---
-# Front matter comment to ensure Jekyll properly reads file.
+# CSS for every page
 ---
 
-/*
-  Site variables
-*/
+/* Site variables */
 
 $base-font-family: 'Roboto', sans-serif;
 
@@ -22,4 +20,10 @@ $phone-width: 480px;
 
 $header-thickness: 56px;
 
-@import "-sections-dir";
+@import "base",
+        "default",
+        "header",
+        "footer",
+        "social-icons",
+        "post",
+        "misc";

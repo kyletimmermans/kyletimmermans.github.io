@@ -42,6 +42,13 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#004000">
   <link rel="stylesheet" href="/assets/css/main.css">
+  {%- if page.layout == "home" or page.layout == "mobilehome" -%}
+    <link rel="stylesheet" href="/assets/css/home.css">
+  {%- elsif page.layout == "PDFjs" -%}
+    <link rel="stylesheet" href="/assets/css/download-button.css">
+  {%- elsif page.title == "About" -%}
+    <link rel="stylesheet" href="/assets/css/translation-slider.css">
+  {%- endif -%}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro">
