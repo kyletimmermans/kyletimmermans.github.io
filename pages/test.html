@@ -23,25 +23,37 @@ title: I'm a teapot
 }
 
 .special-img {
+    max-height: 50vh;
+    width: auto;
     max-width: 90%;
     height: auto;
 }
 
 .special-div {
     font-weight: bold;
-    font-size: 6.5rem;
+    font-size: 4.5rem;
     margin-top: 1rem;
     white-space: normal;
-}
-
-/* Font size for small screens */
-@media screen and (max-width : 1000px) {
-    .special-div { font-size: 2rem; }
 }
 
 .a-black { color: black; text-decoration: none; }
 
 .a-gray { color: gray; text-decoration: none; }
+
+/* Font size for small screens */
+@media screen and (max-width : 1000px) {
+    .special-div { font-size: 2rem; }
+}
+  
+/* Medium screens */
+@media screen and (min-height: 900px) and (max-height: 1199px) and (min-width: 1600px) and (max-width: 2099px) {
+    .special-div { font-size: 5rem; }
+}
+
+/* Big screens */
+@media screen and (min-width: 2100px) and (min-height: 1200px) {
+    .special-div { font-size: 6.5rem; }
+}
 </style>
 <body>
     <script>
