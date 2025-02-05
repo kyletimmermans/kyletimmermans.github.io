@@ -3,7 +3,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="300" height="300" viewBox="0 0 300 300" xml:space="preserve">
 <desc>Created with Fabric.js 5.3.0</desc>
 <defs>
+  <style>
+    /* Make favicon more visible on dark backgrounds by adding a white background */
+    @media (prefers-color-scheme: dark) {
+      .background { fill: white !important; }
+    }
+  </style>
 </defs>
+<rect class="background" style="fill: transparent;" x="0" y="6" width="300" height="290" rx="40"/>
 <g transform="matrix(0.987330316 1.5800587964 -0.3826209178 0.2390880849 97.7602385507 173.5965039775)">
 <path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(0.000005, 0.000005)" d="M -42.01681 -42.01681 L 42.016799999999996 -42.01681 L 42.016799999999996 42.016799999999996 L -42.01681 42.016799999999996 z" stroke-linecap="round" />
 </g>
