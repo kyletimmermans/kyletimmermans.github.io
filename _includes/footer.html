@@ -2,5 +2,6 @@
   {% for item in site.data.settings.social %}
     <a href="{{ item.link }}" class="menu-link" target="_blank" rel="noopener noreferrer" title="{{ item.name }}" aria-label="{{ item.name }}"><i class="{{ item.icon }}"></i></a>
   {% endfor %}
-  <div class="name-year"><a href="{{ site.github.url }}/">Kyle Timmermans | {{ 'now' | date: "%Y" }}</a></div>
+  <div class="name-year"><a href="{{ site.github.url }}/">Kyle Timmermans | </a></div>
+  <script>document.querySelector('.name-year > a').textContent += new Date().getFullYear();</script>
 </footer>
